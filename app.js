@@ -6,6 +6,7 @@
     arrow: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
     diagonal: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>',
     calendar: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="1"/><path d="M8 3v4M16 3v4M4 10h16M8 14h2M14 14h2M8 17h2"/></svg>',
+    map: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 5 6-2 6 3 6-2v15l-6 2-6-3-6 2zM9 3v15M15 6v15"/></svg>',
     patron: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6zM12 8v8M8.5 11.5h7"/></svg>',
     cards: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
     bookmark: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
@@ -14,7 +15,7 @@
   const groupNames = {};
   const config = window.SAINT_UI_CONFIG;
   const months = config.months;
-  const views = { cards: { label: 'Kartice', target: 'saint-grid', note: 'Portreti i životopisi' }, list: { label: 'Popis', target: 'saint-list', note: 'Popis po kategorijama' }, calendar: { label: 'Kalendar', target: 'saint-calendar', note: 'Godišnji kalendar' } };
+  const views = { cards: { label: 'Kartice', target: 'saint-grid', note: 'Portreti i životopisi' }, list: { label: 'Popis', target: 'saint-list', note: 'Popis po kategorijama' }, calendar: { label: 'Kalendar', target: 'saint-calendar', note: 'Godišnji kalendar' }, map: { label: 'Karte', target: 'saint-map', note: 'Mjesta iz životopisa' } };
   const stored = readStorage('localStorage', 'saints-library:preferences', {});
   const session = readStorage('sessionStorage', 'saints-library:browsing', {});
   const state = { saints: [], byId: new Map(), visible: [], view: Object.hasOwn(views, stored.view) ? stored.view : 'cards', search: typeof session.search === 'string' ? session.search.slice(0, 200) : '', groups: new Set(), categories: new Set(), themes: new Set(), centuries: new Set(), saved: new Set(Array.isArray(stored.saved) ? stored.saved.filter(id => typeof id === 'string') : []), savedOnly: false, readingSize: [17, 19, 21].includes(stored.readingSize) ? stored.readingSize : 17, active: null, opener: null, originScroll: 0, data: null };
@@ -22,6 +23,7 @@
   let storageNotice = false;
   let focusGeneration = 0;
   let calendarMonth = null;
+  let mapView = null;
   function readStorage(kind, key, fallback) {
     try { const value = JSON.parse(window[kind]?.getItem(key) || 'null'); return value && typeof value === 'object' && !Array.isArray(value) ? value : fallback; } catch { return fallback; }
   }
@@ -198,10 +200,14 @@
     for (const [key, view] of Object.entries(views)) {
       const container = $(`#${view.target}`);
       container.hidden = state.view !== key;
-      if (container.hidden) container.innerHTML = '';
+      if (container.hidden && key !== 'map') container.innerHTML = '';
     }
     if (state.view === 'list') renderList();
     else if (state.view === 'calendar') renderCalendar();
+    else if (state.view === 'map') {
+      if (!mapView && window.SaintMapView) mapView = new window.SaintMapView($('#saint-map'), state.saints, { personTitle, profileHref });
+      mapView?.update(state.visible);
+    }
     else grid.innerHTML = state.visible.map(cardHTML).join('');
     grid.setAttribute('aria-busy', 'false');
     $('#empty-state').hidden = state.visible.length > 0;
@@ -273,7 +279,8 @@
     const { saint, feast } = people[feastFeature.index];
     $('#feast-banner-label').textContent = feastFeature.isToday
       ? `Spomendan (${feast.label})`
-      : 'Sljedeći spomendan u zbirci';
+      : 'Nadolazeći spomendan u zbirci';
+    $('#feast-upcoming-note').hidden = feastFeature.isToday;
     $('#feast-banner-name').textContent = personTitle(saint);
     $('#feast-life').textContent = saint.life || '';
     $('#feast-life').hidden = !saint.life;

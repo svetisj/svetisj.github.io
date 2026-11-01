@@ -1,6 +1,6 @@
 'use strict';
 // Build updates this identifier so a changed inventory triggers a worker update.
-const BUILD_VERSION = '726e108319a710d00e8dcec61b0127b067bba1131fd34107ac9b76daaf88b78c';
+const BUILD_VERSION = '6b319de063d304351f121403282dab80c6fa14246c82e1b8663989ac817212f5';
 const PREFIX = 'saints-library-';
 let inventoryPromise;
 let downloadPromise;

@@ -8,9 +8,15 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/app-icon-192.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="assets/vendor/markercluster/MarkerCluster.css">
   <link rel="stylesheet" href="styles.css">
   <script src="data/saints.js" defer></script>
   <script src="ui-config.js" defer></script>
+  <script src="assets/vendor/leaflet/leaflet.js" defer></script>
+  <script src="assets/vendor/markercluster/leaflet.markercluster.js" defer></script>
+  <script src="data/places.js" defer></script>
+  <script src="map-view.js" defer></script>
   <script src="app.js" defer></script>
   <!-- SEO:START -->
 <title>Isusovački sveci i blaženici</title>
@@ -37,14 +43,11 @@
 </head>
 <body>
   <a class="skip-link" href="#zbirka">Preskoči na zbirku</a>
-  <header class="site-header">
-    <div class="header-inner"><a class="brand" href="#" aria-label="Isusovački sveci i blaženici, početak"><img class="brand-emblem" src="assets/ihs-logo.svg" width="64" height="64" alt="IHS" decoding="async"></a></div>
-  </header>
   <main>
     <div class="page-width hero-wrap">
       <section class="home-hero" aria-labelledby="page-title">
         <div class="hero-content">
-          <p class="hero-eyebrow">Družba Isusova - Katalog Svetih</p>
+          <div class="hero-identity"><img class="hero-emblem" src="assets/ihs-logo.svg" width="80" height="80" alt="IHS" decoding="async"><p class="hero-eyebrow">Družba Isusova - Katalog Svetih</p></div>
           <h1 id="page-title">Isusovački sveci i blaženici</h1>
           <div class="hero-actions"><a id="hero-collection" class="hero-primary" href="#zbirka">Zbirka <span aria-hidden="true">↓</span></a><button id="random-saint" class="hero-secondary" type="button">Slučajni odabir <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h3c5 0 5 12 10 12h3M16 14l4 4-4 4M4 18h3c2 0 3-2 4-4M13 10c1-2 2-4 4-4h3M16 2l4 4-4 4"/></svg></button></div>
         </div>
@@ -57,6 +60,7 @@
           <div class="feast-heading"><svg class="feast-banner-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 10h16M8 14h2M14 14h2M8 17h2"/></svg><span class="eyebrow" id="feast-banner-label">Spomendan</span></div>
           <div class="feast-date"><span id="feast-people-count"></span><span id="feast-banner-date"></span></div>
         </div>
+        <p class="feast-upcoming-note" id="feast-upcoming-note" hidden>Za današnji datum u zbirci nema spomendana. Prikazan je nadolazeći spomendan.</p>
         <div class="feast-feature">
           <figure class="feast-visual"><a id="feast-portrait" class="feast-portrait" href="#"></a><figcaption id="feast-image-caption" hidden></figcaption></figure>
           <div class="feast-content">
@@ -99,6 +103,7 @@
       <div class="active-filters" id="active-filters" role="group" aria-label="Odabrani filtri" hidden></div>
       <div class="results-bar"><p id="results-count" tabindex="-1" role="status" aria-live="polite">Učitavanje zbirke…</p><button id="clear-search" class="text-button" type="button" hidden>Očisti pretragu ×</button><button id="reset-filters" class="text-button" type="button" hidden>Očisti sve filtre ×</button><span class="results-note" id="view-description">Portreti i životopisi</span></div>
       <div class="saint-grid" id="saint-grid" aria-busy="true"><p>Učitavanje zbirke…</p></div>
+      <section class="saint-map" id="saint-map" aria-label="Karte — mjesta iz životopisa" hidden></section>
       <div class="grouped-list" id="saint-list" aria-label="Popis po kategorijama" hidden></div>
       <div class="feast-calendar" id="saint-calendar" aria-label="Godišnji kalendar" hidden></div>
       <div class="empty-state" id="empty-state" hidden><h3>Nema rezultata.</h3><p>Pokušajte s drugim pojmom ili uklonite neke od odabranih filtara. Profile možete spremiti oznakom knjižne oznake.</p><button class="button-primary" id="empty-reset" type="button">Prikaži cijelu zbirku</button></div>

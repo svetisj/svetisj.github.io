@@ -1,0 +1,9 @@
+Map data attribution
+GeoNames (https://www.geonames.org/): WGS84 settlement coordinates, CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+Selected records retain individual GeoNames links in data/places.js.
+Natural Earth (https://www.naturalearthdata.com/): 1:110m countries, public domain.
+https://www.naturalearthdata.com/about/terms-of-use/
+Stara Goa representative coordinate: UNESCO World Heritage Centre
+https://whc.unesco.org/en/list/234/maps/
+Coordinates represent approximate settlements, not exact buildings or stratišta.
