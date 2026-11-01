@@ -36,7 +36,7 @@
   }
   const frame = callback => typeof window.requestAnimationFrame === 'function' ? window.requestAnimationFrame(callback) : callback();
   const documentURL = new URL(location.href);
-  const libraryURL = new URL('./', documentURL);
+  const libraryURL = new URL(window.SAINT_LIBRARY_URL || './', documentURL);
   const hostedProfiles = !window.SAINT_STANDALONE && location.protocol !== 'file:';
   $('#site-base').setAttribute('href', hostedProfiles ? libraryURL.href : documentURL.href);
   const dialog = $('#profile-dialog');
