@@ -1,6 +1,6 @@
 'use strict';
 // Build updates this identifier so a changed inventory triggers a worker update.
-const BUILD_VERSION = 'c2950c0a6c7824d6332b3e97934bc9447acde46a7bb0f574ec189f54363076d1';
+const BUILD_VERSION = '726e108319a710d00e8dcec61b0127b067bba1131fd34107ac9b76daaf88b78c';
 const PREFIX = 'saints-library-';
 let inventoryPromise;
 let downloadPromise;
@@ -32,7 +32,9 @@ self.addEventListener('install', event => {
       const existing = await caches.match(absolute(path));
       if (existing) await cache.put(absolute(path), existing);
     }));
-    if (!self.registration.active) await self.skipWaiting();
+    // Activate updates without interrupting the current reading session.
+    // The next navigation/reload receives the newly cached version.
+    await self.skipWaiting();
   })());
 });
 

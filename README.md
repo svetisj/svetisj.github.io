@@ -15,9 +15,13 @@ Zbirka sadrži **214 profila**: 57 svetaca, 155 blaženika i dvije osobe u skupi
 - **Kartice** s portretima i cjelovitim uvodima u životopise.
 - **Popis** po povijesnim razdobljima i kanonskim skupinama.
 - **Godišnji kalendar** s pregledom datuma i prelaskom na pojedini mjesec.
-- **Pretraživanje** po imenima, drugim oblicima imena i sadržaju.
+- **Pretraživanje po imenu** i drugim zabilježenim oblicima imena, uz podršku za hrvatske dijakritičke znakove.
+- **Djelovanje**: 16 kategorija prema dokumentiranim iskustvima i djelovanju, uz barem jednu kategoriju za svaku osobu.
+- **Razdoblje**: stoljeća života od 15. do 20. stoljeća.
+- **Status**: sveci, blaženici, sluge Božji i laici. Jedna sklopiva kontrola **Filtri** objedinjuje djelovanje, razdoblje, status i skupine, uz višestruki odabir, brojač odabira i prikaz rezultata. Odabrane stavke ostaju vidljive i nakon zatvaranja.
+- **Skupine**: svih 12 kategorija zbirke nalazi se unutar kontrole Filtri i vrijedi za kartice, popis i kalendar.
 - **Spremljeni profili** i prilagodljiva veličina teksta, uz pamćenje odabira na uređaju.
-- **Dijeljenje, ispis i preuzimanje datuma** za osobni kalendar.
+- **Dijeljenje i ispis** životopisa.
 - **Izvanmrežno čitanje** nakon spremanja zbirke, uz mogućnost dodavanja na početni zaslon.
 
 Svaki životopis ima i zasebnu adresu, primjerice [Sv. Ignacije Lojolski](https://svetisj.github.io/osoba/ignacije-lojolski/). Stranice profila mogu se čitati bez JavaScripta; JavaScript omogućuje pretraživanje i ostale interakcije u zbirci.
@@ -26,9 +30,9 @@ Svaki životopis ima i zasebnu adresu, primjerice [Sv. Ignacije Lojolski](https:
 
 Životopisi i podaci oslanjaju se na [Molitvenik](https://molitvenik.app/sveci), [službeni imenik Družbe Isusove](https://www.jesuits.global/about-us/saints-and-blessed/) te hrvatske izvore HKM, Župu Jastrebarsko i Bitno.net. Poveznice i podaci o slikama navedeni su uz pojedine profile. Za 53 sveca potvrđena je i poveznica na osobnu stranicu u službenom isusovačkom imeniku.
 
-Tekstovi blaženika s engleskih izvora sažeti su i prilagođeni hrvatskom jeziku uz pomoć umjetne inteligencije, što je naznačeno uz tekstove. Ne predstavljaju potpune prijevode izvornih članaka. Tekst blaženog Ivana Merza prilagođen je iz hrvatskog izvora.
+Životopisi su izvorni hrvatski sažeci i sinteze, sastavljeni uz pomoć umjetne inteligencije prema navedenim izvorima. Dulji životopisi dopunjeni su dodatnim provjerenim crkvenim i stručnim izvorima, koji su svi povezani uz tekst. Ne predstavljaju potpune prijevode izvornih članaka. Tekst blaženog Ivana Merza prilagođen je iz hrvatskog izvora.
 
-Za uvezene isusovačke blaženike kalendar prikazuje datum smrti prema pravilu ove zbirke. Za sluge Božje datum je označen kao **godišnjica smrti**. Postojeći datumi svetaca i dodatni zajednički spomendani ostaju posebno navedeni. Nepoznati podaci o zaštitništvu nisu dopunjavani pretpostavkama.
+Za uvezene isusovačke blaženike kalendar prikazuje datum smrti prema pravilu ove zbirke. I za sluge Božje koristi se oznaka **Spomendan**, uz datum smrti kao osnovu kalendarskog prikaza. Postojeći datumi svetaca i dodatni zajednički spomendani ostaju posebno navedeni. Nepoznati podaci o zaštitništvu nisu dopunjavani pretpostavkama.
 
 ## Statička objava
 
@@ -66,10 +70,10 @@ SEO metapodaci, kanonske adrese i sitemap podešeni su za **https://svetisj.gith
 
 ### Izvanmrežna uporaba
 
-Na stranici odaberite **Spremi za izvanmrežnu uporabu** kako bi se svi životopisi i slike spremili na uređaj. Preglednik prikazuje napredak i potvrdu dovršetka. Instalacija i izvanmrežno spremanje rade na HTTPS-u ili lokalnom poslužitelju. Pri dostupnosti nove verzije zbirke može se odabrati **Učitaj novu verziju**.
+Preglednik tijekom uporabe sprema učitane sadržaje za kasnije čitanje. Za dodavanje na početni zaslon upotrijebite izbornik preglednika. Instalacija i predmemorija dostupne su na HTTPS-u ili lokalnom poslužitelju.
 
 ## Ažuriranje sadržaja
 
 Urednički izvori, razvojni alati, provjere i radne bilješke vode se u zasebnom razvojnom projektu, izvan ovog repozitorija. Ovdje se prenosi njegov gotov statički izlaz, zajedno s usklađenim popisom izvanmrežnih datoteka i novom verzijom service workera.
 
-Slike, tekstovi i pripadajući izvori zadržavaju svoje autore i navedene podatke o podrijetlu. Kontakt razvijatelja dostupan je preko gumba u podnožju stranice.
+Slike, tekstovi i pripadajući izvori zadržavaju svoje autore i navedene podatke o podrijetlu. Kontakt je dostupan preko gumba u podnožju stranice.

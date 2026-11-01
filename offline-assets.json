@@ -1,11 +1,12 @@
 {
-  "version": "c2950c0a6c7824d6332b3e97934bc9447acde46a7bb0f574ec189f54363076d1",
+  "version": "726e108319a710d00e8dcec61b0127b067bba1131fd34107ac9b76daaf88b78c",
   "assets": [
     ".nojekyll",
     "404.html",
     "app.js",
     "assets/app-icon-192.png",
     "assets/app-icon-512.png",
+    "assets/hero-saints.jpg",
     "assets/ihs-logo.svg",
     "assets/images/01d97e6c0efdaa5f3a4a-full.jpg",
     "assets/images/01d97e6c0efdaa5f3a4a-thumb.jpg",
