@@ -1,6 +1,6 @@
 'use strict';
 // Build updates this identifier so a changed inventory triggers a worker update.
-const BUILD_VERSION = '6b8e6bcb6ae4ec2c1b0c59e4313087fc124ddef8024aaab3617976b4b6c92069';
+const BUILD_VERSION = '58d1d3d45459e14b58d0672df7090df593165fb0a9cd6470317c4df402bccaa1';
 const PREFIX = 'saints-library-';
 let inventoryPromise;
 let downloadPromise;
@@ -65,7 +65,7 @@ self.addEventListener('fetch', event => {
           return response;
         } catch {
           const match = target.match(/^osoba\/([^/]+)\/index\.html$/);
-          if (match) return Response.redirect(absolute('index.html') + '#svetac-' + match[1], 302);
+          if (match) return Response.redirect(absolute('index.html') + '#' + match[1], 302);
           throw new Error('Page unavailable offline');
         }
       }

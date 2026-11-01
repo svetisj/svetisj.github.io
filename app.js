@@ -35,6 +35,10 @@
     try { window.sessionStorage?.setItem('saints-library:browsing', JSON.stringify({ search: state.search, view: state.view, groups: [...state.groups], categories: [...state.categories], themes: [...state.themes], centuries: [...state.centuries], y: window.scrollY || 0, savedOnly: state.savedOnly })); } catch { /* Browsing also works without storage. */ }
   }
   const frame = callback => typeof window.requestAnimationFrame === 'function' ? window.requestAnimationFrame(callback) : callback();
+  const documentURL = new URL(location.href);
+  const libraryURL = new URL('./', documentURL);
+  const hostedProfiles = !window.SAINT_STANDALONE && location.protocol !== 'file:';
+  $('#site-base').setAttribute('href', hostedProfiles ? libraryURL.href : documentURL.href);
   const dialog = $('#profile-dialog');
   const grid = $('#saint-grid');
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
@@ -51,7 +55,7 @@
     const slug = saint.venerationStatus === 'blessed' ? saint.id.replace(/^bl-/, '') : saint.id;
     return `#${prefix}-${encodeURIComponent(slug)}`;
   };
-  const profileHref = saint => window.SAINT_STANDALONE ? profileHash(saint) : `osoba/${encodeURIComponent(saint.id)}/`;
+  const profileHref = saint => hostedProfiles ? new URL(`osoba/${profileHash(saint).slice(1)}/`, libraryURL).href : new URL(profileHash(saint), documentURL).href;
   const feastsOf = saint => [...(saint.feast ? [saint.feast] : []), ...(saint.additionalFeasts || [])];
   const feastOrder = saint => Math.min(9999, ...feastsOf(saint).map(feast => feast.month * 100 + feast.day));
   const feastScope = saint => saint.feast?.kind === 'anniversary' ? 'Spomendan' : feastsOf(saint).length > 1 ? 'Spomendani' : saint.feast?.scope === 'group' ? 'Spomendan skupine' : 'Spomendan';
@@ -417,7 +421,7 @@
     renderProfile(saint);
     if (push) {
       const method = dialog.open ? 'replaceState' : 'pushState';
-      history[method]({ saintProfile: true }, '', profileHash(saint));
+      history[method]({ saintProfile: true }, '', profileHref(saint));
     }
     if (!dialog.open) {
       dialog.showModal();
@@ -446,15 +450,19 @@
   function requestClose() {
     if (history.state?.saintProfile) history.back();
     else {
-      history.replaceState(null, '', `${location.pathname}${location.search}#zbirka`);
+      history.replaceState(null, '', new URL('#zbirka', hostedProfiles ? libraryURL : documentURL).href);
       closeProfile();
     }
   }
 
   function syncHash() {
-    if (/^#(?:sv|bl|sb)-.+$/.test(location.hash)) {
-      const saint = state.saints.find(person => profileHash(person) === location.hash);
-      if (saint) openProfile(saint.id, false);
+    const fromHash = /^#(?:sv|bl|sb)-.+$/.test(location.hash);
+    const saint = state.saints.find(person => fromHash
+      ? profileHash(person) === location.hash
+      : hostedProfiles && new URL(profileHref(person)).pathname === location.pathname);
+    if (saint) {
+      if (hostedProfiles && fromHash) history.replaceState(history.state, '', profileHref(saint));
+      openProfile(saint.id, false);
     } else closeProfile();
   }
 
@@ -474,7 +482,7 @@
   async function copyLink() {
     try {
       const saint = state.byId.get(state.active);
-      const url = !window.SAINT_STANDALONE && location.protocol !== 'file:' && saint ? new URL(profileHref(saint), location.href).href : location.href;
+      const url = !window.SAINT_STANDALONE && location.protocol !== 'file:' && saint ? new URL(profileHref(saint), libraryURL).href : location.href;
       if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(url);
       else {
         const input = document.createElement('textarea'); input.value = url;
@@ -512,7 +520,7 @@
 
   function prepareOffline() {
     if (window.SAINT_STANDALONE || location.protocol === 'file:' || !('serviceWorker' in navigator)) return;
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
+    navigator.serviceWorker.register(new URL('sw.js', libraryURL).href).catch(() => {});
   }
 
   function attachEvents() {
