@@ -1,0 +1,600 @@
+'use strict';
+
+(() => {
+  const $ = (selector, root = document) => root.querySelector(selector);
+  const icons = {
+    arrow: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+    diagonal: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>',
+    calendar: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="1"/><path d="M8 3v4M16 3v4M4 10h16M8 14h2M14 14h2M8 17h2"/></svg>',
+    patron: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6zM12 8v8M8.5 11.5h7"/></svg>',
+    cards: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
+    bookmark: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
+    list: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h13M8 12h13M8 19h13M3 5h1M3 12h1M3 19h1"/></svg>',
+  };
+  const groupNames = {};
+  const config = window.SAINT_UI_CONFIG;
+  const months = config.months;
+  const views = { cards: { label: 'Kartice', target: 'saint-grid', note: 'Portreti i životopisi' }, list: { label: 'Popis', target: 'saint-list', note: 'Popis po skupinama' }, calendar: { label: 'Kalendar', target: 'saint-calendar', note: 'Godišnji kalendar' } };
+  const stored = readStorage('localStorage', 'saints-library:preferences', {});
+  const session = readStorage('sessionStorage', 'saints-library:browsing', {});
+  const state = { saints: [], byId: new Map(), visible: [], view: Object.hasOwn(views, stored.view) ? stored.view : 'cards', search: typeof session.search === 'string' ? session.search.slice(0, 200) : '', veneration: config.filters.some(item => item.id === stored.veneration) ? stored.veneration : 'all', saved: new Set(Array.isArray(stored.saved) ? stored.saved.filter(id => typeof id === 'string') : []), savedOnly: false, readingSize: [17, 19, 21].includes(stored.readingSize) ? stored.readingSize : 17, active: null, opener: null, originScroll: 0, data: null };
+  let storageNotice = false;
+  function readStorage(kind, key, fallback) {
+    try { const value = JSON.parse(window[kind]?.getItem(key) || 'null'); return value && typeof value === 'object' && !Array.isArray(value) ? value : fallback; } catch { return fallback; }
+  }
+  function persist() {
+    try { window.localStorage?.setItem('saints-library:preferences', JSON.stringify({ view: state.view, veneration: state.veneration, saved: [...state.saved], readingSize: state.readingSize })); }
+    catch { if (!storageNotice) { storageNotice = true; showToast('Preglednik ne dopušta spremanje postavki. Odabiri vrijede dok je stranica otvorena.'); } }
+  }
+  function rememberPosition() {
+    try { window.sessionStorage?.setItem('saints-library:browsing', JSON.stringify({ search: state.search, view: state.view, veneration: state.veneration, y: window.scrollY || 0, savedOnly: state.savedOnly })); } catch { /* Browsing also works without storage. */ }
+  }
+  const frame = callback => typeof window.requestAnimationFrame === 'function' ? window.requestAnimationFrame(callback) : callback();
+  const dialog = $('#profile-dialog');
+  const grid = $('#saint-grid');
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+  const fold = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('hr').replace(/đ/g, 'd');
+  const plainText = value => { const node = document.createElement('div'); node.innerHTML = value || ''; return node.textContent || ''; };
+  const initials = name => name.split(/[\s-]+/).filter(Boolean).slice(0, 2).map(part => part[0]).join('');
+  const sourceName = saint => saint.source?.publisher || (saint.source?.url?.includes('jesuits.global') ? 'Družba Isusova · jesuits.global' : 'Molitvenik · Zrno gorušice');
+  const imageCredit = image => (image?.credit || 'Podaci o autoru slike nisu navedeni.').replace(/^Opći prikaz;\s*slika ovoga sveca nije dostupna\.\s*/i, '');
+  const titlePrefixes = config.prefixes;
+  const personTitle = saint => `${saint.honorific || titlePrefixes[saint.venerationStatus] || ''} ${saint.name}`.trim();
+  const translationNote = saint => saint.venerationStatus === 'blessed' ? `<p class="translation-note">${saint.textProcessing === 'croatian-summary' ? 'Tekst je sažet i prilagođen uz pomoć umjetne inteligencije.' : 'Tekst je preveden i prilagođen uz pomoć umjetne inteligencije.'}</p>` : '';
+  const matchesSelection = (saint, selection) => { const filter = config.filters.find(item => item.id === selection); return Boolean(filter && (filter.id === 'all' || filter.statuses?.includes(saint.venerationStatus) || (filter.groupId && filter.groupId === saint.groupId))); };
+  const profileHref = saint => window.SAINT_STANDALONE ? `#svetac-${encodeURIComponent(saint.id)}` : `osoba/${encodeURIComponent(saint.id)}/`;
+  const feastsOf = saint => [...(saint.feast ? [saint.feast] : []), ...(saint.additionalFeasts || [])];
+  const feastOrder = saint => Math.min(9999, ...feastsOf(saint).map(feast => feast.month * 100 + feast.day));
+  const feastScope = saint => saint.feast?.kind === 'anniversary' ? 'Godišnjica smrti' : feastsOf(saint).length > 1 ? 'Spomendani' : saint.feast?.scope === 'group' ? 'Spomendan skupine' : 'Spomendan';
+  const feastText = saint => feastsOf(saint).map(feast => feast.label + (feast.groupLabel ? ` (${feast.groupLabel})` : '')).join(' · ') || 'Datum nije naveden u izvoru';
+  let toastTimer;
+
+  function placeholder(saint) {
+    return `<div class="card-placeholder"><strong aria-hidden="true">${esc(initials(saint.name))}</strong><span>Portret nije dostupan</span></div>`;
+  }
+
+  function imageHTML(saint, large = false, compact = false) {
+    const image = saint.portrait;
+    if (!image?.src) return placeholder(saint);
+    const src = !large && image.thumbSrc ? image.thumbSrc : image.src;
+    const alt = image.isGroup ? (image.caption || image.alt || 'Zajednički prikaz mučenika') : (image.alt || personTitle(saint));
+    const thumbWidth = image.thumbWidth || 600;
+    const fullWidth = image.width || 1200;
+    const sizes = compact ? '60px' : large ? '(max-width: 700px) 90vw, 360px' : '(max-width: 700px) 90px, (max-height: 500px) and (pointer: coarse) 90px, (max-width: 850px) 44vw, 30vw';
+    const srcset = image.thumbSrc && thumbWidth !== fullWidth ? ` srcset="${esc(image.thumbSrc)} ${thumbWidth}w, ${esc(image.src)} ${fullWidth}w" sizes="${sizes}"` : '';
+    return `<img src="${esc(src)}"${srcset} alt="${esc(alt)}" ${large ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" data-portrait="${esc(saint.id)}">`;
+  }
+
+  function saveButton(saint, compact = false) {
+    const saved = state.saved.has(saint.id);
+    return `<button type="button" class="save-button ${saved ? 'is-saved' : ''} ${compact ? 'save-compact' : ''}" data-save="${esc(saint.id)}" aria-pressed="${saved}" aria-label="${saved ? 'Ukloni spremljeni profil' : 'Spremi profil'}: ${esc(personTitle(saint))}" title="${saved ? 'Ukloni iz spremljenih' : 'Spremi profil'}">${icons.bookmark}<span>${saved ? 'Spremljeno' : 'Spremi'}</span></button>`;
+  }
+
+  function cardHTML(saint) {
+    return `<article class="saint-card" data-card="${esc(saint.id)}">
+      <a class="card-art-button" href="${profileHref(saint)}" data-open="${esc(saint.id)}" aria-label="Otvori životopis: ${esc(personTitle(saint))}">${imageHTML(saint)}</a>
+      <div class="card-body"><div class="card-heading"><p class="card-kicker">${esc(saint.groupLabel || groupNames[saint.groupId] || 'Iz zbirke')}</p>
+      <h3 class="card-name"><a href="${profileHref(saint)}" data-open="${esc(saint.id)}">${esc(personTitle(saint))}</a></h3><p class="card-life">${esc(saint.life || (saint.roles || []).slice(0, 2).join(' · '))}</p></div>
+      <p class="card-summary">${esc(saint.summary)}</p>${translationNote(saint)}<div class="card-facts">
+      <div class="card-fact">${icons.calendar}<div><span class="card-fact-label">${feastScope(saint)}</span><span class="card-fact-value ${saint.feast ? '' : 'missing'}">${esc(feastText(saint))}</span></div></div>
+      ${saint.patronage?.length ? `<div class="card-fact">${icons.patron}<div><span class="card-fact-label">Zaštitništvo</span><span class="card-fact-value">${esc(saint.patronage.join(' · '))}</span></div></div>` : ''}
+      </div><div class="card-actions"><button class="card-open" type="button" data-open="${esc(saint.id)}">Pročitaj životopis ${icons.arrow}</button>${saveButton(saint, true)}</div></div>
+    </article>`;
+  }
+
+  function buildVenerationFilters() {
+    $('#veneration-filters').innerHTML = config.filters.map(({ id: key, label }) => {
+      const count = state.saints.filter(saint => matchesSelection(saint, key)).length;
+      return `<button type="button" class="veneration-filter" data-veneration="${key}" aria-pressed="${key === state.veneration}">${label}<span>${count}</span></button>`;
+    }).join('');
+  }
+
+  function buildViewSwitch() {
+    $('#collection-views').innerHTML = Object.entries(views).map(([key, view]) => `<button type="button" data-view="${key}" aria-controls="${view.target}" aria-pressed="${key === state.view}">${icons[key === 'calendar' ? 'calendar' : key]}<span>${view.label}</span></button>`).join('');
+  }
+
+  function listRowHTML(saint) {
+    return `<li data-list-item="${esc(saint.id)}"><button class="saint-list-open" type="button" data-open="${esc(saint.id)}">
+      <span class="list-portrait">${imageHTML(saint, false, true)}</span>
+      <span class="list-person"><strong>${esc(personTitle(saint))}</strong><span>${esc(saint.life || (saint.roles || []).join(' · '))}</span></span>
+      <span class="list-fact"><span class="list-fact-label">${feastScope(saint)}</span>${esc(feastText(saint))}</span>
+      ${saint.patronage?.length ? `<span class="list-fact list-patronage"><span class="list-fact-label">Zaštitništvo</span>${esc(saint.patronage.join(' · '))}</span>` : ''}
+      <span class="list-arrow">${icons.diagonal}</span></button></li>`;
+  }
+
+  function renderList() {
+    const groups = Object.keys(groupNames).map(key => ({ key, saints: state.visible.filter(saint => saint.groupId === key) })).filter(group => group.saints.length);
+    state.visible = groups.flatMap(group => group.saints);
+    const contents = `<details class="category-contents" id="category-contents"><summary>Skupine <span>${groups.length}</span></summary><nav aria-label="Sadržaj popisa">${groups.map(group => `<button type="button" data-jump-group="${esc(group.key)}">${esc(groupNames[group.key])}<span>${group.saints.length} u zbirci</span></button>`).join('')}</nav></details>`;
+    $('#saint-list').innerHTML = contents + groups.map(group => `<section class="list-category" aria-labelledby="list-group-${group.key}" data-list-group="${group.key}"><div class="list-category-heading"><h3 id="list-group-${group.key}" tabindex="-1">${esc(groupNames[group.key])}</h3><span>${group.saints.length} u zbirci</span><button type="button" data-jump-contents>Na skupine ↑</button></div><ul class="saint-list">${group.saints.map(listRowHTML).join('')}</ul></section>`).join('');
+  }
+
+  function renderCalendar() {
+    state.visible.sort((a, b) => {
+      return feastOrder(a) - feastOrder(b) || a.name.localeCompare(b.name, 'hr');
+    });
+    const monthSections = months.map((name, index) => {
+      const month = index + 1;
+      const entries = state.visible.flatMap(saint => feastsOf(saint).filter(feast => feast.month === month).map(feast => ({ saint, feast }))).sort((a, b) => a.feast.day - b.feast.day || a.saint.name.localeCompare(b.saint.name, 'hr'));
+      const days = new Map();
+      for (const entry of entries) {
+        if (!days.has(entry.feast.day)) days.set(entry.feast.day, []);
+        days.get(entry.feast.day).push(entry);
+      }
+      const eventHTML = ({ saint, feast }) => `<button class="calendar-event" type="button" data-calendar-item="${esc(saint.id)}" data-open="${esc(saint.id)}"><span>${esc(personTitle(saint))}</span>${feast.kind === 'anniversary' ? '<small>Godišnjica smrti</small>' : feast.scope === 'group' ? `<small>${esc(feast.groupLabel || 'Spomendan skupine')}</small>` : ''}</button>`;
+      const events = Array.from(days, ([day, people]) => `<li class="feast-day" data-feast-day="${month}-${day}"><span class="feast-day-number" aria-label="${esc(people[0].feast.label)}">${day}.</span><div class="feast-day-people">${people.length > 1 ? `<span class="day-count">${people.length} u zbirci</span>` : ''}${people.slice(0, 5).map(eventHTML).join('')}${people.length > 5 ? `<details class="day-more"><summary>Još ${people.length - 5} · prikaži sve (${people.length})</summary>${people.slice(5).map(eventHTML).join('')}</details>` : ''}</div></li>`).join('');
+      return `<section class="calendar-month" data-calendar-month="${month}" aria-labelledby="calendar-month-${month}"><div class="calendar-month-heading"><h3 id="calendar-month-${month}" tabindex="-1">${name}</h3><span class="calendar-month-count">${entries.length} zapisa</span></div>${events ? `<ol class="feast-days">${events}</ol>` : '<p class="calendar-month-empty">Nema navedenih spomendana.</p>'}</section>`;
+    }).join('');
+    const unknown = state.visible.filter(saint => !feastsOf(saint).length);
+    const unknownSection = unknown.length ? `<section class="calendar-undated" aria-labelledby="calendar-undated-title"><h3 id="calendar-undated-title">Datum nije naveden u izvoru</h3><div>${unknown.map(saint => `<button class="calendar-event" type="button" data-calendar-item="${esc(saint.id)}" data-open="${esc(saint.id)}">${esc(personTitle(saint))}</button>`).join('')}</div></section>` : '';
+    $('#saint-calendar').innerHTML = state.visible.length ? `<nav class="calendar-navigation" aria-label="Prijeđi na mjesec"><button type="button" data-calendar-today>Danas</button>${months.map((name, index) => `<button type="button" data-jump-month="${index + 1}" aria-label="${name}">${name.slice(0, 3)}.</button>`).join('')}</nav><p class="calendar-note">Godišnji pregled. Za isusovačke blaženike naveden je dan smrti; za sluge Božje godišnjica smrti.</p><div class="calendar-months">${monthSections}</div>${unknownSection}` : '';
+  }
+
+  function renderCollection() {
+    const query = fold(state.search).trim();
+    const terms = query.split(/\s+/).filter(Boolean);
+    state.visible = state.saints.filter(saint => matchesSelection(saint, state.veneration) && (!state.savedOnly || state.saved.has(saint.id)) && terms.every(term => saint.searchText.includes(term)));
+    state.visible.sort((a, b) => (query ? searchScore(b, query, terms) - searchScore(a, query, terms) : 0) || a.name.localeCompare(b.name, 'hr'));
+    for (const [key, view] of Object.entries(views)) {
+      const container = $(`#${view.target}`);
+      container.hidden = state.view !== key;
+      if (container.hidden) container.innerHTML = '';
+    }
+    if (state.view === 'list') renderList();
+    else if (state.view === 'calendar') renderCalendar();
+    else grid.innerHTML = state.visible.map(cardHTML).join('');
+    grid.setAttribute('aria-busy', 'false');
+    $('#empty-state').hidden = state.visible.length > 0;
+    const filtered = Boolean(state.search) || state.veneration !== 'all';
+    $('#results-count').innerHTML = filtered ? `Prikazano <strong>${state.visible.length}</strong> od ${state.saints.length}` : `<strong>${state.saints.length}</strong> u zbirci`;
+    $('#clear-search').hidden = !state.search;
+    for (const button of $('#veneration-filters').querySelectorAll('button')) button.setAttribute('aria-pressed', String(button.dataset.veneration === state.veneration));
+    for (const button of $('#collection-views').querySelectorAll('button')) button.setAttribute('aria-pressed', String(button.dataset.view === state.view));
+    $('#view-description').textContent = views[state.view].note;
+    $('#saved-count').textContent = state.saved.size;
+    $('#saved-filter').setAttribute('aria-pressed', String(state.savedOnly));
+    $('#empty-state h3')?.replaceChildren?.(document.createTextNode(state.savedOnly && !state.saved.size ? 'Još nema spremljenih profila.' : 'Nema rezultata.'));
+    persist();
+    rememberPosition();
+  }
+
+  function clearSearch() {
+    state.search = '';
+    $('#saint-search').value = '';
+    renderCollection();
+  }
+
+  function searchScore(saint, query, terms) {
+    const names = saint.searchNames;
+    if (names.includes(query)) return 1000;
+    if (names.some(name => name.startsWith(query))) return 900;
+    if (names.some(name => terms.every(term => name.split(/[\s-]+/).some(word => word.startsWith(term))))) return 800;
+    if (names.some(name => terms.every(term => name.includes(term)))) return 700;
+    if (terms.every(term => saint.searchIntro.includes(term))) return 500;
+    return 100;
+  }
+
+  function jumpTo(selector, focusSelector) {
+    const target = $(selector);
+    if (!target) return;
+    target.scrollIntoView({ block: 'start', behavior: 'instant' });
+    const focus = focusSelector ? $(focusSelector, target) : target;
+    if (focus?.focus) focus.focus({ preventScroll: true });
+  }
+
+  function showCalendarDay(month, day, reset = false) {
+    if (reset) { state.veneration = 'all'; state.savedOnly = false; state.search = ''; $('#saint-search').value = ''; }
+    state.view = 'calendar'; renderCollection();
+    const today = $(`[data-feast-day="${month}-${day}"]`);
+    if (today) {
+      const more = $('details', today); if (more) more.open = true;
+      today.scrollIntoView({ block: 'start', behavior: 'instant' });
+      $('button', today)?.focus({ preventScroll: true });
+    } else {
+      jumpTo(`[data-calendar-month="${month}"]`, 'h3');
+      showToast('Za današnji dan nema zapisa u odabranom prikazu.');
+    }
+  }
+
+  function prepareFeastBanner() {
+    const today = new Date();
+    const month = today.getMonth() + 1, day = today.getDate();
+    const entries = state.saints.flatMap(saint => feastsOf(saint).map(feast => ({ saint, feast })));
+    const current = entries.filter(entry => entry.feast.month === month && entry.feast.day === day);
+    let entry = current[0];
+    if (entry) $('#feast-banner-label').textContent = entry.feast.kind === 'anniversary' ? 'Godišnjica smrti danas' : 'Spomendan danas';
+    else {
+      entry = entries.map(item => { const date = new Date(today.getFullYear(), item.feast.month - 1, item.feast.day); if (date < new Date(today.getFullYear(), month - 1, day)) date.setFullYear(date.getFullYear() + 1); return { ...item, date }; }).sort((a, b) => a.date - b.date)[0];
+      if (!entry) return;
+      $('#feast-banner-label').textContent = entry.feast.kind === 'anniversary' ? 'Sljedeća godišnjica u zbirci' : 'Sljedeći spomendan u zbirci';
+    }
+    const people = entries.filter(item => item.feast.month === entry.feast.month && item.feast.day === entry.feast.day);
+    $('#feast-banner-name').textContent = personTitle(entry.saint) + (people.length > 1 ? ` i još ${people.length - 1}` : '');
+    $('#feast-banner-date').textContent = entry.feast.label;
+    $('#feast-banner-name').dataset.day = `${entry.feast.month}-${entry.feast.day}`;
+    $('#feast-banner').hidden = false;
+  }
+
+  function prepareCredits() {
+    const artworks = new Map();
+    for (const saint of state.saints) {
+      if (!saint.portrait?.src) continue;
+      const key = saint.portrait.sourceUrl || saint.portrait.src;
+      if (!artworks.has(key)) artworks.set(key, { image: saint.portrait, names: [] });
+      artworks.get(key).names.push(personTitle(saint));
+    }
+    $('#image-credits-list').innerHTML = Array.from(artworks.values()).map(({ image, names }) => `<li><strong>${esc(names.join(' · '))}</strong>${esc(imageCredit(image))}<br><a href="${esc(image.sourceUrl || image.sourcePage || '')}" target="_blank" rel="noopener noreferrer">Izvor slike ↗</a></li>`).join('');
+    if (state.data.collectedAt) {
+      const date = new Intl.DateTimeFormat('hr', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(state.data.collectedAt));
+      $('#source-date').textContent = `Izvori prikupljeni ${date}`;
+    }
+  }
+
+  function factsHTML(saint) {
+    const facts = [
+      { label: feastScope(saint), value: feastText(saint), missing: !feastsOf(saint).length },
+      { label: 'Zaštitništvo', value: saint.patronage?.length ? saint.patronage.join(' · ') : 'Nije navedeno u izvoru', missing: !saint.patronage?.length },
+    ];
+    if (saint.life) facts.push({ label: 'Životni vijek', value: saint.life });
+    const seen = new Set(facts.map(fact => fold(fact.label)));
+    for (const fact of saint.details || []) {
+      const label = fold(fact.label);
+      if (label === 'slavi se' || label === 'zastitnik / zastitnica' || seen.has(label)) continue;
+      if (saint.source?.isShared && !saint.life && /zivotni vijek/.test(label)) continue;
+      seen.add(label);
+      facts.push(fact);
+    }
+    return facts.map(fact => `<div><dt>${esc(fact.label)}</dt><dd${fact.missing ? ' class="missing"' : ''}>${esc(fact.value)}</dd></div>`).join('');
+  }
+
+  function renderProfile(saint) {
+    state.active = saint.id;
+    $('#profile-name').textContent = personTitle(saint);
+    $('#profile-group').textContent = saint.groupLabel || '';
+    $('#profile-index').textContent = `${String(saint.number).padStart(2, '0')} / ${state.saints.length}`;
+    $('#profile-roles').textContent = (saint.roles || []).join(' · ');
+    $('#profile-life').textContent = saint.life || '';
+    $('#profile-life').hidden = !saint.life;
+    $('#profile-summary').textContent = saint.summary;
+    $('#profile-portrait').innerHTML = imageHTML(saint, true);
+    $('#profile-save').innerHTML = saveButton(saint);
+    $('#profile-toast').hidden = true;
+    updateReadingSize();
+    $('#profile-image-caption').innerHTML = `${esc(imageCredit(saint.portrait))}${saint.portrait?.sourceUrl ? `<br><a href="${esc(saint.portrait.sourceUrl)}" target="_blank" rel="noopener noreferrer">Pogledaj izvornu sliku ↗</a>` : ''}`;
+    $('#profile-facts').innerHTML = factsHTML(saint);
+    const isShared = saint.biographyScope === 'group';
+    const notice = isShared ? `<p class="shared-notice">Ovaj je svetac dio zajedničkog izvora „${esc(saint.source.title)}”. U nastavku je prikazan životopis skupine ili zajednički prikaz mučeništva; podaci iz zajedničkog izvora posebno su označeni.</p>` : '';
+    const heading = isShared ? 'Zajednički životopis' : 'Život i svjedočanstvo';
+    const language = saint.biographyLanguage === 'en' && !saint.biographyHtml.includes('Izvorni životopis') ? '<p class="source-language">Izvorni životopis na engleskom jeziku</p>' : '';
+    $('#profile-biography').innerHTML = `${notice}<section class="source-prose"><h3>${heading}</h3>${language}${saint.biographyHtml || `<p>${esc(saint.summary)}</p>`}</section>${translationNote(saint)}`;
+    $('#profile-devotions').innerHTML = saint.devotionsHtml ? `<section class="source-prose devotions" aria-label="Molitve, misli i dodatni sadržaji">${saint.devotionsHtml}</section>` : '';
+    const relatedIds = new Set([...(saint.relatedSaints || []), ...state.saints.filter(other => other.id !== saint.id && other.source.url === saint.source.url).map(other => other.id)]);
+    const related = [...relatedIds].map(id => state.byId.get(id)).filter(Boolean);
+    $('#profile-related').hidden = !related.length;
+    $('#profile-related').innerHTML = related.length ? `<p class="section-label">Povezane priče u zbirci</p><div class="related-items">${related.map(person => `<button class="related-saint" type="button" data-open="${esc(person.id)}">${esc(personTitle(person))} ↗</button>`).join('')}</div>` : '';
+    $('#profile-source').innerHTML = `<span>Izvor podataka i životopisa</span><a href="${esc(saint.source.url)}" target="_blank" rel="noopener noreferrer">${esc(saint.source.title)} ↗</a><span>${esc(sourceName(saint))}${saint.source.isShared ? ' · zajednički izvor' : ''}</span>`;
+    for (const source of saint.supplementalSources || []) $('#profile-source').innerHTML += source.url ? `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title)} ↗</a>` : `<span>${esc(source.title)}</span>`;
+    $('#profile-scroll').scrollTop = 0;
+    dialog.scrollTop = 0;
+    document.title = `${personTitle(saint)} — Isusovački sveci i blaženici`;
+  }
+
+  function openProfile(id, push = true, opener = null) {
+    const saint = state.byId.get(id);
+    if (!saint) return;
+    if (!dialog.open) {
+      state.opener = opener && typeof opener.focus === 'function' ? opener : document.activeElement;
+      if (state.opener === document.body) state.opener = $(`[data-open="${saint.id}"]`) || state.opener;
+      state.originScroll = !push && Number.isFinite(session.y) ? session.y : window.scrollY || 0;
+      rememberPosition();
+    }
+    renderProfile(saint);
+    if (push) {
+      const method = dialog.open ? 'replaceState' : 'pushState';
+      history[method]({ saintProfile: true }, '', `#svetac-${encodeURIComponent(id)}`);
+    }
+    if (!dialog.open) {
+      dialog.showModal();
+      document.body.classList.add('dialog-open');
+      $('#close-profile').focus({ preventScroll: true });
+    }
+  }
+
+  function closeProfile() {
+    if (!dialog.open) return;
+    dialog.close();
+    document.body.classList.remove('dialog-open');
+    state.active = null;
+    document.title = 'Isusovački sveci i blaženici';
+    if (state.opener?.isConnected && typeof state.opener.focus === 'function') state.opener.focus({ preventScroll: true });
+    else $('#saint-search').focus({ preventScroll: true });
+    window.scrollTo?.({ top: state.originScroll, behavior: 'instant' });
+  }
+
+  function requestClose() {
+    if (history.state?.saintProfile) history.back();
+    else {
+      history.replaceState(null, '', `${location.pathname}${location.search}#zbirka`);
+      closeProfile();
+    }
+  }
+
+  function syncHash() {
+    const match = location.hash.match(/^#svetac-(.+)$/);
+    if (match) {
+      let id;
+      try { id = decodeURIComponent(match[1]); } catch { return; }
+      if (state.byId.has(id)) openProfile(id, false);
+    } else closeProfile();
+  }
+
+  function adjacentProfile(offset) {
+    const list = state.visible.some(saint => saint.id === state.active) ? state.visible : state.saints;
+    const index = list.findIndex(saint => saint.id === state.active);
+    const next = list[(index + offset + list.length) % list.length];
+    if (next) openProfile(next.id);
+  }
+
+  function showToast(message) {
+    const toast = $(dialog.open ? '#profile-toast' : '#toast');
+    toast.textContent = message; toast.hidden = false;
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => { toast.hidden = true; }, 3000);
+  }
+
+  async function copyLink() {
+    try {
+      const saint = state.byId.get(state.active);
+      const url = !window.SAINT_STANDALONE && location.protocol !== 'file:' && saint ? new URL(profileHref(saint), location.href).href : location.href;
+      if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(url);
+      else {
+        const input = document.createElement('textarea'); input.value = url;
+        input.style.position = 'fixed'; input.style.opacity = '0'; dialog.append(input);
+        input.select(); const success = document.execCommand('copy'); input.remove();
+        if (!success) throw new Error('Copy unavailable');
+      }
+      showToast('Poveznica na životopis je kopirana.');
+    } catch { showToast('Poveznicu možete kopirati iz adresne trake preglednika.'); }
+  }
+
+  function updateReadingSize() {
+    dialog.style.setProperty?.('--reading-size', `${state.readingSize}px`);
+    $('#reading-size-value').textContent = `${state.readingSize}`;
+    $('#reading-smaller').disabled = state.readingSize === 17;
+    $('#reading-larger').disabled = state.readingSize === 21;
+  }
+
+  function toggleSaved(id) {
+    if (!state.byId.has(id)) return;
+    if (state.saved.has(id)) state.saved.delete(id); else state.saved.add(id);
+    persist();
+    const saved = state.saved.has(id);
+    for (const button of document.querySelectorAll?.('[data-save]') || []) {
+      if (button.dataset.save !== id) continue;
+      button.setAttribute('aria-pressed', String(saved));
+      button.classList.toggle('is-saved', saved);
+      button.setAttribute('aria-label', `${saved ? 'Ukloni spremljeni profil' : 'Spremi profil'}: ${personTitle(state.byId.get(id))}`);
+      const label = $('span', button); if (label) label.textContent = saved ? 'Spremljeno' : 'Spremi';
+    }
+    $('#saved-count').textContent = state.saved.size;
+    if (state.savedOnly) { renderCollection(); if (!dialog.open) $('#saved-filter').focus({ preventScroll: true }); }
+    showToast(saved ? 'Profil je spremljen na ovom uređaju.' : 'Profil je uklonjen iz spremljenih.');
+  }
+
+  const calendarEscape = value => String(value).replace(/\\/g, '\\\\').replace(/\r?\n/g, '\\n').replace(/;/g, '\\;').replace(/,/g, '\\,');
+  function exportCalendar() {
+    const saint = state.byId.get(state.active);
+    if (!saint) return;
+    const now = new Date();
+    const stamp = now.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+    const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Isusovacka zbirka//HR', 'CALSCALE:GREGORIAN'];
+    for (const [index, feast] of feastsOf(saint).entries()) {
+      // A valid leap year supports recurring February 29 anniversaries.
+      const date = `2000${String(feast.month).padStart(2, '0')}${String(feast.day).padStart(2, '0')}`;
+      const next = new Date(Date.UTC(2000, feast.month - 1, feast.day + 1));
+      const end = `${next.getUTCFullYear()}${String(next.getUTCMonth() + 1).padStart(2, '0')}${String(next.getUTCDate()).padStart(2, '0')}`;
+      const convention = feast.basis === 'death-date' ? 'Datum smrti prema pravilu ove zbirke.' : 'Datum prema izvoru navedenom u zbirci.';
+      lines.push('BEGIN:VEVENT', `UID:${saint.id}-${index}@isusovacka-zbirka`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${date}`, `DTEND;VALUE=DATE:${end}`, 'RRULE:FREQ=YEARLY', `SUMMARY:${calendarEscape(personTitle(saint))}`, `DESCRIPTION:${calendarEscape(`${feast.kind === 'anniversary' ? 'Godišnjica smrti.' : 'Spomendan u zbirci.'} ${convention} ${saint.source.url}`)}`, 'END:VEVENT');
+    }
+    lines.push('END:VCALENDAR');
+    // RFC 5545 limits physical lines to 75 octets, including continuation spaces.
+    const encoder = new TextEncoder();
+    const folded = lines.map(line => { let out = '', width = 0; for (const char of line) { const size = encoder.encode(char).length; if (width + size > 75) { out += '\r\n '; width = 1; } out += char; width += size; } return out; }).join('\r\n') + '\r\n';
+    const url = URL.createObjectURL(new Blob([folded], { type: 'text/calendar;charset=utf-8' }));
+    const link = document.createElement('a'); link.href = url; link.download = `${saint.id}.ics`; link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 10000);
+    showToast('Datoteka kalendara je preuzeta. Možete je uvesti u svoj kalendar.');
+  }
+
+  let installPrompt;
+  let workerRegistration;
+  let requestedUpdate = false;
+  async function prepareOffline() {
+    const status = $('#offline-status');
+    if (window.SAINT_STANDALONE || location.protocol === 'file:') {
+      status.textContent = 'Životopisi i slike dostupni su bez interneta. Spremljeni profili i veličina teksta pamte se u ovom pregledniku ako to dopušta.';
+      return;
+    }
+    if (!('serviceWorker' in navigator)) {
+      status.textContent = 'Spremljeni profili pamte se u ovom pregledniku. Za izvanmrežno čitanje upotrijebite samostalnu HTML datoteku.';
+      return;
+    }
+    $('#install-help').hidden = window.matchMedia?.('(display-mode: standalone)').matches || navigator.standalone === true;
+    try {
+      workerRegistration = await navigator.serviceWorker.register('./sw.js');
+      const ready = await navigator.serviceWorker.ready;
+      $('#download-offline').hidden = false;
+      $('#download-offline').addEventListener('click', () => {
+        $('#download-offline').disabled = true;
+        $('#offline-progress').hidden = false;
+        status.textContent = 'Spremanje životopisa i slika na ovaj uređaj…';
+        (navigator.serviceWorker.controller || ready.active)?.postMessage({ type: 'DOWNLOAD_ALL' });
+      });
+      const offerUpdate = () => {
+        if (workerRegistration.waiting) {
+          $('#update-app').hidden = false;
+          status.textContent = 'Dostupna je nova verzija zbirke. Učitajte je kada završite s čitanjem.';
+        }
+      };
+      offerUpdate();
+      workerRegistration.addEventListener('updatefound', () => {
+        const installing = workerRegistration.installing;
+        installing?.addEventListener('statechange', () => { if (installing.state === 'installed') offerUpdate(); });
+      });
+      $('#update-app').addEventListener('click', () => {
+        requestedUpdate = true;
+        if (workerRegistration.waiting) workerRegistration.waiting.postMessage({ type: 'SKIP_WAITING' });
+        else location.reload();
+      });
+      navigator.serviceWorker.addEventListener('controllerchange', () => { if (requestedUpdate) location.reload(); });
+      navigator.serviceWorker.addEventListener('message', event => {
+        const message = event.data || {};
+        if (!['OFFLINE_PROGRESS', 'OFFLINE_READY', 'OFFLINE_ERROR', 'OFFLINE_STATUS'].includes(message.type)) return;
+        const progress = $('#offline-progress');
+        if (message.total) { progress.max = message.total; progress.value = message.done || 0; }
+        if (message.type === 'OFFLINE_PROGRESS') {
+          progress.hidden = false;
+          status.textContent = `Spremanje zbirke: ${message.done} od ${message.total} datoteka.`;
+        } else if (message.type === 'OFFLINE_READY' || (message.type === 'OFFLINE_STATUS' && message.complete)) {
+          progress.hidden = true;
+          status.textContent = 'Svi životopisi i slike spremljeni su za čitanje bez interneta.';
+          $('#download-offline').textContent = 'Provjeri spremljenu zbirku';
+          $('#download-offline').disabled = false;
+        } else if (message.type === 'OFFLINE_ERROR') {
+          progress.hidden = true;
+          status.textContent = 'Spremanje nije dovršeno. Provjerite vezu i slobodan prostor pa pokušajte ponovno.';
+          $('#download-offline').disabled = false;
+        } else if (message.type === 'OFFLINE_STATUS') {
+          status.textContent = 'Spremite sve životopise i slike za čitanje bez interneta. Spremljeni profili ostaju samo na ovom uređaju.';
+        }
+      });
+      (navigator.serviceWorker.controller || ready.active)?.postMessage({ type: 'GET_STATUS' });
+    } catch {
+      status.textContent = 'Izvanmrežno spremanje trenutačno nije dostupno. Životopise možete čitati ovdje ili u samostalnoj HTML datoteci.';
+    }
+  }
+
+  function attachEvents() {
+    document.addEventListener('click', event => {
+      const save = event.target.closest('[data-save]');
+      if (save) { toggleSaved(save.dataset.save); return; }
+      const month = event.target.closest('[data-jump-month]');
+      if (month) { jumpTo(`[data-calendar-month="${month.dataset.jumpMonth}"]`, 'h3'); return; }
+      const group = event.target.closest('[data-jump-group]');
+      if (group) { jumpTo(`[data-list-group="${group.dataset.jumpGroup}"]`, 'h3'); return; }
+      if (event.target.closest('[data-jump-contents]')) { jumpTo('#category-contents', 'summary'); return; }
+      if (event.target.closest('[data-calendar-today]')) { const now = new Date(); showCalendarDay(now.getMonth() + 1, now.getDate()); return; }
+      const opener = event.target.closest('[data-open]');
+      if (opener && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && !(event.button > 0)) { event.preventDefault(); openProfile(opener.dataset.open, true, opener); }
+    });
+    $('#saint-search').addEventListener('input', event => { state.search = event.target.value.slice(0, 200); renderCollection(); });
+    $('#saved-filter').addEventListener('click', () => { state.savedOnly = !state.savedOnly; renderCollection(); });
+    $('#feast-banner-name').addEventListener('click', () => { const [month, day] = $('#feast-banner-name').dataset.day.split('-').map(Number); showCalendarDay(month, day, true); });
+    $('#reading-smaller').addEventListener('click', () => { state.readingSize = Math.max(17, state.readingSize - 2); updateReadingSize(); persist(); });
+    $('#reading-larger').addEventListener('click', () => { state.readingSize = Math.min(21, state.readingSize + 2); updateReadingSize(); persist(); });
+    $('#export-calendar').addEventListener('click', exportCalendar);
+    window.addEventListener('beforeinstallprompt', event => {
+      event.preventDefault(); installPrompt = event;
+      $('#install-app').hidden = false;
+    });
+    $('#install-app').addEventListener('click', async () => {
+      if (!installPrompt) return;
+      await installPrompt.prompt();
+      const choice = await installPrompt.userChoice;
+      installPrompt = null; $('#install-app').hidden = true;
+      if (choice.outcome === 'accepted') showToast('Aplikacija je dodana na vaš uređaj.');
+    });
+    window.addEventListener('appinstalled', () => { installPrompt = null; $('#install-app').hidden = true; $('#install-help').hidden = true; });
+    $('#veneration-filters').addEventListener('click', event => {
+      const button = event.target.closest('[data-veneration]');
+      if (button && config.filters.some(item => item.id === button.dataset.veneration)) { state.veneration = button.dataset.veneration; renderCollection(); }
+    });
+    $('#collection-views').addEventListener('click', event => {
+      const button = event.target.closest('[data-view]');
+      if (button && views[button.dataset.view]) {
+        state.view = button.dataset.view;
+        renderCollection();
+        $('#zbirka').scrollIntoView({ block: 'start', behavior: 'instant' });
+      }
+    });
+    $('#clear-search').addEventListener('click', clearSearch);
+    $('#empty-reset').addEventListener('click', () => { state.veneration = 'all'; state.savedOnly = false; clearSearch(); });
+    $('#reveal-developer-contact').addEventListener('click', () => {
+      const address = String.fromCharCode(107, 97, 114, 108, 111, 46, 103, 114, 108, 105, 99, 104, 64, 103, 109, 97, 105, 108, 46, 99, 111, 109);
+      const link = $('#developer-email');
+      link.textContent = address;
+      link.setAttribute('href', `mailto:${address}`);
+      link.hidden = false;
+      $('#reveal-developer-contact').hidden = true;
+      link.focus();
+    });
+    $('#random-saint').addEventListener('click', () => { if (state.saints.length) openProfile(state.saints[Math.floor(Math.random() * state.saints.length)].id); });
+    $('#close-profile').addEventListener('click', requestClose);
+    dialog.addEventListener('cancel', event => { event.preventDefault(); requestClose(); });
+    dialog.addEventListener('click', event => { if (event.target === dialog) { const rect = dialog.getBoundingClientRect(); if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) requestClose(); } });
+    $('#previous-profile').addEventListener('click', () => adjacentProfile(-1));
+    $('#next-profile').addEventListener('click', () => adjacentProfile(1));
+    $('#share-profile').addEventListener('click', copyLink);
+    $('#print-profile').addEventListener('click', () => window.print());
+    window.addEventListener('popstate', syncHash);
+    window.addEventListener('hashchange', syncHash);
+    window.addEventListener('pagehide', rememberPosition);
+    let positionTimer;
+    window.addEventListener('scroll', () => { if (dialog.open) return; clearTimeout(positionTimer); positionTimer = setTimeout(rememberPosition, 250); }, { passive: true });
+    document.addEventListener('keydown', event => {
+      if (event.key === '/' && !dialog.open && !event.ctrlKey && !event.metaKey && !event.altKey && !event.target.closest('input,textarea,select,[contenteditable]')) { event.preventDefault(); $('#saint-search').focus(); }
+    });
+    document.addEventListener('error', event => {
+      const image = event.target;
+      if (!(image instanceof HTMLImageElement) || !image.dataset.portrait) return;
+      const saint = state.byId.get(image.dataset.portrait);
+      if (!saint) return;
+      const parent = image.parentElement;
+      image.remove();
+      if (parent && !parent.querySelector('.card-placeholder')) parent.insertAdjacentHTML('afterbegin', placeholder(saint));
+    }, true);
+  }
+
+  async function init() {
+    attachEvents();
+    try {
+      let data = window.SAINT_COLLECTION;
+      if (!data) {
+        const response = await fetch('data/saints.json');
+        if (!response.ok) throw new Error(`Collection ${response.status}`);
+        data = await response.json();
+      }
+      if (!Array.isArray(data.saints) || !data.saints.length) throw new Error('Empty collection');
+      state.data = data;
+      state.saints = data.saints;
+      for (const category of data.categories) {
+        groupNames[category.id] = category.name;
+      }
+      state.saved = new Set([...state.saved].filter(id => state.saints.some(saint => saint.id === id)));
+      state.savedOnly = Boolean(session.savedOnly);
+      $('#saint-search').value = state.search;
+      for (const saint of state.saints) {
+        saint.searchNames = [fold(saint.name), ...(saint.aliases || []).map(fold), fold(personTitle(saint))];
+        saint.searchIntro = fold(saint.summary);
+        saint.searchText = fold([personTitle(saint), ...(saint.aliases || []), saint.summary, saint.groupLabel, ...(saint.roles || []), ...(saint.patronage || []), ...feastsOf(saint).map(feast => `${feast.label} ${feast.groupLabel || ''}`), ...(saint.details || []).map(item => item.value), plainText(saint.biographyHtml)].join(' '));
+        state.byId.set(saint.id, saint);
+      }
+      buildVenerationFilters();
+      $('#collection-total').textContent = `${state.saints.length} u zbirci`;
+      buildViewSwitch();
+      renderCollection();
+      prepareFeastBanner();
+      prepareCredits();
+      syncHash();
+      if (!dialog.open && session.view === state.view && session.veneration === state.veneration && Number.isFinite(session.y)) frame(() => window.scrollTo?.({ top: Math.max(0, session.y), behavior: 'instant' }));
+      prepareOffline();
+    } catch (error) {
+      grid.innerHTML = '<div class="load-error"><h3>Zbirka se nije mogla učitati.</h3><p>Osvježite stranicu i pokušajte ponovno.</p><button class="button-primary" type="button" id="retry-load">Pokušaj ponovno</button></div>';
+      grid.setAttribute('aria-busy', 'false');
+      $('#results-count').textContent = 'Učitavanje nije uspjelo';
+      $('#retry-load').addEventListener('click', () => location.reload());
+      console.error('Saint collection could not load:', error);
+    }
+  }
+
+  init();
+})();
