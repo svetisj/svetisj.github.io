@@ -46,7 +46,12 @@
   const personTitle = saint => `${saint.honorific || titlePrefixes[saint.venerationStatus] || ''} ${saint.name}`.trim();
   const translationNote = saint => saint.venerationStatus === 'blessed' ? `<p class="translation-note">${saint.textProcessing === 'croatian-summary' ? 'Tekst je sažet i prilagođen uz pomoć umjetne inteligencije.' : 'Tekst je preveden i prilagođen uz pomoć umjetne inteligencije.'}</p>` : '';
   const matchesSelection = (saint, selection) => { const filter = config.filters.find(item => item.id === selection); return Boolean(filter && (filter.id === 'all' || filter.statuses?.includes(saint.venerationStatus) || (filter.groupId && filter.groupId === saint.groupId))); };
-  const profileHref = saint => window.SAINT_STANDALONE ? `#svetac-${encodeURIComponent(saint.id)}` : `osoba/${encodeURIComponent(saint.id)}/`;
+  const profileHash = saint => {
+    const prefix = saint.venerationStatus === 'saint' ? 'sv' : saint.venerationStatus === 'blessed' ? 'bl' : 'sb';
+    const slug = saint.venerationStatus === 'blessed' ? saint.id.replace(/^bl-/, '') : saint.id;
+    return `#${prefix}-${encodeURIComponent(slug)}`;
+  };
+  const profileHref = saint => window.SAINT_STANDALONE ? profileHash(saint) : `osoba/${encodeURIComponent(saint.id)}/`;
   const feastsOf = saint => [...(saint.feast ? [saint.feast] : []), ...(saint.additionalFeasts || [])];
   const feastOrder = saint => Math.min(9999, ...feastsOf(saint).map(feast => feast.month * 100 + feast.day));
   const feastScope = saint => saint.feast?.kind === 'anniversary' ? 'Spomendan' : feastsOf(saint).length > 1 ? 'Spomendani' : saint.feast?.scope === 'group' ? 'Spomendan skupine' : 'Spomendan';
@@ -412,7 +417,7 @@
     renderProfile(saint);
     if (push) {
       const method = dialog.open ? 'replaceState' : 'pushState';
-      history[method]({ saintProfile: true }, '', `#svetac-${encodeURIComponent(id)}`);
+      history[method]({ saintProfile: true }, '', profileHash(saint));
     }
     if (!dialog.open) {
       dialog.showModal();
@@ -447,11 +452,9 @@
   }
 
   function syncHash() {
-    const match = location.hash.match(/^#svetac-(.+)$/);
-    if (match) {
-      let id;
-      try { id = decodeURIComponent(match[1]); } catch { return; }
-      if (state.byId.has(id)) openProfile(id, false);
+    if (/^#(?:sv|bl|sb)-.+$/.test(location.hash)) {
+      const saint = state.saints.find(person => profileHash(person) === location.hash);
+      if (saint) openProfile(saint.id, false);
     } else closeProfile();
   }
 
@@ -605,6 +608,7 @@
     $('#previous-profile').addEventListener('click', () => adjacentProfile(-1));
     $('#next-profile').addEventListener('click', () => adjacentProfile(1));
     $('#share-profile').addEventListener('click', copyLink);
+    $('#share-profile-top').addEventListener('click', copyLink);
     $('#print-profile').addEventListener('click', () => window.print());
     window.addEventListener('popstate', syncHash);
     window.addEventListener('hashchange', syncHash);
