@@ -3,7 +3,7 @@
   "authority": {
     "file": "Isusovački svetci, blaženici - HR.xlsx",
     "sheet": "Lista",
-    "sha256": "4575dc338383190374f095f4460f50e6353708daae024d179f94d81167c78b99",
+    "sha256": "0834e95d66e813f3a633ad26858dc05c8a45405b808b8f8c800ccb86cf150d80",
     "recordCount": 217,
     "matchedExisting": 208,
     "addedProfiles": [
@@ -1667,10 +1667,9 @@
     {
       "id": "stanislav-kostka",
       "number": 8,
-      "name": "Stjepan / Stanislav Kostka",
+      "name": "Stanislav Kostka",
       "venerationStatus": "saint",
       "aliases": [
-        "Stanislav Kostka",
         "Stanislaus Kostka",
         "Stanislaus",
         "Stanisław Kostka"
@@ -1758,7 +1757,7 @@
         },
         {
           "label": "Drugi oblici imena",
-          "value": "Stanislav Kostka · Stanislaus Kostka · Stanislaus · Stanisław Kostka"
+          "value": "Stanislaus Kostka · Stanislaus · Stanisław Kostka"
         }
       ],
       "biographyHtml": "<p>Današnji sveti zaštitnik, Stanisław Kostka, isusovački novak, rodio se 28. listopada 1550. u poljskom selu Rostkowu nedaleko Przasnysza (Mazovjecko vojvodstvo) kao senatorski sin u krilu bogate, moćne i ponosne plemićke obitelji. Odgojen u vjerskom duhu, sa 14 godina poslan je 1564. zajedno sa starijim bratom Pawełom i odgojiteljem na daljnje školovanje u isusovački kolegij. Za vrijeme trogodišnjeg školovanja isticao se svojom ljubaznošću, vedrinom, pobožnošću i molitvenim žarom. Odgojitelj braće Kostka bio je sklon laganom, udobnom i rasipnom životu te nije previše brinuo za svoje učenike. Stariji brat se priklonio odgojitelju, ali pobožnom i marljivom Stanisławu to nije odgovaralo. Prema legendi, teško je obolio, ali nitko nije brinuo za njega pa se pomolio svojoj zaštitnici, svetoj Barbari, koja ga je u pratnji dvojice anđela pričestila. Ukazala mu se Gospa s Djetetom u naručju, izliječila ga od bolesti i preporučila mu da postane isusovac, protiv volje njegove obitelji.</p>\n<p>Jednog jutra, nakon bratovog zlostavljanja, prerušen u prosjaka potajno je napustio Beč i uputio se u Bavarsku gdje je u Dillingenu pronašao njemačkog isusovačkog provincijala, svetog Petra Kanizija. On se uvjerio da se kod Stanisława radi o pravom zvanju i poslao ga krajem listopada 1567. generalu Družbe Isusove Franciscu Borgiji u Rim. U Rimu je Stanisław započeo svoj novicijat. Bio je u svakom pogledu uzoran: šutljiv, čedan i poslušan. Nježna zdravlja, razbolio se i umro od groznice 15. kolovoza 1568, na Veliku Gospu, a nije još navršio ni 18 godina. Pripisuju mu se mnoga čudesa. Blaženim ga je 1605. proglasio u nazočnosti brata Paweła papa Pavao V, a svetim 1726. papa Benedikt XIII. Zazivaju ga pri prijelomu kostiju, ubrzanom kucanju srca i opasnim bolestima, a zaštitnik je Poljske, isusovačkih novaka, studenata, mladeži i bolesnika koji primaju posljednju pomast. Posvećene su mu mnoge župe i crkve diljem Poljske i svijeta.</p>",
@@ -11521,7 +11520,7 @@
     {
       "id": "bl-alfredo-simon-colomina",
       "number": 60,
-      "name": "Alfred Simeon / Simon Colomina",
+      "name": "Alfred Šimun Colomina",
       "venerationStatus": "blessed",
       "aliases": [
         "Alfredo Simón Colomina",
@@ -24599,11 +24598,10 @@
     {
       "id": "bl-joao-adauctus",
       "number": 127,
-      "name": "Ivan ‘Adauctus’",
+      "name": "Ivan Adauctus",
       "venerationStatus": "blessed",
       "aliases": [
         "João Adauctus",
-        "João ‘Adauctus’",
         "João"
       ],
       "groupId": "blessed",
@@ -24685,7 +24683,7 @@
         },
         {
           "label": "Drugi oblici imena",
-          "value": "João Adauctus · João ‘Adauctus’ · João"
+          "value": "João Adauctus · João"
         }
       ],
       "deathDate": {
@@ -24699,7 +24697,7 @@
       "biographyLanguage": "hr",
       "source": {
         "url": "https://www.jesuits.global/saint-blessed/blessed-joao-adauctus/",
-        "title": "Blessed João ‘Adauctus’",
+        "title": "Blessed João Adauctus",
         "isShared": false
       },
       "supplementalSources": [
@@ -24759,7 +24757,7 @@
         ],
         "notes": "",
         "originalName": "João",
-        "englishName": "João ‘Adauctus’",
+        "englishName": "João Adauctus",
         "sourceDescription": {
           "it": "Candidato, martire nel viaggio al Brasile",
           "hr": "Kandidat, mučenik na putovanju u Brazil"
