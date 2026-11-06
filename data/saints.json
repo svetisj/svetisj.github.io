@@ -3,7 +3,7 @@
   "authority": {
     "file": "Isusovački svetci, blaženici - HR.xlsx",
     "sheet": "Lista",
-    "sha256": "0834e95d66e813f3a633ad26858dc05c8a45405b808b8f8c800ccb86cf150d80",
+    "sha256": "a6487bbfa1ac827fe7f27fbe8087291df213a024dbf44cb38459dff1d9c999e2",
     "recordCount": 217,
     "matchedExisting": 208,
     "addedProfiles": [
@@ -887,8 +887,8 @@
       "life": "1510. – 1572.",
       "feast": {
         "month": 10,
-        "day": 3,
-        "label": "3. listopada",
+        "day": 10,
+        "label": "10. listopada",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -1008,8 +1008,8 @@
         "membership": "Isusovac",
         "feast": {
           "month": 10,
-          "day": 3,
-          "label": "3. listopada",
+          "day": 10,
+          "label": "10. listopada",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -1078,9 +1078,9 @@
       ],
       "life": "1521. – 1597.",
       "feast": {
-        "month": 4,
-        "day": 27,
-        "label": "27. travnja",
+        "month": 12,
+        "day": 21,
+        "label": "21. prosinca",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -1203,9 +1203,9 @@
         "otherLabels": "Crkveni naučitelj; teolog i autor katekizama; provincijal",
         "membership": "Isusovac",
         "feast": {
-          "month": 4,
-          "day": 27,
-          "label": "27. travnja",
+          "month": 12,
+          "day": 21,
+          "label": "21. prosinca",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -2311,9 +2311,9 @@
       ],
       "life": "1597. – 1640.",
       "feast": {
-        "month": 7,
-        "day": 2,
-        "label": "2. srpnja",
+        "month": 6,
+        "day": 16,
+        "label": "16. lipnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -2431,9 +2431,9 @@
         "otherLabels": "Pučki misionar; skrbnik siromašnih i napuštenih žena",
         "membership": "Isusovac",
         "feast": {
-          "month": 7,
-          "day": 2,
-          "label": "2. srpnja",
+          "month": 6,
+          "day": 16,
+          "label": "16. lipnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -3092,9 +3092,9 @@
       ],
       "life": "1579. – 1615.",
       "feast": {
-        "month": 1,
-        "day": 19,
-        "label": "19. siječnja",
+        "month": 3,
+        "day": 10,
+        "label": "10. ožujka",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -3209,9 +3209,9 @@
         "otherLabels": "Misionar u Škotskoj",
         "membership": "Isusovac",
         "feast": {
-          "month": 1,
-          "day": 19,
-          "label": "19. siječnja",
+          "month": 3,
+          "day": 10,
+          "label": "10. ožujka",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -3566,8 +3566,8 @@
       "life": "1864. – 1929.",
       "feast": {
         "month": 5,
-        "day": 4,
-        "label": "4. svibnja",
+        "day": 2,
+        "label": "2. svibnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -3687,8 +3687,8 @@
         "membership": "Isusovac",
         "feast": {
           "month": 5,
-          "day": 4,
-          "label": "4. svibnja",
+          "day": 2,
+          "label": "2. svibnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -4552,9 +4552,9 @@
       ],
       "life": "1642. – 1716.",
       "feast": {
-        "month": 7,
-        "day": 2,
-        "label": "2. srpnja",
+        "month": 5,
+        "day": 11,
+        "label": "11. svibnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -4676,9 +4676,9 @@
         "otherLabels": "Apostol Napulja; pučki misionar i propovjednik",
         "membership": "Isusovac",
         "feast": {
-          "month": 7,
-          "day": 2,
-          "label": "2. srpnja",
+          "month": 5,
+          "day": 11,
+          "label": "11. svibnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -4936,9 +4936,9 @@
       ],
       "life": "1561. – 1595.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 2,
+        "day": 21,
+        "label": "21. veljače",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -5053,9 +5053,9 @@
         "otherLabels": "Pjesnik i pisac; svećenik engleske misije",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 2,
+          "day": 21,
+          "label": "21. veljače",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -5300,9 +5300,9 @@
       ],
       "life": "1575. – 1608.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 6,
+        "day": 23,
+        "label": "23. lipnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -5435,9 +5435,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 6,
+          "day": 23,
+          "label": "23. lipnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -5502,9 +5502,9 @@
       ],
       "life": "1558. – 1595.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 4,
+        "day": 7,
+        "label": "7. travnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -5619,9 +5619,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 4,
+          "day": 7,
+          "label": "7. travnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -5685,9 +5685,9 @@
       ],
       "life": "† 1606.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 3,
+        "day": 22,
+        "label": "22. ožujka",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -5797,9 +5797,9 @@
         "otherLabels": "Tesar i zidar; graditelj tajnih svećeničkih skrovišta",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 3,
+          "day": 22,
+          "label": "22. ožujka",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -5865,9 +5865,9 @@
       ],
       "life": "1616. – 1679.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 8,
+        "day": 26,
+        "label": "26. kolovoza",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -5977,9 +5977,9 @@
         "otherLabels": "Poznat kao Otac siromaha; misionar u južnom Walesu",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 8,
+          "day": 26,
+          "label": "26. kolovoza",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -6044,9 +6044,9 @@
       ],
       "life": "1645. – 1679.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 7,
+        "day": 22,
+        "label": "22. srpnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -6158,9 +6158,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 7,
+          "day": 22,
+          "label": "22. srpnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -6308,9 +6308,9 @@
       ],
       "life": "1585. – 1628.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 8,
+        "day": 28,
+        "label": "28. kolovoza",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -6422,9 +6422,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 8,
+          "day": 28,
+          "label": "28. kolovoza",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -6909,9 +6909,9 @@
       ],
       "life": "1610. – 1649.",
       "feast": {
-        "month": 10,
-        "day": 19,
-        "label": "19. listopada",
+        "month": 3,
+        "day": 17,
+        "label": "17. ožujka",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -7032,9 +7032,9 @@
         "otherLabels": "Član skupine sjevernoameričkih mučenika; misionar među Huronima",
         "membership": "Isusovac",
         "feast": {
-          "month": 10,
-          "day": 19,
-          "label": "19. listopada",
+          "month": 3,
+          "day": 17,
+          "label": "17. ožujka",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -7099,9 +7099,9 @@
       ],
       "life": "1601. – 1648.",
       "feast": {
-        "month": 10,
-        "day": 19,
-        "label": "19. listopada",
+        "month": 7,
+        "day": 4,
+        "label": "4. srpnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -7236,9 +7236,9 @@
         "otherLabels": "Član skupine sjevernoameričkih mučenika; misionar među Huronima",
         "membership": "Isusovac",
         "feast": {
-          "month": 10,
-          "day": 19,
-          "label": "19. listopada",
+          "month": 7,
+          "day": 4,
+          "label": "4. srpnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -7305,9 +7305,9 @@
       ],
       "life": "1606. – 1649.",
       "feast": {
-        "month": 10,
-        "day": 19,
-        "label": "19. listopada",
+        "month": 12,
+        "day": 7,
+        "label": "7. prosinca",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -7428,9 +7428,9 @@
         "otherLabels": "Član skupine sjevernoameričkih mučenika; misionar među Petunima",
         "membership": "Isusovac",
         "feast": {
-          "month": 10,
-          "day": 19,
-          "label": "19. listopada",
+          "month": 12,
+          "day": 7,
+          "label": "7. prosinca",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -7499,9 +7499,9 @@
       ],
       "life": "1613. – 1649.",
       "feast": {
-        "month": 10,
-        "day": 19,
-        "label": "19. listopada",
+        "month": 12,
+        "day": 8,
+        "label": "8. prosinca",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -7632,9 +7632,9 @@
         "otherLabels": "Član skupine sjevernoameričkih mučenika; profesor i misionar",
         "membership": "Isusovac",
         "feast": {
-          "month": 10,
-          "day": 19,
-          "label": "19. listopada",
+          "month": 12,
+          "day": 8,
+          "label": "8. prosinca",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -7913,9 +7913,9 @@
       ],
       "life": "† 1646.",
       "feast": {
-        "month": 10,
+        "month": 11,
         "day": 19,
-        "label": "19. listopada",
+        "label": "19. studenoga",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -8042,9 +8042,9 @@
         "otherLabels": "Laički misionarski suradnik (donné); sjevernoamerički mučenik",
         "membership": "Pratitelj isusovaca",
         "feast": {
-          "month": 10,
+          "month": 11,
           "day": 19,
-          "label": "19. listopada",
+          "label": "19. studenoga",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -8112,9 +8112,9 @@
       ],
       "life": "1589. – 1619.",
       "feast": {
-        "month": 1,
-        "day": 19,
-        "label": "19. siječnja",
+        "month": 9,
+        "day": 7,
+        "label": "7. rujna",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -8245,9 +8245,9 @@
         "otherLabels": "Ostrogonski kanonik; ravnatelj sjemeništa u Trnavi; kanoniziran 02.07.1995.",
         "membership": "Pratitelj isusovaca",
         "feast": {
-          "month": 1,
-          "day": 19,
-          "label": "19. siječnja",
+          "month": 9,
+          "day": 7,
+          "label": "7. rujna",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -8316,9 +8316,9 @@
       ],
       "life": "1584. – 1619.",
       "feast": {
-        "month": 1,
-        "day": 19,
-        "label": "19. siječnja",
+        "month": 9,
+        "day": 7,
+        "label": "7. rujna",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -8443,9 +8443,9 @@
         "otherLabels": "Član skupine trojice košičkih mučenika",
         "membership": "Isusovac",
         "feast": {
-          "month": 1,
-          "day": 19,
-          "label": "19. siječnja",
+          "month": 9,
+          "day": 7,
+          "label": "7. rujna",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -8510,9 +8510,9 @@
       ],
       "life": "1584. – 1619.",
       "feast": {
-        "month": 1,
-        "day": 19,
-        "label": "19. siječnja",
+        "month": 9,
+        "day": 7,
+        "label": "7. rujna",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -8637,9 +8637,9 @@
         "otherLabels": "Član skupine trojice košičkih mučenika; dušobrižnik vojnika",
         "membership": "Isusovac",
         "feast": {
-          "month": 1,
-          "day": 19,
-          "label": "19. siječnja",
+          "month": 9,
+          "day": 7,
+          "label": "7. rujna",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -8706,8 +8706,8 @@
       "life": "1576. – 1628.",
       "feast": {
         "month": 11,
-        "day": 16,
-        "label": "16. studenoga",
+        "day": 15,
+        "label": "15. studenoga",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -8831,8 +8831,8 @@
         "membership": "Isusovac",
         "feast": {
           "month": 11,
-          "day": 16,
-          "label": "16. studenoga",
+          "day": 15,
+          "label": "15. studenoga",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -9890,8 +9890,8 @@
       "life": "1847. – 1900.",
       "feast": {
         "month": 7,
-        "day": 9,
-        "label": "9. srpnja",
+        "day": 20,
+        "label": "20. srpnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -10015,8 +10015,8 @@
         "membership": "Isusovac",
         "feast": {
           "month": 7,
-          "day": 9,
-          "label": "9. srpnja",
+          "day": 20,
+          "label": "20. srpnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -10082,9 +10082,9 @@
       ],
       "life": "1852. – 1900.",
       "feast": {
-        "month": 7,
-        "day": 9,
-        "label": "9. srpnja",
+        "month": 6,
+        "day": 19,
+        "label": "19. lipnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -10207,9 +10207,9 @@
         "otherLabels": "Misionar u Kini; mučenik Bokserskoga ustanka",
         "membership": "Isusovac",
         "feast": {
-          "month": 7,
-          "day": 9,
-          "label": "9. srpnja",
+          "month": 6,
+          "day": 19,
+          "label": "19. lipnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -10279,9 +10279,9 @@
       ],
       "life": "1847. – 1900.",
       "feast": {
-        "month": 7,
-        "day": 9,
-        "label": "9. srpnja",
+        "month": 6,
+        "day": 19,
+        "label": "19. lipnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -10404,9 +10404,9 @@
         "otherLabels": "Misionar u Kini; mučenik Bokserskoga ustanka",
         "membership": "Isusovac",
         "feast": {
-          "month": 7,
-          "day": 9,
-          "label": "9. srpnja",
+          "month": 6,
+          "day": 19,
+          "label": "19. lipnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -10474,9 +10474,9 @@
       ],
       "life": "1595. – 1645.",
       "feast": {
-        "month": 12,
+        "month": 2,
         "day": 1,
-        "label": "1. prosinca",
+        "label": "1. veljače",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -10586,9 +10586,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
+          "month": 2,
           "day": 1,
-          "label": "1. prosinca",
+          "label": "1. veljače",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -10940,8 +10940,8 @@
       "life": "1533. – 1597.",
       "feast": {
         "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "day": 5,
+        "label": "5. veljače",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -11066,8 +11066,8 @@
         "membership": "Isusovac",
         "feast": {
           "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "day": 5,
+          "label": "5. veljače",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -11132,9 +11132,9 @@
       ],
       "life": "1556. – 1570.",
       "feast": {
-        "month": 1,
-        "day": 19,
-        "label": "19. siječnja",
+        "month": 7,
+        "day": 15,
+        "label": "15. srpnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -11265,9 +11265,9 @@
         "otherLabels": "Član skupine četrdesetorice brazilskih mučenika",
         "membership": "Isusovac",
         "feast": {
-          "month": 1,
-          "day": 19,
-          "label": "19. siječnja",
+          "month": 7,
+          "day": 15,
+          "label": "15. srpnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -11326,9 +11326,9 @@
       ],
       "life": "1726. – 1792.",
       "feast": {
-        "month": 9,
-        "day": 2,
-        "label": "2. rujna",
+        "month": 2,
+        "day": 9,
+        "label": "9. veljače",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -11467,9 +11467,9 @@
         "otherLabels": "Rujanski mučenik; svećenik u vrijeme ukinuća Družbe Isusove",
         "membership": "Isusovac",
         "feast": {
-          "month": 9,
-          "day": 2,
-          "label": "2. rujna",
+          "month": 2,
+          "day": 9,
+          "label": "9. veljače",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -11534,9 +11534,9 @@
       ],
       "life": "1877. – 1936.",
       "feast": {
-        "month": 9,
-        "day": 2,
-        "label": "2. rujna",
+        "month": 11,
+        "day": 29,
+        "label": "29. studenoga",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -11666,9 +11666,9 @@
         "otherLabels": "Rektor isusovačkih kolegija u Valenciji i Sarriàu",
         "membership": "Isusovac",
         "feast": {
-          "month": 9,
-          "day": 2,
-          "label": "2. rujna",
+          "month": 11,
+          "day": 29,
+          "label": "29. studenoga",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -11933,9 +11933,9 @@
       ],
       "life": "1549. – 1593.",
       "feast": {
-        "month": 2,
-        "day": 4,
-        "label": "4. veljače",
+        "month": 7,
+        "day": 25,
+        "label": "25. srpnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -12073,9 +12073,9 @@
         "otherLabels": "Član skupine petorice mučenika iz Cuncolima",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 4,
-          "label": "4. veljače",
+          "month": 7,
+          "day": 25,
+          "label": "25. srpnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -12134,9 +12134,9 @@
       ],
       "life": "† 1994.",
       "feast": {
-        "month": 1,
-        "day": 19,
-        "label": "19. siječnja",
+        "month": 5,
+        "day": 23,
+        "label": "23. svibnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -12284,9 +12284,9 @@
         "otherLabels": "Član skupine četrdesetorice brazilskih mučenika",
         "membership": "Isusovac",
         "feast": {
-          "month": 1,
-          "day": 19,
-          "label": "19. siječnja",
+          "month": 5,
+          "day": 23,
+          "label": "23. svibnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -12540,9 +12540,9 @@
       ],
       "life": "1551. – 1620.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 6,
+        "day": 2,
+        "label": "2. lipnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -12659,9 +12659,9 @@
         "otherLabels": "Misionar u Indiji i Japanu; kateheta i isusovački brat",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 6,
+          "day": 2,
+          "label": "2. lipnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -13108,9 +13108,9 @@
       ],
       "life": "1570. – 1632.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 9,
+        "day": 3,
+        "label": "3. rujna",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -13227,9 +13227,9 @@
         "otherLabels": "Misionar i dušobrižnik progonjenih kršćana",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 9,
+          "day": 3,
+          "label": "3. rujna",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -13289,9 +13289,9 @@
       ],
       "life": "1628. – 1679.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 6,
+        "day": 20,
+        "label": "20. lipnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -13416,9 +13416,9 @@
         "otherLabels": "Žrtva izmišljene Papističke urote Titusa Oatesa",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 6,
+          "day": 20,
+          "label": "20. lipnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -13856,9 +13856,9 @@
       ],
       "life": "1551. – 1583.",
       "feast": {
-        "month": 2,
-        "day": 4,
-        "label": "4. veljače",
+        "month": 4,
+        "day": 2,
+        "label": "2. travnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -13987,9 +13987,9 @@
         "otherLabels": "Član skupine petorice mučenika iz Cuncolima",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 4,
-          "label": "4. veljače",
+          "month": 4,
+          "day": 2,
+          "label": "2. travnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -14244,9 +14244,9 @@
       ],
       "life": "1572. – 1619.",
       "feast": {
-        "month": 2,
+        "month": 1,
         "day": 6,
-        "label": "6. veljače",
+        "label": "6. siječnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -14375,9 +14375,9 @@
         "otherLabels": "Mučenik Velikoga mučeništva u Nagasakiju; zavjete položio u zatvoru",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
+          "month": 1,
           "day": 6,
-          "label": "6. veljače",
+          "label": "6. siječnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -14440,9 +14440,9 @@
       ],
       "life": "1572. – 1622.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 8,
+        "day": 10,
+        "label": "10. kolovoza",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -14563,9 +14563,9 @@
         "otherLabels": "Kateheta; primljen u Družbu u zatvoru",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 8,
+          "day": 10,
+          "label": "10. kolovoza",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -15403,9 +15403,9 @@
       ],
       "life": "1571. – 1622.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 9,
+        "day": 15,
+        "label": "15. rujna",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -15535,9 +15535,9 @@
         "otherLabels": "Misionar u Japanu; djelovao u Sakaiu",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 9,
+          "day": 15,
+          "label": "15. rujna",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -16960,9 +16960,9 @@
       ],
       "life": "1866. – 1936.",
       "feast": {
-        "month": 9,
-        "day": 2,
-        "label": "2. rujna",
+        "month": 8,
+        "day": 23,
+        "label": "23. kolovoza",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -17107,9 +17107,9 @@
         "otherLabels": "Poglavar u Alicanteu; ekonom i službenik više isusovačkih zajednica",
         "membership": "Isusovac",
         "feast": {
-          "month": 9,
-          "day": 2,
-          "label": "2. rujna",
+          "month": 8,
+          "day": 23,
+          "label": "23. kolovoza",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -17175,9 +17175,9 @@
       ],
       "life": "1906. – 1946.",
       "feast": {
-        "month": 9,
-        "day": 2,
-        "label": "2. rujna",
+        "month": 4,
+        "day": 3,
+        "label": "3. travnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -17327,9 +17327,9 @@
         "otherLabels": "Rektor Papinskoga sjemeništa u Albaniji; profesor",
         "membership": "Isusovac",
         "feast": {
-          "month": 9,
-          "day": 2,
-          "label": "2. rujna",
+          "month": 4,
+          "day": 3,
+          "label": "3. travnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -17396,9 +17396,9 @@
       ],
       "life": "1584. – 1622.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 11,
+        "day": 1,
+        "label": "1. studenoga",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -17520,9 +17520,9 @@
         "otherLabels": "Član skupine Petra Pavla Navarre i drugova",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 11,
+          "day": 1,
+          "label": "1. studenoga",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -17582,9 +17582,9 @@
       ],
       "life": "1627. – 1672.",
       "feast": {
-        "month": 10,
+        "month": 1,
         "day": 21,
-        "label": "21. listopada",
+        "label": "21. siječnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -17710,9 +17710,9 @@
         "otherLabels": "Misionar i osnivač katoličke misije na Marijanskim otocima",
         "membership": "Isusovac",
         "feast": {
-          "month": 10,
+          "month": 1,
           "day": 21,
-          "label": "21. listopada",
+          "label": "21. siječnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -17962,8 +17962,8 @@
       "life": "† 1636.",
       "feast": {
         "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "day": 25,
+        "label": "25. veljače",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -18098,8 +18098,8 @@
         "membership": "Isusovac",
         "feast": {
           "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "day": 25,
+          "label": "25. veljače",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -18161,8 +18161,8 @@
       "life": "1578. – 1624.",
       "feast": {
         "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "day": 22,
+        "label": "22. veljače",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -18293,8 +18293,8 @@
         "membership": "Isusovac",
         "feast": {
           "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "day": 22,
+          "label": "22. veljače",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -18543,9 +18543,9 @@
       ],
       "life": "1566. – 1602.",
       "feast": {
-        "month": 10,
+        "month": 1,
         "day": 30,
-        "label": "30. listopada",
+        "label": "30. siječnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -18670,9 +18670,9 @@
         "otherLabels": "Bivši vojnik; isusovački brat; njegovatelj bolesnika",
         "membership": "Isusovac",
         "feast": {
-          "month": 10,
+          "month": 1,
           "day": 30,
-          "label": "30. listopada",
+          "label": "30. siječnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -18733,9 +18733,9 @@
       ],
       "life": "1561. – 1607.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 4,
+        "day": 7,
+        "label": "7. travnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -18864,9 +18864,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 4,
+          "day": 7,
+          "label": "7. travnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -19130,9 +19130,9 @@
       ],
       "life": "1846. – 1897.",
       "feast": {
-        "month": 11,
-        "day": 23,
-        "label": "23. studenoga",
+        "month": 4,
+        "day": 5,
+        "label": "5. travnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -19269,9 +19269,9 @@
         "otherLabels": "Rektor kolegija San Felipe Neri; profesor",
         "membership": "Isusovac",
         "feast": {
-          "month": 11,
-          "day": 23,
-          "label": "23. studenoga",
+          "month": 4,
+          "day": 5,
+          "label": "5. travnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -20119,9 +20119,9 @@
       ],
       "life": "† 1602.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 4,
+        "day": 20,
+        "label": "20. travnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -20242,9 +20242,9 @@
         "otherLabels": "Primljen u Družbu tijekom zatočeništva",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 4,
+          "day": 20,
+          "label": "20. travnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -20703,9 +20703,9 @@
       ],
       "life": "1551. – 1583.",
       "feast": {
-        "month": 2,
-        "day": 4,
-        "label": "4. veljače",
+        "month": 7,
+        "day": 25,
+        "label": "25. srpnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -20830,9 +20830,9 @@
         "otherLabels": "Graditelj crkava i kapela u misiji Salcete",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 4,
-          "label": "4. veljače",
+          "month": 7,
+          "day": 25,
+          "label": "25. srpnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -21087,8 +21087,8 @@
       "life": "1857. – 1929.",
       "feast": {
         "month": 9,
-        "day": 10,
-        "label": "10. rujna",
+        "day": 9,
+        "label": "9. rujna",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -21215,8 +21215,8 @@
         "membership": "Isusovac",
         "feast": {
           "month": 9,
-          "day": 10,
-          "label": "10. rujna",
+          "day": 9,
+          "label": "9. rujna",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -22068,9 +22068,9 @@
       ],
       "life": "1567. – 1623.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 12,
+        "day": 4,
+        "label": "4. prosinca",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -22200,9 +22200,9 @@
         "otherLabels": "Član skupine Jeronima de Angelisa i Šimuna Yempoa",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 12,
+          "day": 4,
+          "label": "4. prosinca",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -22262,9 +22262,9 @@
       ],
       "life": "1887. – 1947.",
       "feast": {
-        "month": 9,
-        "day": 2,
-        "label": "2. rujna",
+        "month": 1,
+        "day": 31,
+        "label": "31. siječnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -22407,9 +22407,9 @@
         "otherLabels": "Odgojitelj; glazbenik; pisac i organizator školskih kulturnih aktivnosti",
         "membership": "Isusovac",
         "feast": {
-          "month": 9,
-          "day": 2,
-          "label": "2. rujna",
+          "month": 1,
+          "day": 31,
+          "label": "31. siječnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -23058,9 +23058,9 @@
       ],
       "life": "1580. – 1622.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 9,
+        "day": 10,
+        "label": "10. rujna",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -23182,9 +23182,9 @@
         "otherLabels": "Mučenik Velikoga mučeništva u Nagasakiju; zavjete položio u zatvoru",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 9,
+          "day": 10,
+          "label": "10. rujna",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -23246,8 +23246,8 @@
       "life": "1880. – 1936.",
       "feast": {
         "month": 9,
-        "day": 2,
-        "label": "2. rujna",
+        "day": 29,
+        "label": "29. rujna",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -23379,8 +23379,8 @@
         "membership": "Isusovac",
         "feast": {
           "month": 9,
-          "day": 2,
-          "label": "2. rujna",
+          "day": 29,
+          "label": "29. rujna",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -24809,9 +24809,9 @@
       ],
       "life": "1581. – 1617.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 5,
+        "day": 22,
+        "label": "22. svibnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -24936,9 +24936,9 @@
         "otherLabels": "Misionar na japanskim otocima i području Nagasakija",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 5,
+          "day": 22,
+          "label": "22. svibnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -25981,9 +25981,9 @@
       ],
       "life": "1850. – 1912.",
       "feast": {
-        "month": 10,
-        "day": 12,
-        "label": "12. listopada",
+        "month": 1,
+        "day": 2,
+        "label": "2. siječnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -26117,9 +26117,9 @@
         "otherLabels": "Misionar na Madagaskaru; Misionar i njegovatelj oboljelih od gube; utemeljitelj bolnice u Marani",
         "membership": "Isusovac",
         "feast": {
-          "month": 10,
-          "day": 12,
-          "label": "12. listopada",
+          "month": 1,
+          "day": 2,
+          "label": "2. siječnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -26387,9 +26387,9 @@
       ],
       "life": "1557. – 1594.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 7,
+        "day": 4,
+        "label": "4. srpnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -26523,9 +26523,9 @@
         "otherLabels": "Primljen u Družbu u zatvoru; sin irskih roditelja",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 7,
+          "day": 4,
+          "label": "4. srpnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -26957,9 +26957,9 @@
       ],
       "life": "1535. – 1578.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 2,
+        "day": 3,
+        "label": "3. veljače",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -27080,9 +27080,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 2,
+          "day": 3,
+          "label": "3. veljače",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -27534,9 +27534,9 @@
       ],
       "life": "1861. – 1933.",
       "feast": {
-        "month": 5,
-        "day": 8,
-        "label": "8. svibnja",
+        "month": 2,
+        "day": 19,
+        "label": "19. veljače",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -27674,9 +27674,9 @@
         "otherLabels": "Irac; Obraćenik s anglikanstva; duhovni pratitelj i posjetitelj bolesnika",
         "membership": "Isusovac",
         "feast": {
-          "month": 5,
-          "day": 8,
-          "label": "8. svibnja",
+          "month": 2,
+          "day": 19,
+          "label": "19. veljače",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -27742,8 +27742,8 @@
       "life": "1878. – 1936.",
       "feast": {
         "month": 9,
-        "day": 2,
-        "label": "2. rujna",
+        "day": 28,
+        "label": "28. rujna",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -27897,8 +27897,8 @@
         "membership": "Isusovac",
         "feast": {
           "month": 9,
-          "day": 2,
-          "label": "2. rujna",
+          "day": 28,
+          "label": "28. rujna",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -28153,9 +28153,9 @@
       ],
       "life": "1643. – 1683.",
       "feast": {
-        "month": 11,
-        "day": 16,
-        "label": "16. studenoga",
+        "month": 1,
+        "day": 27,
+        "label": "27. siječnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -28288,9 +28288,9 @@
         "otherLabels": "Misionar među domorodačkim narodima sjeverne Argentine",
         "membership": "Isusovac",
         "feast": {
-          "month": 11,
-          "day": 16,
-          "label": "16. studenoga",
+          "month": 1,
+          "day": 27,
+          "label": "27. siječnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -28354,9 +28354,9 @@
       ],
       "life": "1861. – 1936.",
       "feast": {
-        "month": 9,
-        "day": 2,
-        "label": "2. rujna",
+        "month": 12,
+        "day": 29,
+        "label": "29. prosinca",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -28492,9 +28492,9 @@
         "otherLabels": "Profesor moralne teologije i kanonskoga prava; pisac",
         "membership": "Isusovac",
         "feast": {
-          "month": 9,
-          "day": 2,
-          "label": "2. rujna",
+          "month": 12,
+          "day": 29,
+          "label": "29. prosinca",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -29537,9 +29537,9 @@
       ],
       "life": "1575. – 1619.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 11,
+        "day": 18,
+        "label": "18. studenoga",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -29661,9 +29661,9 @@
         "otherLabels": "Mučenik isusovačkih misija u Japanu",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 11,
+          "day": 18,
+          "label": "18. studenoga",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -31478,9 +31478,9 @@
       ],
       "life": "1583. – 1628.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 12,
+        "day": 25,
+        "label": "25. prosinca",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -31597,9 +31597,9 @@
         "otherLabels": "Kateheta i pratitelj isusovačkih misionara",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 12,
+          "day": 25,
+          "label": "25. prosinca",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -32244,9 +32244,9 @@
       ],
       "life": "1579. – 1624.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 8,
+        "day": 25,
+        "label": "25. kolovoza",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -32376,9 +32376,9 @@
         "otherLabels": "Misionar u Goi i Japanu; profesor teologije",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 8,
+          "day": 25,
+          "label": "25. kolovoza",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -32439,9 +32439,9 @@
       ],
       "life": "1866. – 1936.",
       "feast": {
-        "month": 9,
-        "day": 2,
-        "label": "2. rujna",
+        "month": 1,
+        "day": 15,
+        "label": "15. siječnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -32581,9 +32581,9 @@
         "otherLabels": "Duhovnik radničke mladeži; djelovao u Valenciji",
         "membership": "Isusovac",
         "feast": {
-          "month": 9,
-          "day": 2,
-          "label": "2. rujna",
+          "month": 1,
+          "day": 15,
+          "label": "15. siječnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -32651,9 +32651,9 @@
       ],
       "life": "† 1633.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 7,
+        "day": 31,
+        "label": "31. srpnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -32775,9 +32775,9 @@
         "otherLabels": "Mučenik progona kršćana u Japanu",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 7,
+          "day": 31,
+          "label": "31. srpnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -33226,9 +33226,9 @@
       ],
       "life": "1864. – 1936.",
       "feast": {
-        "month": 9,
-        "day": 2,
-        "label": "2. rujna",
+        "month": 12,
+        "day": 29,
+        "label": "29. prosinca",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -33384,9 +33384,9 @@
         "otherLabels": "Župni suradnik; služio starijima u domu Malih sestara siromaha",
         "membership": "Isusovac",
         "feast": {
-          "month": 9,
-          "day": 2,
-          "label": "2. rujna",
+          "month": 12,
+          "day": 29,
+          "label": "29. prosinca",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -34247,9 +34247,9 @@
       ],
       "life": "1552. – 1583.",
       "feast": {
-        "month": 2,
-        "day": 4,
-        "label": "4. veljače",
+        "month": 7,
+        "day": 25,
+        "label": "25. srpnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -34379,9 +34379,9 @@
         "otherLabels": "Član skupine petorice mučenika iz Cuncolima",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 4,
-          "label": "4. veljače",
+          "month": 7,
+          "day": 25,
+          "label": "25. srpnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -34642,9 +34642,9 @@
       ],
       "life": "1587. – 1639.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 7,
+        "day": 4,
+        "label": "4. srpnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -34766,9 +34766,9 @@
         "otherLabels": "Hodočasnik u Rim; zaređen za svećenika u Rimu; misionar u Japanu",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 7,
+          "day": 4,
+          "label": "4. srpnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -34829,9 +34829,9 @@
       ],
       "life": "1603. – 1651.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 5,
+        "day": 19,
+        "label": "19. svibnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -34960,9 +34960,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 5,
+          "day": 19,
+          "label": "19. svibnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -35992,9 +35992,9 @@
       ],
       "life": "1598. – 1644.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 9,
+        "day": 7,
+        "label": "7. rujna",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -36124,9 +36124,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 9,
+          "day": 7,
+          "label": "7. rujna",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -36784,9 +36784,9 @@
       ],
       "life": "1571. – 1601.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 3,
+        "day": 31,
+        "label": "31. ožujka",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -36920,9 +36920,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 3,
+          "day": 31,
+          "label": "31. ožujka",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -37200,9 +37200,9 @@
       ],
       "life": "1570. – 1601.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 2,
+        "day": 27,
+        "label": "27. veljače",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -37319,9 +37319,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 2,
+          "day": 27,
+          "label": "27. veljače",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -37577,9 +37577,9 @@
       ],
       "life": "1928. – 1977.",
       "feast": {
-        "month": 11,
-        "day": 23,
-        "label": "23. studenoga",
+        "month": 12,
+        "day": 3,
+        "label": "3. prosinca",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -37708,9 +37708,9 @@
         "otherLabels": "Župnik u Aguilaresu; promicatelj prava siromašnih i župnih zajednica",
         "membership": "Isusovac",
         "feast": {
-          "month": 11,
-          "day": 23,
-          "label": "23. studenoga",
+          "month": 12,
+          "day": 3,
+          "label": "3. prosinca",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -38364,9 +38364,9 @@
       ],
       "life": "1580. – 1623.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 12,
+        "day": 4,
+        "label": "4. prosinca",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -38492,9 +38492,9 @@
         "otherLabels": "Član skupine Jeronima de Angelisa i Šimuna Yempoa",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 12,
+          "day": 4,
+          "label": "4. prosinca",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -38741,9 +38741,9 @@
       ],
       "life": "1549. – 1582.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 5,
+        "day": 30,
+        "label": "30. svibnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -38868,9 +38868,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 5,
+          "day": 30,
+          "label": "30. svibnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -38930,8 +38930,8 @@
       "life": "1600. – 1642.",
       "feast": {
         "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "day": 12,
+        "label": "12. prosinca",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -39049,8 +39049,8 @@
         "membership": "Isusovac",
         "feast": {
           "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "day": 12,
+          "label": "12. prosinca",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -39111,9 +39111,9 @@
       ],
       "life": "1570. – 1627.",
       "feast": {
-        "month": 2,
-        "day": 6,
-        "label": "6. veljače",
+        "month": 9,
+        "day": 7,
+        "label": "7. rujna",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -39238,9 +39238,9 @@
         "otherLabels": "Japanski misionar; djelovao potajno među progonjenim kršćanima",
         "membership": "Isusovac",
         "feast": {
-          "month": 2,
-          "day": 6,
-          "label": "6. veljače",
+          "month": 9,
+          "day": 7,
+          "label": "7. rujna",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -39302,9 +39302,9 @@
       ],
       "life": "1618. – 1679.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 6,
+        "day": 30,
+        "label": "30. lipnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -39433,9 +39433,9 @@
         "otherLabels": "Žrtva izmišljene Papističke urote Titusa Oatesa",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 6,
+          "day": 30,
+          "label": "30. lipnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -39493,9 +39493,9 @@
       ],
       "life": "1535. – 1573.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 6,
+        "day": 29,
+        "label": "29. lipnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -39624,9 +39624,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 6,
+          "day": 29,
+          "label": "29. lipnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -40907,9 +40907,9 @@
       ],
       "life": "1610. – 1679.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 6,
+        "day": 30,
+        "label": "30. lipnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -41038,9 +41038,9 @@
         "otherLabels": "Žrtva izmišljene Papističke urote Titusa Oatesa",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 6,
+          "day": 30,
+          "label": "30. lipnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -41101,9 +41101,9 @@
       ],
       "life": "1636. – 1679.",
       "feast": {
-        "month": 12,
-        "day": 1,
-        "label": "1. prosinca",
+        "month": 1,
+        "day": 24,
+        "label": "24. siječnja",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -41220,9 +41220,9 @@
         "otherLabels": "Mučenik engleskih protukatoličkih progona",
         "membership": "Isusovac",
         "feast": {
-          "month": 12,
-          "day": 1,
-          "label": "1. prosinca",
+          "month": 1,
+          "day": 24,
+          "label": "24. siječnja",
           "scope": "individual",
           "basis": "workbook"
         },
@@ -41833,9 +41833,9 @@
       ],
       "life": "1890. – 1942.",
       "feast": {
-        "month": 9,
-        "day": 2,
-        "label": "2. rujna",
+        "month": 2,
+        "day": 22,
+        "label": "22. veljače",
         "scope": "individual",
         "basis": "workbook"
       },
@@ -41943,9 +41943,9 @@
         "otherLabels": "Nadbiskup; apostolski administrator Estonije",
         "membership": "Isusovac",
         "feast": {
-          "month": 9,
-          "day": 2,
-          "label": "2. rujna",
+          "month": 2,
+          "day": 22,
+          "label": "22. veljače",
           "scope": "individual",
           "basis": "workbook"
         },
