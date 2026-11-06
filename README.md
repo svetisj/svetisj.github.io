@@ -8,7 +8,7 @@ Hrvatska digitalna zbirka života i svjedočanstava svetaca, blaženika i slugu 
 
 **Adresa stranice:** [svetisj.github.io](https://svetisj.github.io/)
 
-Zbirka sadrži **214 profila**: 57 svetaca, 155 blaženika i dvije osobe u skupini Sluge Božji. Uključuje i laičke suradnike te suputnike isusovačkih mučenika. Svaki profil donosi životopis, raspoložive biografske podatke, sliku i poveznice na izvore.
+Zbirka sadrži **223 profila**: 59 svetaca, 162 blaženika i dvije osobe u skupini Sluge Božji. Uključuje i laičke suradnike te suputnike isusovačkih mučenika. Svaki profil donosi životopis, raspoložive biografske podatke, sliku i poveznice na izvore.
 
 ## Što se nalazi u zbirci
 
@@ -32,7 +32,7 @@ Svaki životopis ima i zasebnu adresu, primjerice [Sv. Ignacije Lojolski](https:
 
 Životopisi su izvorni hrvatski sažeci i sinteze, sastavljeni uz pomoć umjetne inteligencije prema navedenim izvorima. Dulji životopisi dopunjeni su dodatnim provjerenim crkvenim i stručnim izvorima, koji su svi povezani uz tekst. Ne predstavljaju potpune prijevode izvornih članaka. Tekst blaženog Ivana Merza prilagođen je iz hrvatskog izvora.
 
-Za uvezene isusovačke blaženike kalendar prikazuje datum smrti prema pravilu ove zbirke. I za sluge Božje koristi se oznaka **Spomendan**, uz datum smrti kao osnovu kalendarskog prikaza. Postojeći datumi svetaca i dodatni zajednički spomendani ostaju posebno navedeni. Nepoznati podaci o zaštitništvu nisu dopunjavani pretpostavkama.
+Za 217 osoba podatci su usklađeni s uredničkom tablicom: kalendar prati **Datum proslave**, a profili donose raspoložive datume i mjesta rođenja i smrti, okolnosti mučeništva, ulogu, pripadnost, druge oznake, oblike imena i izvore. Šest dodatnih profila zadržava ranije podatke. Nepotpuni datumi i razlike među izvorima izričito su označeni.
 
 ## Statička objava
 
@@ -46,11 +46,11 @@ Ovaj repozitorij sadrži **samo gotove statičke datoteke stranice i ovaj README
 ├── ui-config.js               # Oznake i skupine u sučelju
 ├── assets/                    # IHS logo, portreti, ikone i slika za dijeljenje
 ├── data/                      # Podaci zbirke
-├── osoba/                     # 214 statičkih stranica životopisa
+├── osoba/                     # 223 statičkih stranica životopisa
 ├── manifest.webmanifest       # Podaci za instalaciju aplikacije
 ├── sw.js                      # Izvanmrežno spremanje i verzije predmemorije
 ├── offline-assets.json        # Popis datoteka za izvanmrežno čitanje
-├── sitemap.xml                # 215 URL-ova za tražilice
+├── sitemap.xml                # 224 URL-ova za tražilice
 ├── robots.txt                 # Pravila indeksiranja i adresa sitemapa
 ├── 404.html                   # Stranica za nepostojeće poveznice
 └── .nojekyll                  # Posluživanje bez obrade Jekyllom

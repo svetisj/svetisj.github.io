@@ -49,7 +49,7 @@
   const titlePrefixes = config.prefixes;
   const personTitle = saint => `${saint.honorific || titlePrefixes[saint.venerationStatus] || ''} ${saint.name}`.trim();
   const translationNote = saint => saint.venerationStatus === 'blessed' ? `<p class="translation-note">${saint.textProcessing === 'croatian-summary' ? 'Tekst je sažet i prilagođen uz pomoć umjetne inteligencije.' : 'Tekst je preveden i prilagođen uz pomoć umjetne inteligencije.'}</p>` : '';
-  const matchesSelection = (saint, selection) => { const filter = config.filters.find(item => item.id === selection); return Boolean(filter && (filter.id === 'all' || filter.statuses?.includes(saint.venerationStatus) || (filter.groupId && filter.groupId === saint.groupId))); };
+  const matchesSelection = (saint, selection) => { const filter = config.filters.find(item => item.id === selection); return Boolean(filter && (filter.id === 'all' || filter.statuses?.includes(saint.venerationStatus) || (filter.groupId && filter.groupId === saint.groupId) || (filter.id === 'laity' && saint.isLayCompanion))); };
   const profileHash = saint => {
     const prefix = saint.venerationStatus === 'saint' ? 'sv' : saint.venerationStatus === 'blessed' ? 'bl' : 'sb';
     const slug = saint.venerationStatus === 'blessed' ? saint.id.replace(/^bl-/, '') : saint.id;
@@ -198,7 +198,7 @@
     }).join('');
     const unknown = state.visible.filter(saint => !feastsOf(saint).length);
     const unknownSection = unknown.length ? `<section class="calendar-undated" aria-labelledby="calendar-undated-title"><h3 id="calendar-undated-title">Datum nije naveden u izvoru</h3><div>${unknown.map(saint => `<button class="calendar-event" type="button" data-calendar-item="${esc(saint.id)}" data-open="${esc(saint.id)}">${esc(personTitle(saint))}</button>`).join('')}</div></section>` : '';
-    $('#saint-calendar').innerHTML = state.visible.length ? `<nav class="calendar-navigation" aria-label="Prijeđi na mjesec"><button type="button" data-calendar-today>Danas</button><div class="calendar-month-links">${months.map((name, index) => `<button type="button" data-jump-month="${index + 1}" aria-label="${name}">${name.slice(0, 3)}.</button>`).join('')}</div><label class="calendar-month-picker" for="calendar-month-picker"><span class="visually-hidden">Prijeđi na mjesec</span><select id="calendar-month-picker"><option value="" disabled${calendarMonth ? '' : ' selected'}>Odaberite mjesec</option>${months.map((name, index) => `<option value="${index + 1}"${calendarMonth === index + 1 ? ' selected' : ''}>${name}</option>`).join('')}</select></label></nav><p class="calendar-note">Godišnji pregled. Za isusovačke blaženike i sluge Božje naveden je dan smrti.</p><div class="calendar-months">${monthSections}</div>${unknownSection}` : '';
+    $('#saint-calendar').innerHTML = state.visible.length ? `<nav class="calendar-navigation" aria-label="Prijeđi na mjesec"><button type="button" data-calendar-today>Danas</button><div class="calendar-month-links">${months.map((name, index) => `<button type="button" data-jump-month="${index + 1}" aria-label="${name}">${name.slice(0, 3)}.</button>`).join('')}</div><label class="calendar-month-picker" for="calendar-month-picker"><span class="visually-hidden">Prijeđi na mjesec</span><select id="calendar-month-picker"><option value="" disabled${calendarMonth ? '' : ' selected'}>Odaberite mjesec</option>${months.map((name, index) => `<option value="${index + 1}"${calendarMonth === index + 1 ? ' selected' : ''}>${name}</option>`).join('')}</select></label></nav><p class="calendar-note">Godišnji pregled spomendana. Datum proslave može se razlikovati od datuma smrti; godišnjice su posebno označene.</p><div class="calendar-months">${monthSections}</div>${unknownSection}` : '';
   }
 
   function renderCollection() {
@@ -365,7 +365,7 @@
     if (saint.life) facts.push({ label: 'Životni vijek', value: saint.life });
     if (saint.lifeThemes.length) facts.push({ label: 'Djelovanje', value: state.data.lifeThemes.filter(theme => saint.lifeThemes.includes(theme.id)).map(theme => theme.name).join(' · ') });
     if (saint.centuries.length) facts.push({ label: 'Razdoblje', value: saint.centuries.map(century => `${century}.`).join(', ') + ' stoljeće' });
-    if (saint.lifePeriod?.limitations) facts.push({ label: 'Podaci o razdoblju', value: saint.lifePeriod.limitations });
+    if (saint.lifePeriod?.limitations && !saint.workbook) facts.push({ label: 'Podaci o razdoblju', value: saint.lifePeriod.limitations });
     const seen = new Set(facts.map(fact => fold(fact.label)));
     for (const fact of saint.details || []) {
       const label = fold(fact.label);
