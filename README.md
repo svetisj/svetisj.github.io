@@ -70,7 +70,7 @@ SEO metapodaci, kanonske adrese i sitemap podešeni su za **https://svetisj.gith
 
 ### Izvanmrežna uporaba
 
-Preglednik tijekom uporabe sprema učitane sadržaje za kasnije čitanje. Za dodavanje na početni zaslon upotrijebite izbornik preglednika. Instalacija i predmemorija dostupne su na HTTPS-u ili lokalnom poslužitelju.
+Preglednik tijekom uporabe sprema učitane sadržaje za kasnije čitanje. Nakon preuzimanja nove verzije stare predmemorije ove aplikacije automatski se uklanjaju, a otvorene stranice jednom osvježavaju. Spremljeni profili i postavke ostaju sačuvani. Ažuriranje zahtijeva mrežnu vezu i provjeru stranice u pregledniku. Za dodavanje na početni zaslon upotrijebite izbornik preglednika. Instalacija i predmemorija dostupne su na HTTPS-u ili lokalnom poslužitelju.
 
 ## Ažuriranje sadržaja
 

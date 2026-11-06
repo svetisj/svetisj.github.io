@@ -520,7 +520,17 @@
 
   function prepareOffline() {
     if (window.SAINT_STANDALONE || location.protocol === 'file:' || !('serviceWorker' in navigator)) return;
-    navigator.serviceWorker.register(new URL('sw.js', libraryURL).href).catch(() => {});
+    navigator.serviceWorker.register(new URL('sw.js', libraryURL).href, { updateViaCache: 'none' }).then(registration => {
+      let lastCheck = 0;
+      const checkForUpdate = () => {
+        if (document.visibilityState === 'hidden' || Date.now() - lastCheck < 60000) return;
+        lastCheck = Date.now();
+        registration.update().catch(() => {});
+      };
+      checkForUpdate();
+      window.addEventListener('focus', checkForUpdate);
+      document.addEventListener('visibilitychange', checkForUpdate);
+    }).catch(() => {});
   }
 
   function attachEvents() {

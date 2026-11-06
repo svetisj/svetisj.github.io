@@ -1,6 +1,6 @@
 'use strict';
 // Build updates this identifier so a changed inventory triggers a worker update.
-const BUILD_VERSION = '133a855bda6c1fe30ece39277f9d798f36e81d4717264d8be5875b9f4843a405';
+const BUILD_VERSION = 'ae94b4593d0f1a1f2a009d750fd5431624c4663a5514eab5cf33bc41c48b7626';
 const PREFIX = 'saints-library-';
 let inventoryPromise;
 let downloadPromise;
@@ -12,7 +12,9 @@ async function inventory() {
     const cached = await cache.match(absolute('offline-assets.json'));
     const response = cached || await fetch(absolute('offline-assets.json'), { cache: 'no-store' });
     if (!response.ok) throw new Error('Offline inventory unavailable');
-    return response.json();
+    const data = await response.json();
+    if (data.version !== BUILD_VERSION) throw new Error('Release inventory does not match this worker');
+    return data;
   })();
   return inventoryPromise;
 }
@@ -22,18 +24,20 @@ self.addEventListener('install', event => {
     const response = await fetch(absolute('offline-assets.json'), { cache: 'no-store' });
     if (!response.ok) throw new Error('Offline inventory unavailable');
     const data = await response.clone().json();
+    // A deployment can briefly expose files from two releases. Keep the old
+    // working worker until its replacement and inventory agree.
+    if (data.version !== BUILD_VERSION) throw new Error('Release inventory does not match this worker');
     inventoryPromise = Promise.resolve(data);
     const cache = await caches.open(PREFIX + data.version);
     await cache.put(absolute('offline-assets.json'), response);
     const shell = data.assets.filter(path => !path.startsWith('assets/images/') && !path.startsWith('assets/portraits/') && !path.startsWith('osoba/'));
-    await cache.addAll(shell.map(absolute));
+    await cache.addAll(shell.map(path => new Request(absolute(path), { cache: 'reload' })));
     // Content-addressed images already saved by an older version can be reused.
     await Promise.all(data.assets.filter(path => path.startsWith('assets/images/')).map(async path => {
       const existing = await caches.match(absolute(path));
       if (existing) await cache.put(absolute(path), existing);
     }));
-    // Activate updates without interrupting the current reading session.
-    // The next navigation/reload receives the newly cached version.
+    // Activation replaces the cache and refreshes open pages once on upgrade.
     await self.skipWaiting();
   })());
 });
@@ -42,8 +46,17 @@ self.addEventListener('activate', event => {
   event.waitUntil((async () => {
     const data = await inventory();
     const current = PREFIX + data.version;
-    await Promise.all((await caches.keys()).filter(key => key.startsWith(PREFIX) && key !== current).map(key => caches.delete(key)));
+    const obsolete = (await caches.keys()).filter(key => key.startsWith(PREFIX) && key !== current);
+    await Promise.all(obsolete.map(key => caches.delete(key)));
     await self.clients.claim();
+    // This also upgrades pages running the previous app, which cannot know
+    // about new controllerchange handlers. First installations do not reload.
+    if (obsolete.length) {
+      const windows = await self.clients.matchAll({ type: 'window' });
+      // Do not hold activation open until navigation finishes: those requests
+      // must be able to reach the newly activated worker.
+      for (const client of windows) client.navigate(client.url).catch(() => {});
+    }
   })());
 });
 
@@ -60,7 +73,7 @@ self.addEventListener('fetch', event => {
         const page = await cache.match(absolute(target));
         if (page) return page;
         try {
-          const response = await fetch(event.request);
+          const response = await fetch(event.request, { cache: 'reload' });
           if (response.ok) await cache.put(absolute(target), response.clone());
           return response;
         } catch {
@@ -73,7 +86,7 @@ self.addEventListener('fetch', event => {
     }
     const existing = await cache.match(event.request);
     if (existing) return existing;
-    const response = await fetch(event.request);
+    const response = await fetch(event.request, { cache: 'reload' });
     if (response.ok && data.assets.some(path => absolute(path) === event.request.url)) await cache.put(event.request, response.clone());
     return response;
   })());
