@@ -55,7 +55,7 @@
     const slug = saint.venerationStatus === 'blessed' ? saint.id.replace(/^bl-/, '') : saint.id;
     return `#${prefix}-${encodeURIComponent(slug)}`;
   };
-  const profileHref = saint => hostedProfiles ? new URL(`osoba/${profileHash(saint).slice(1)}/`, libraryURL).href : new URL(profileHash(saint), documentURL).href;
+  const profileHref = saint => hostedProfiles ? new URL(`${profileHash(saint).slice(1)}/`, libraryURL).href : new URL(profileHash(saint), documentURL).href;
   const feastsOf = saint => [...(saint.feast ? [saint.feast] : []), ...(saint.additionalFeasts || [])];
   const feastOrder = saint => Math.min(9999, ...feastsOf(saint).map(feast => feast.month * 100 + feast.day));
   const feastScope = saint => saint.feast?.kind === 'anniversary' ? 'Spomendan' : feastsOf(saint).length > 1 ? 'Spomendani' : saint.feast?.scope === 'group' ? 'Spomendan skupine' : 'Spomendan';
@@ -345,10 +345,12 @@
   function prepareCredits() {
     const artworks = new Map();
     for (const saint of state.saints) {
-      if (!saint.portrait?.src) continue;
-      const key = saint.portrait.sourceUrl || saint.portrait.src;
-      if (!artworks.has(key)) artworks.set(key, { image: saint.portrait, names: [] });
-      artworks.get(key).names.push(personTitle(saint));
+      for (const image of saint.gallery || [saint.portrait]) {
+        if (!image?.src) continue;
+        const key = image.sourceUrl || image.src;
+        if (!artworks.has(key)) artworks.set(key, { image, names: [] });
+        artworks.get(key).names.push(personTitle(saint));
+      }
     }
     $('#image-credits-list').innerHTML = Array.from(artworks.values()).map(({ image, names }) => `<li><strong>${esc(names.join(' · '))}</strong>${esc(imageCredit(image))}<br><a href="${esc(image.sourceUrl || image.sourcePage || '')}" target="_blank" rel="noopener noreferrer">Izvor slike ↗</a></li>`).join('');
     if (state.data.collectedAt) {
@@ -377,6 +379,17 @@
     return facts.map(fact => `<div><dt>${esc(fact.label)}</dt><dd${fact.missing ? ' class="missing"' : ''}>${esc(fact.value)}</dd></div>`).join('');
   }
 
+  function renderGallery(saint, index) {
+    const images = saint.gallery?.length ? saint.gallery : [saint.portrait];
+    const image = images[index];
+    state.galleryIndex = index;
+    $('#profile-portrait').innerHTML = imageHTML({ ...saint, portrait: image }, true);
+    const navigation = $('#profile-gallery');
+    navigation.hidden = images.length < 2;
+    navigation.innerHTML = images.length > 1 ? `<p class="gallery-count" aria-live="polite">Slika ${index + 1} od ${images.length}</p><div class="gallery-thumbnails" role="group" aria-label="Odaberi sliku">${images.map((photo, i) => `<button type="button" data-gallery-index="${i}" aria-label="Slika ${i + 1} od ${images.length}: ${esc(photo.alt || personTitle(saint))}" aria-pressed="${i === index}"><img src="${esc(photo.thumbSrc || photo.src)}" alt="" loading="lazy" decoding="async"></button>`).join('')}</div>` : '';
+    $('#profile-image-caption').innerHTML = `${esc(imageCredit(image))}${image?.sourcePage || image?.sourceUrl ? `<br><a href="${esc(image.sourcePage || image.sourceUrl)}" target="_blank" rel="noopener noreferrer">Izvor slike ↗</a>` : ''}${image?.license ? `<br>${image.licenseUrl?.startsWith('https://') ? `<a href="${esc(image.licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(image.license)}</a>` : esc(image.license)}` : ''}`;
+  }
+
   function renderProfile(saint) {
     state.active = saint.id;
     $('#profile-name').textContent = personTitle(saint);
@@ -386,11 +399,11 @@
     $('#profile-life').textContent = saint.life || '';
     $('#profile-life').hidden = !saint.life;
     $('#profile-summary').textContent = saint.summary;
-    $('#profile-portrait').innerHTML = imageHTML(saint, true);
+    renderGallery(saint, 0);
     $('#profile-save').innerHTML = saveButton(saint);
     $('#profile-toast').hidden = true;
     updateReadingSize();
-    $('#profile-image-caption').innerHTML = `${esc(imageCredit(saint.portrait))}${saint.portrait?.sourceUrl ? `<br><a href="${esc(saint.portrait.sourceUrl)}" target="_blank" rel="noopener noreferrer">Pogledaj izvornu sliku ↗</a>` : ''}`;
+
     $('#profile-facts').innerHTML = factsHTML(saint);
     const isShared = saint.biographyScope === 'group';
     const notice = isShared ? `<p class="shared-notice">Ovaj je svetac dio zajedničkog izvora „${esc(saint.source.title)}”. U nastavku je prikazan životopis skupine ili zajednički prikaz mučeništva; podaci iz zajedničkog izvora posebno su označeni.</p>` : '';
@@ -534,6 +547,15 @@
   }
 
   function attachEvents() {
+    document.addEventListener('click', event => {
+      const button = event.target.closest('[data-gallery-index]');
+      if (!button) return;
+      const saint = state.byId.get(state.active);
+      const index = Number(button.dataset.galleryIndex);
+      if (!saint || !Number.isInteger(index) || index < 0 || index >= (saint.gallery || []).length) return;
+      renderGallery(saint, index);
+      document.querySelector(`[data-gallery-index="${index}"]`)?.focus({ preventScroll: true });
+    });
     document.addEventListener('click', event => {
       const save = event.target.closest('[data-save]');
       if (save) { toggleSaved(save.dataset.save); return; }

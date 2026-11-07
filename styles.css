@@ -671,3 +671,15 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.2; }
 /* Direct biography URLs load the shared collection/card without flashing the fallback layout. */
 html.profile-loading body { visibility:hidden; }
 html.profile-loading::after { content:'Učitavanje životopisa…'; position:fixed; inset:0; display:grid; place-items:center; color:var(--muted); background:var(--paper); font:17px var(--sans); }
+
+/* Personal image galleries: native buttons remain keyboard accessible. */
+.profile-gallery { margin-top: 12px; }
+.gallery-count { font-size: 13px; margin: 0 0 8px; color: var(--muted, #675c51); }
+.gallery-thumbnails { display: flex; flex-wrap: wrap; gap: 8px; }
+.gallery-thumbnails button { padding: 3px; border: 2px solid transparent; border-radius: 8px; background: #e7e0d3; cursor: pointer; }
+.gallery-thumbnails button[aria-pressed="true"] { border-color: var(--burgundy, #721d30); }
+.gallery-thumbnails button:focus-visible { outline: 3px solid #721d30; outline-offset: 3px; }
+.gallery-thumbnails img { display: block; width: 56px; height: 64px; object-fit: contain; }
+.seo-gallery { min-width: 0; }
+.seo-gallery .seo-portrait { margin: 0 0 18px; }
+@media print { .gallery-thumbnails { display: none; } }

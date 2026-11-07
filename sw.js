@@ -1,6 +1,6 @@
 'use strict';
 // Build updates this identifier so a changed inventory triggers a worker update.
-const BUILD_VERSION = '236c2253b7a82b3fe2bcfc81f48c36ff6d612375f29e6abf7e1aa9c49d8d7e2f';
+const BUILD_VERSION = '6f962d8841c6ad032ea5fae5198e64b20f28c1424a78003924946516a8c49daa';
 const PREFIX = 'saints-library-';
 let inventoryPromise;
 let downloadPromise;
@@ -30,7 +30,7 @@ self.addEventListener('install', event => {
     inventoryPromise = Promise.resolve(data);
     const cache = await caches.open(PREFIX + data.version);
     await cache.put(absolute('offline-assets.json'), response);
-    const shell = data.assets.filter(path => !path.startsWith('assets/images/') && !path.startsWith('assets/portraits/') && !path.startsWith('osoba/'));
+    const shell = data.assets.filter(path => !path.startsWith('assets/images/') && !path.startsWith('assets/portraits/') && !path.startsWith('osoba/') && !/^(?:sv|bl|sb)-[^/]+\/index\.html$/.test(path));
     await cache.addAll(shell.map(path => new Request(absolute(path), { cache: 'reload' })));
     // Content-addressed images already saved by an older version can be reused.
     await Promise.all(data.assets.filter(path => path.startsWith('assets/images/')).map(async path => {
@@ -77,7 +77,7 @@ self.addEventListener('fetch', event => {
           if (response.ok) await cache.put(absolute(target), response.clone());
           return response;
         } catch {
-          const match = target.match(/^osoba\/([^/]+)\/index\.html$/);
+          const match = target.match(/^(?:osoba\/)?([^/]+)\/index\.html$/);
           if (match) return Response.redirect(absolute('index.html') + '#' + match[1], 302);
           throw new Error('Page unavailable offline');
         }
