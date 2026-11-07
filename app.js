@@ -419,10 +419,13 @@
     const language = saint.biographyLanguage === 'en' && !saint.biographyHtml.includes('Izvorni životopis') ? '<p class="source-language">Izvorni životopis na engleskom jeziku</p>' : '';
     $('#profile-biography').innerHTML = `${notice}<section class="source-prose"><h3>${heading}</h3>${language}${saint.biographyHtml || `<p>${esc(saint.summary)}</p>`}</section>${translationNote(saint)}<p class="biography-read-more"><a href="${esc(saint.source.url)}" target="_blank" rel="noopener noreferrer">Pročitaj više na izvornoj stranici ↗</a></p>`;
     $('#profile-devotions').innerHTML = saint.devotionsHtml ? `<section class="source-prose devotions" aria-label="Molitve, misli i dodatni sadržaji">${saint.devotionsHtml}</section>` : '';
-    const relatedIds = new Set([...(saint.relatedSaints || []), ...state.saints.filter(other => other.id !== saint.id && other.source.url === saint.source.url).map(other => other.id)]);
-    const related = [...relatedIds].map(id => state.byId.get(id)).filter(Boolean);
+    const related = (saint.relationships || (saint.relatedSaints || []).map(personId => ({personId, labels:['Zajednički biografski izvor'], notes:[], sources:[saint.source.url]}))).filter(link => state.byId.has(link.personId));
+    const relationshipCard = link => {
+      const person = state.byId.get(link.personId);
+      return `<article class="relationship-card"><button class="related-saint" type="button" data-open="${esc(person.id)}"><strong>${esc(personTitle(person))} ↗</strong><span>${link.labels.map(esc).join(' · ')}</span></button><details><summary>O povezanosti i izvorima</summary>${link.notes.map(note => `<p>${esc(note)}</p>`).join('')}<div class="relationship-sources">${link.sources.map((url,i) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Izvor ${i+1} ↗</a>`).join('')}</div></details></article>`;
+    };
     $('#profile-related').hidden = !related.length;
-    $('#profile-related').innerHTML = related.length ? `<p class="section-label">Povezane priče u zbirci</p><div class="related-items">${related.map(person => `<button class="related-saint" type="button" data-open="${esc(person.id)}">${esc(personTitle(person))} ↗</button>`).join('')}</div>` : '';
+    $('#profile-related').innerHTML = related.length ? `<h3>Povezane osobe</h3><div class="related-items">${related.slice(0,6).map(relationshipCard).join('')}</div>${related.length>6 ? `<details class="related-more"><summary>Prikaži još ${related.length-6} povezanih osoba</summary><div class="related-items">${related.slice(6).map(relationshipCard).join('')}</div></details>` : ''}` : '';
     $('#profile-source').innerHTML = `<span>Izvori podataka i životopisa</span><a href="${esc(saint.source.url)}" target="_blank" rel="noopener noreferrer">${esc(saint.source.title)} ↗</a><span>${esc(sourceName(saint))}${saint.source.isShared ? ' · zajednički izvor' : ''}</span>`;
     for (const source of saint.supplementalSources || []) $('#profile-source').innerHTML += source.url ? `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title)} ↗</a>` : `<span>${esc(source.title)}</span>`;
     $('#profile-scroll').scrollTop = 0;

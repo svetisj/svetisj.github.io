@@ -277,6 +277,20 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.2; }
 .shared-notice, .source-language { background: #eee8dc; padding: 14px; margin-bottom: 22px; border-radius: 9px; font-size: 14px; line-height: 1.75; color: #5c534b; }
 .devotions { margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); }
 .profile-related { margin-top: 26px; }
+.profile-related>h3 { font:normal 28px/1.3 var(--serif); margin-bottom:16px; }
+.profile-related .related-items { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.relationship-card { border:1px solid var(--line); border-radius:10px; padding:12px; min-width:0; }
+.relationship-card .related-saint { width:100%; border:0; padding:0; display:block; }
+.relationship-card .related-saint strong { display:block; font-size:15px; font-weight:600; }
+.relationship-card .related-saint span { display:block; font-size:12px; color:var(--muted); margin-top:5px; line-height:1.5; }
+.relationship-card details { font-size:12px; line-height:1.6; color:var(--muted); margin-top:8px; }
+.relationship-card summary,.related-more>summary { cursor:pointer; min-height:40px; padding:8px 0; }
+.relationship-card details p { margin:8px 0; }
+.relationship-sources { display:flex; flex-wrap:wrap; gap:12px; }
+.relationship-sources a { color:var(--burgundy); }
+.related-more { margin-top:12px; }
+.related-more>summary { color:var(--burgundy); font-size:14px; }
+@media(max-width:700px) { .profile-related .related-items { grid-template-columns:minmax(0,1fr); } }
 .section-label { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
 .related-items { display: flex; flex-wrap: wrap; gap: 8px; }
 .related-saint { min-height: 44px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; text-align: left; color: var(--burgundy); font-size: 14px; }
@@ -710,5 +724,13 @@ html.profile-loading::after { content:'Učitavanje životopisa…'; position:fix
 .profile-map-evidence p { margin:6px 0; }
 .profile-map-evidence a { color:var(--burgundy); }
 .profile-map-coordinate { font-size:11px; }
+.profile-map-locations { margin:14px 0; padding:0; display:grid; gap:12px; }
+.profile-map-locations>div { border-left:2px solid var(--line); padding-left:12px; min-width:0; }
+.profile-map-locations dt { font-size:12px; color:var(--muted); margin-bottom:3px; }
+.profile-map-locations dd { margin:0; font-size:14px; line-height:1.6; overflow-wrap:anywhere; }
+.profile-map-locations dd small { display:block; color:var(--muted); font-size:11px; }
+.profile-location-show { display:block; min-height:40px; color:var(--burgundy); font-size:12px; text-align:left; }
+.profile-map-places button>small { display:block; color:var(--muted); font-size:10px; margin-top:3px; }
+.saint-map-pin.broad { border:1px dashed #70675c; border-radius:50%; }
 @media (max-width:700px) { .profile-map-canvas { height:240px; } .profile-map-heading h3 { font-size:23px; } .profile-map-heading { gap:8px; } }
 @media print { .profile-map-canvas,.profile-map-heading button,.profile-map-evidence { display:none; } .profile-map-places button { border:0; padding:0; } }
