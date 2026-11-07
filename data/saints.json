@@ -3234,19 +3234,25 @@
       "portrait": {
         "src": "assets/images/311ac8296c478815bf7b-full.jpg",
         "alt": "Sveti Josip de Anchieta",
-        "credit": "Oscar Pereira da Silva · public domain · Wikimedia Commons",
+        "credit": "Nepoznati autor (18. stoljeće) · Museu Paulista / Wikimedia Commons · javno dobro",
         "sourceUrl": "https://cdn.molitvenik.app/saints/sveti-josip-de-anchieta.jpg",
-        "sourcePage": "https://molitvenik.app/svetac/sveti-josip-de-anchieta",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Padre_Anchieta.jpg",
         "isGroup": false,
         "caption": "",
-        "creditHtml": "<figcaption>\nOscar Pereira da Silva\n·\npublic domain\n·\n<a href=\"https://commons.wikimedia.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>\n</figcaption>",
+        "creditHtml": "",
         "isLocal": true,
         "originalAssetPath": "assets/portraits/d8abbe21740e4e721e84.jpg",
         "thumbSrc": "assets/images/311ac8296c478815bf7b-thumb.jpg",
         "width": 979,
         "height": 1200,
         "thumbWidth": 489,
-        "thumbHeight": 600
+        "thumbHeight": 600,
+        "license": "Javno dobro",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/File:Padre_Anchieta.jpg#Licensing",
+        "identityReview": {
+          "reason": "The painting's inscription identifies José de Anchieta. Commons catalogs the artist as unknown, eighteenth century; the imported Oscar Pereira da Silva attribution belongs to a different painting.",
+          "evidence": "https://commons.wikimedia.org/wiki/File:Padre_Anchieta.jpg"
+        }
       },
       "details": [
         {
@@ -3381,19 +3387,25 @@
         {
           "src": "assets/images/311ac8296c478815bf7b-full.jpg",
           "alt": "Sveti Josip de Anchieta",
-          "credit": "Oscar Pereira da Silva · public domain · Wikimedia Commons",
+          "credit": "Nepoznati autor (18. stoljeće) · Museu Paulista / Wikimedia Commons · javno dobro",
           "sourceUrl": "https://cdn.molitvenik.app/saints/sveti-josip-de-anchieta.jpg",
-          "sourcePage": "https://molitvenik.app/svetac/sveti-josip-de-anchieta",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Padre_Anchieta.jpg",
           "isGroup": false,
           "caption": "",
-          "creditHtml": "<figcaption>\nOscar Pereira da Silva\n·\npublic domain\n·\n<a href=\"https://commons.wikimedia.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>\n</figcaption>",
+          "creditHtml": "",
           "isLocal": true,
           "originalAssetPath": "assets/portraits/d8abbe21740e4e721e84.jpg",
           "thumbSrc": "assets/images/311ac8296c478815bf7b-thumb.jpg",
           "width": 979,
           "height": 1200,
           "thumbWidth": 489,
-          "thumbHeight": 600
+          "thumbHeight": 600,
+          "license": "Javno dobro",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/File:Padre_Anchieta.jpg#Licensing",
+          "identityReview": {
+            "reason": "The painting's inscription identifies José de Anchieta. Commons catalogs the artist as unknown, eighteenth century; the imported Oscar Pereira da Silva attribution belongs to a different painting.",
+            "evidence": "https://commons.wikimedia.org/wiki/File:Padre_Anchieta.jpg"
+          }
         },
         {
           "src": "assets/images/gallery-e0361c3db041389e8c38-full.jpg",
@@ -13595,12 +13607,12 @@
       "sourcePatronageOwner": "Alexander Lanfant",
       "portrait": {
         "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-        "alt": "Skupni prikaz pariških mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-alexander-lanfant/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
         "width": 350,
@@ -13608,7 +13620,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-alexander-lanfant/"
+        }
       },
       "details": [
         {
@@ -13752,12 +13768,12 @@
       "gallery": [
         {
           "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-          "alt": "Skupni prikaz pariških mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-alexander-lanfant/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
           "width": 350,
@@ -13765,7 +13781,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-alexander-lanfant/"
+          }
         }
       ],
       "lifeThemes": [
@@ -14500,12 +14520,12 @@
       "sourcePatronageOwner": "Alvaro Mendes",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-alvaro-mendes/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -14513,7 +14533,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-alvaro-mendes/"
+        }
       },
       "details": [
         {
@@ -14662,12 +14686,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-alvaro-mendes/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -14675,7 +14699,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-alvaro-mendes/"
+          }
         }
       ],
       "lifeThemes": [
@@ -15145,12 +15173,12 @@
       "sourcePatronageOwner": "André Gonçalves",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-andre-goncalves/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -15158,7 +15186,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-andre-goncalves/"
+        }
       },
       "details": [
         {
@@ -15290,12 +15322,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-andre-goncalves/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -15303,7 +15335,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-andre-goncalves/"
+          }
         }
       ],
       "lifeThemes": [
@@ -16188,12 +16224,12 @@
       "sourcePatronageOwner": "António Fernandes",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-antonio-fernandes/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -16201,7 +16237,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-antonio-fernandes/"
+        }
       },
       "details": [
         {
@@ -16323,12 +16363,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-antonio-fernandes/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -16336,7 +16376,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-antonio-fernandes/"
+          }
         }
       ],
       "lifeThemes": [
@@ -16819,12 +16863,12 @@
       "sourcePatronageOwner": "Antonius Kyuni",
       "portrait": {
         "src": "assets/images/16f589058b5c70daad37-full.jpg",
-        "alt": "Prikaz skupine mučenika uz životopis: Antonius Kyuni",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/spinolacomp.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-antonius-kyuni/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/16f589058b5c70daad37-thumb.jpg",
         "width": 350,
@@ -16832,7 +16876,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-0f7dd84900ddf1ee2eb91d98.jpg",
-        "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c"
+        "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-antonius-kyuni/"
+        }
       },
       "details": [
         {
@@ -16961,12 +17009,12 @@
       "gallery": [
         {
           "src": "assets/images/16f589058b5c70daad37-full.jpg",
-          "alt": "Prikaz skupine mučenika uz životopis: Antonius Kyuni",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/spinolacomp.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-antonius-kyuni/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/16f589058b5c70daad37-thumb.jpg",
           "width": 350,
@@ -16974,7 +17022,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-0f7dd84900ddf1ee2eb91d98.jpg",
-          "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c"
+          "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-antonius-kyuni/"
+          }
         }
       ],
       "lifeThemes": [
@@ -19028,12 +19080,12 @@
       "sourcePatronageOwner": "Charles Le Gué",
       "portrait": {
         "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-        "alt": "Skupni prikaz pariških mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-charles-le-gue/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
         "width": 350,
@@ -19041,7 +19093,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-charles-le-gue/"
+        }
       },
       "details": [
         {
@@ -19162,12 +19218,12 @@
       "gallery": [
         {
           "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-          "alt": "Skupni prikaz pariških mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-charles-le-gue/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
           "width": 350,
@@ -19175,7 +19231,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-charles-le-gue/"
+          }
         }
       ],
       "lifeThemes": [
@@ -19655,12 +19715,12 @@
       "sourcePatronageOwner": "Claude Laporte",
       "portrait": {
         "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-        "alt": "Skupni prikaz pariških mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-claude-laporte/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
         "width": 350,
@@ -19668,7 +19728,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-claude-laporte/"
+        }
       },
       "details": [
         {
@@ -19803,12 +19867,12 @@
       "gallery": [
         {
           "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-          "alt": "Skupni prikaz pariških mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-claude-laporte/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
           "width": 350,
@@ -19816,7 +19880,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-claude-laporte/"
+          }
         }
       ],
       "lifeThemes": [
@@ -21428,12 +21496,12 @@
       "sourcePatronageOwner": "Domingos Fernandes",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-domingos-fernandes/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -21441,7 +21509,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-domingos-fernandes/"
+        }
       },
       "details": [
         {
@@ -21568,12 +21640,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-domingos-fernandes/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -21581,7 +21653,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-domingos-fernandes/"
+          }
         }
       ],
       "lifeThemes": [
@@ -23236,12 +23312,12 @@
       "sourcePatronageOwner": "Francis Le Livec",
       "portrait": {
         "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-        "alt": "Skupni prikaz pariških mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-francis-le-livec/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
         "width": 350,
@@ -23249,7 +23325,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-francis-le-livec/"
+        }
       },
       "details": [
         {
@@ -23379,12 +23459,12 @@
       "gallery": [
         {
           "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-          "alt": "Skupni prikaz pariških mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-francis-le-livec/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
           "width": 350,
@@ -23392,7 +23472,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-francis-le-livec/"
+          }
         }
       ],
       "lifeThemes": [
@@ -24296,12 +24380,12 @@
       "sourcePatronageOwner": "Francisco de Magalhães",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-francisco-de-magalhaes/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -24309,7 +24393,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-francisco-de-magalhaes/"
+        }
       },
       "details": [
         {
@@ -24441,12 +24529,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-francisco-de-magalhaes/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -24454,7 +24542,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-francisco-de-magalhaes/"
+          }
         }
       ],
       "lifeThemes": [
@@ -26096,12 +26188,12 @@
       "sourcePatronageOwner": "Gonçalo Henriques",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-goncalo-henriques/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -26109,7 +26201,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-goncalo-henriques/"
+        }
       },
       "details": [
         {
@@ -26236,12 +26332,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-goncalo-henriques/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -26249,7 +26345,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-goncalo-henriques/"
+          }
         }
       ],
       "lifeThemes": [
@@ -26735,12 +26835,12 @@
       "sourcePatronageOwner": "Gundisalvus Fusai",
       "portrait": {
         "src": "assets/images/16f589058b5c70daad37-full.jpg",
-        "alt": "Prikaz skupine mučenika uz životopis: Gundisalvus Fusai",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/spinolacomp.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-gundisalvus-fusai/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/16f589058b5c70daad37-thumb.jpg",
         "width": 350,
@@ -26748,7 +26848,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-0f7dd84900ddf1ee2eb91d98.jpg",
-        "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c"
+        "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-gundisalvus-fusai/"
+        }
       },
       "details": [
         {
@@ -26869,12 +26973,12 @@
       "gallery": [
         {
           "src": "assets/images/16f589058b5c70daad37-full.jpg",
-          "alt": "Prikaz skupine mučenika uz životopis: Gundisalvus Fusai",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/spinolacomp.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-gundisalvus-fusai/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/16f589058b5c70daad37-thumb.jpg",
           "width": 350,
@@ -26882,7 +26986,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-0f7dd84900ddf1ee2eb91d98.jpg",
-          "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c"
+          "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-gundisalvus-fusai/"
+          }
         }
       ],
       "lifeThemes": [
@@ -27379,12 +27487,12 @@
       "sourcePatronageOwner": "Ioannes Kingocu",
       "portrait": {
         "src": "assets/images/16f589058b5c70daad37-full.jpg",
-        "alt": "Prikaz skupine mučenika uz životopis: Ioannes Kingocu",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/spinolacomp.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-ioannes-kingocu/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/16f589058b5c70daad37-thumb.jpg",
         "width": 350,
@@ -27392,7 +27500,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-0f7dd84900ddf1ee2eb91d98.jpg",
-        "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c"
+        "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-ioannes-kingocu/"
+        }
       },
       "details": [
         {
@@ -27512,12 +27624,12 @@
       "gallery": [
         {
           "src": "assets/images/16f589058b5c70daad37-full.jpg",
-          "alt": "Prikaz skupine mučenika uz životopis: Ioannes Kingocu",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/spinolacomp.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-ioannes-kingocu/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/16f589058b5c70daad37-thumb.jpg",
           "width": 350,
@@ -27525,7 +27637,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-0f7dd84900ddf1ee2eb91d98.jpg",
-          "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c"
+          "sourceDigest": "16f589058b5c70daad37771a1c241dc0c77f8abd790d431bcf470c4d9c81165c",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-ioannes-kingocu/"
+          }
         }
       ],
       "lifeThemes": [
@@ -27586,12 +27702,12 @@
       "sourcePatronageOwner": "Iohannes Kinsaco",
       "portrait": {
         "src": "assets/images/ab8840ed5fb4f582d4d4-full.jpg",
-        "alt": "Prikaz skupine mučenika uz životopis: Iohannes Kinsaco",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/francispachecocomp.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-iohannes-kinsaco/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/ab8840ed5fb4f582d4d4-thumb.jpg",
         "width": 350,
@@ -27599,7 +27715,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-e12286f6edde1cea41f06030.jpg",
-        "sourceDigest": "ab8840ed5fb4f582d4d4b6b05abf33c876a19407c7a257cb8941b2f6cfd38913"
+        "sourceDigest": "ab8840ed5fb4f582d4d4b6b05abf33c876a19407c7a257cb8941b2f6cfd38913",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-iohannes-kinsaco/"
+        }
       },
       "details": [
         {
@@ -27720,12 +27840,12 @@
       "gallery": [
         {
           "src": "assets/images/ab8840ed5fb4f582d4d4-full.jpg",
-          "alt": "Prikaz skupine mučenika uz životopis: Iohannes Kinsaco",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/francispachecocomp.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-iohannes-kinsaco/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/ab8840ed5fb4f582d4d4-thumb.jpg",
           "width": 350,
@@ -27733,7 +27853,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-e12286f6edde1cea41f06030.jpg",
-          "sourceDigest": "ab8840ed5fb4f582d4d4b6b05abf33c876a19407c7a257cb8941b2f6cfd38913"
+          "sourceDigest": "ab8840ed5fb4f582d4d4b6b05abf33c876a19407c7a257cb8941b2f6cfd38913",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-iohannes-kinsaco/"
+          }
         }
       ],
       "lifeThemes": [
@@ -28232,12 +28356,12 @@
       "sourcePatronageOwner": "James Friteyre-Durvé",
       "portrait": {
         "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-        "alt": "Skupni prikaz pariških mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-james-friteyre-durve/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
         "width": 350,
@@ -28245,7 +28369,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-james-friteyre-durve/"
+        }
       },
       "details": [
         {
@@ -28380,12 +28508,12 @@
       "gallery": [
         {
           "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-          "alt": "Skupni prikaz pariških mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-james-friteyre-durve/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
           "width": 350,
@@ -28393,7 +28521,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-james-friteyre-durve/"
+          }
         }
       ],
       "lifeThemes": [
@@ -28916,12 +29048,12 @@
       "sourcePatronageOwner": "João Fernandes I",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-joao-fernandes-i/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -28929,7 +29061,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-joao-fernandes-i/"
+        }
       },
       "details": [
         {
@@ -29061,12 +29197,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-joao-fernandes-i/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -29074,7 +29210,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-joao-fernandes-i/"
+          }
         }
       ],
       "lifeThemes": [
@@ -29129,12 +29269,12 @@
       "sourcePatronageOwner": "João Fernandes II",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-joao-fernandes-ii/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -29142,7 +29282,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-joao-fernandes-ii/"
+        }
       },
       "details": [
         {
@@ -29273,12 +29417,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-joao-fernandes-ii/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -29286,7 +29430,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-joao-fernandes-ii/"
+          }
         }
       ],
       "lifeThemes": [
@@ -32292,21 +32440,24 @@
       "patronageScope": "individual",
       "sourcePatronageOwner": "Joseph Imbert",
       "portrait": {
-        "src": "assets/images/5bb6a979b9274f5f18de-full.jpg",
-        "alt": "Portret: Joseph Imbert",
-        "credit": "Družba Isusova / Jesuits.global",
-        "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/imbert.jpg",
-        "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-joseph-imbert/",
-        "isGroup": false,
-        "caption": "",
+        "src": "assets/images/aea3439856d20320c95f-full.jpg",
+        "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+        "width": 902,
+        "height": 1200,
+        "thumbWidth": 451,
+        "thumbHeight": 600,
         "isLocal": true,
-        "thumbSrc": "assets/images/5bb6a979b9274f5f18de-thumb.jpg",
-        "width": 350,
-        "height": 350,
-        "thumbWidth": 350,
-        "thumbHeight": 350,
-        "originalAssetPath": "assets/portraits/remote-4b4b8f88c1c2fc7eb871be07.jpg",
-        "sourceDigest": "5bb6a979b9274f5f18de03ee0d4dd666e67bda86ecfe29c9a6d7bb912caaf8af"
+        "isGroup": true,
+        "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "alt": "Zajednički prikaz isusovačkih svetaca; nije osobni portret.",
+        "caption": "Zajednički prikaz; osobni portret nije potvrđen.",
+        "credit": "Zajednički prikaz isusovačkih svetaca. Potvrđeni osobni portret nije dostupan.",
+        "identityReview": {
+          "reason": "Jesuits.global's imbert.jpg is a black-and-white reproduction of the Anchieta portrait, including its identifying inscription. It must not be presented as Joseph Imbert.",
+          "evidence": "https://commons.wikimedia.org/wiki/File:Anchieta.jpg"
+        },
+        "originalAssetPath": "assets/hero-saints.jpg"
       },
       "details": [
         {
@@ -32430,21 +32581,24 @@
       "birthDate": null,
       "gallery": [
         {
-          "src": "assets/images/5bb6a979b9274f5f18de-full.jpg",
-          "alt": "Portret: Joseph Imbert",
-          "credit": "Družba Isusova / Jesuits.global",
-          "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/imbert.jpg",
-          "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-joseph-imbert/",
-          "isGroup": false,
-          "caption": "",
+          "src": "assets/images/aea3439856d20320c95f-full.jpg",
+          "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+          "width": 902,
+          "height": 1200,
+          "thumbWidth": 451,
+          "thumbHeight": 600,
           "isLocal": true,
-          "thumbSrc": "assets/images/5bb6a979b9274f5f18de-thumb.jpg",
-          "width": 350,
-          "height": 350,
-          "thumbWidth": 350,
-          "thumbHeight": 350,
-          "originalAssetPath": "assets/portraits/remote-4b4b8f88c1c2fc7eb871be07.jpg",
-          "sourceDigest": "5bb6a979b9274f5f18de03ee0d4dd666e67bda86ecfe29c9a6d7bb912caaf8af"
+          "isGroup": true,
+          "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "alt": "Zajednički prikaz isusovačkih svetaca; nije osobni portret.",
+          "caption": "Zajednički prikaz; osobni portret nije potvrđen.",
+          "credit": "Zajednički prikaz isusovačkih svetaca. Potvrđeni osobni portret nije dostupan.",
+          "identityReview": {
+            "reason": "Jesuits.global's imbert.jpg is a black-and-white reproduction of the Anchieta portrait, including its identifying inscription. It must not be presented as Joseph Imbert.",
+            "evidence": "https://commons.wikimedia.org/wiki/File:Anchieta.jpg"
+          },
+          "originalAssetPath": "assets/hero-saints.jpg"
         }
       ],
       "lifeThemes": [
@@ -32946,12 +33100,12 @@
       "sourcePatronageOwner": "Juan de Mayorga",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-juan-de-mayorga/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -32959,7 +33113,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-juan-de-mayorga/"
+        }
       },
       "details": [
         {
@@ -33081,12 +33239,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-juan-de-mayorga/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -33094,7 +33252,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-juan-de-mayorga/"
+          }
         }
       ],
       "lifeThemes": [
@@ -34476,12 +34638,12 @@
       "sourcePatronageOwner": "Ludovicus Kawara",
       "portrait": {
         "src": "assets/images/ab8840ed5fb4f582d4d4-full.jpg",
-        "alt": "Prikaz skupine mučenika uz životopis: Ludovicus Kawara",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/francispachecocomp.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-ludovicus-kawara/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/ab8840ed5fb4f582d4d4-thumb.jpg",
         "width": 350,
@@ -34489,7 +34651,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-e12286f6edde1cea41f06030.jpg",
-        "sourceDigest": "ab8840ed5fb4f582d4d4b6b05abf33c876a19407c7a257cb8941b2f6cfd38913"
+        "sourceDigest": "ab8840ed5fb4f582d4d4b6b05abf33c876a19407c7a257cb8941b2f6cfd38913",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-ludovicus-kawara/"
+        }
       },
       "details": [
         {
@@ -34605,12 +34771,12 @@
       "gallery": [
         {
           "src": "assets/images/ab8840ed5fb4f582d4d4-full.jpg",
-          "alt": "Prikaz skupine mučenika uz životopis: Ludovicus Kawara",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/francispachecocomp.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-ludovicus-kawara/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/ab8840ed5fb4f582d4d4-thumb.jpg",
           "width": 350,
@@ -34618,7 +34784,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-e12286f6edde1cea41f06030.jpg",
-          "sourceDigest": "ab8840ed5fb4f582d4d4b6b05abf33c876a19407c7a257cb8941b2f6cfd38913"
+          "sourceDigest": "ab8840ed5fb4f582d4d4b6b05abf33c876a19407c7a257cb8941b2f6cfd38913",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-ludovicus-kawara/"
+          }
         }
       ],
       "lifeThemes": [
@@ -35315,12 +35485,12 @@
       "sourcePatronageOwner": "Manuel Fernandes",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-manuel-fernandes/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -35328,7 +35498,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-manuel-fernandes/"
+        }
       },
       "details": [
         {
@@ -35455,12 +35629,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-manuel-fernandes/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -35468,7 +35642,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-manuel-fernandes/"
+          }
         }
       ],
       "lifeThemes": [
@@ -35952,12 +36130,12 @@
       "sourcePatronageOwner": "Mathurin Nicolas La Ville Crohain",
       "portrait": {
         "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-        "alt": "Skupni prikaz pariških mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-mathurin-nicolas-la-ville-crohain/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
         "width": 350,
@@ -35965,7 +36143,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+        "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-mathurin-nicolas-la-ville-crohain/"
+        }
       },
       "details": [
         {
@@ -36100,12 +36282,12 @@
       "gallery": [
         {
           "src": "assets/images/56f41eb6a7dbc002d388-full.jpg",
-          "alt": "Skupni prikaz pariških mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/parismartyrs.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-mathurin-nicolas-la-ville-crohain/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/56f41eb6a7dbc002d388-thumb.jpg",
           "width": 350,
@@ -36113,7 +36295,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-f5cc6e713f2b5afbd9a1d4b5.jpg",
-          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612"
+          "sourceDigest": "56f41eb6a7dbc002d388298f5e4522b12eb51c5f47fe295e3b84b2e794fac612",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-mathurin-nicolas-la-ville-crohain/"
+          }
         }
       ],
       "lifeThemes": [
@@ -36169,12 +36355,12 @@
       "sourcePatronageOwner": "Michael Nagashima",
       "portrait": {
         "src": "assets/images/1dccdb34935682db5769-full.jpg",
-        "alt": "Prikaz skupine mučenika uz životopis: Michael Nagashima",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/06/nagasakimartyrs.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-michael-nagashima/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1dccdb34935682db5769-thumb.jpg",
         "width": 350,
@@ -36182,7 +36368,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-cebb594774e88b735302722b.jpg",
-        "sourceDigest": "1dccdb34935682db576902a1c65cee075da2526f826246f502963ba1d6c4f644"
+        "sourceDigest": "1dccdb34935682db576902a1c65cee075da2526f826246f502963ba1d6c4f644",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-michael-nagashima/"
+        }
       },
       "details": [
         {
@@ -36298,12 +36488,12 @@
       "gallery": [
         {
           "src": "assets/images/1dccdb34935682db5769-full.jpg",
-          "alt": "Prikaz skupine mučenika uz životopis: Michael Nagashima",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/06/nagasakimartyrs.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-michael-nagashima/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1dccdb34935682db5769-thumb.jpg",
           "width": 350,
@@ -36311,7 +36501,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-cebb594774e88b735302722b.jpg",
-          "sourceDigest": "1dccdb34935682db576902a1c65cee075da2526f826246f502963ba1d6c4f644"
+          "sourceDigest": "1dccdb34935682db576902a1c65cee075da2526f826246f502963ba1d6c4f644",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-michael-nagashima/"
+          }
         }
       ],
       "lifeThemes": [
@@ -38562,12 +38756,12 @@
       "sourcePatronageOwner": "Pedro de Fontoura",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-pedro-de-fontoura/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -38575,7 +38769,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-pedro-de-fontoura/"
+        }
       },
       "details": [
         {
@@ -38702,12 +38900,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-pedro-de-fontoura/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -38715,7 +38913,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-pedro-de-fontoura/"
+          }
         }
       ],
       "lifeThemes": [
@@ -43221,12 +43423,12 @@
       "sourcePatronageOwner": "Sebastian Kimura",
       "portrait": {
         "src": "assets/images/1dccdb34935682db5769-full.jpg",
-        "alt": "Prikaz skupine mučenika uz životopis: Sebastian Kimura",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/06/nagasakimartyrs.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-sebastian-kimura/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1dccdb34935682db5769-thumb.jpg",
         "width": 350,
@@ -43234,7 +43436,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-cebb594774e88b735302722b.jpg",
-        "sourceDigest": "1dccdb34935682db576902a1c65cee075da2526f826246f502963ba1d6c4f644"
+        "sourceDigest": "1dccdb34935682db576902a1c65cee075da2526f826246f502963ba1d6c4f644",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-sebastian-kimura/"
+        }
       },
       "details": [
         {
@@ -43359,12 +43565,12 @@
       "gallery": [
         {
           "src": "assets/images/1dccdb34935682db5769-full.jpg",
-          "alt": "Prikaz skupine mučenika uz životopis: Sebastian Kimura",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/06/nagasakimartyrs.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-sebastian-kimura/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1dccdb34935682db5769-thumb.jpg",
           "width": 350,
@@ -43372,7 +43578,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-cebb594774e88b735302722b.jpg",
-          "sourceDigest": "1dccdb34935682db576902a1c65cee075da2526f826246f502963ba1d6c4f644"
+          "sourceDigest": "1dccdb34935682db576902a1c65cee075da2526f826246f502963ba1d6c4f644",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-sebastian-kimura/"
+          }
         }
       ],
       "lifeThemes": [
@@ -43652,12 +43862,12 @@
       "sourcePatronageOwner": "Simão Lopes",
       "portrait": {
         "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-        "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-        "credit": "Družba Isusova / Jesuits.global",
+        "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+        "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
         "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
         "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-simao-lopes/",
-        "isGroup": false,
-        "caption": "",
+        "isGroup": true,
+        "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
         "isLocal": true,
         "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
         "width": 350,
@@ -43665,7 +43875,11 @@
         "thumbWidth": 350,
         "thumbHeight": 350,
         "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+        "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+        "identityReview": {
+          "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+          "evidence": "https://www.jesuits.global/saint-blessed/blessed-simao-lopes/"
+        }
       },
       "details": [
         {
@@ -43797,12 +44011,12 @@
       "gallery": [
         {
           "src": "assets/images/1a8af4330308e8eb274f-full.jpg",
-          "alt": "Skupni prikaz Ignacija de Azeveda i drugova mučenika",
-          "credit": "Družba Isusova / Jesuits.global",
+          "alt": "Zajednički prikaz skupine mučenika; nije osobni portret.",
+          "credit": "Zajednički prikaz skupine mučenika · Družba Isusova / Jesuits.global",
           "sourceUrl": "https://www.jesuits.global/sj_files/2020/05/azevedo.jpg",
           "sourcePage": "https://www.jesuits.global/saint-blessed/blessed-simao-lopes/",
-          "isGroup": false,
-          "caption": "",
+          "isGroup": true,
+          "caption": "Zajednički prikaz skupine mučenika; nije osobni portret.",
           "isLocal": true,
           "thumbSrc": "assets/images/1a8af4330308e8eb274f-thumb.jpg",
           "width": 350,
@@ -43810,7 +44024,11 @@
           "thumbWidth": 350,
           "thumbHeight": 350,
           "originalAssetPath": "assets/portraits/remote-8fcfed1595a80bf191104462.jpg",
-          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a"
+          "sourceDigest": "1a8af4330308e8eb274f33c7440dd8963086a84950a57d55216656d1a112a98a",
+          "identityReview": {
+            "reason": "Visual review confirms that this asset depicts a group of martyrs. The imported individual-portrait flag was incorrect.",
+            "evidence": "https://www.jesuits.global/saint-blessed/blessed-simao-lopes/"
+          }
         }
       ],
       "lifeThemes": [
