@@ -390,6 +390,7 @@
     $('#profile-image-caption').innerHTML = `${esc(imageCredit(image))}${image?.sourcePage || image?.sourceUrl ? `<br><a href="${esc(image.sourcePage || image.sourceUrl)}" target="_blank" rel="noopener noreferrer">Izvor slike ↗</a>` : ''}${image?.license ? `<br>${image.licenseUrl?.startsWith('https://') ? `<a href="${esc(image.licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(image.license)}</a>` : esc(image.license)}` : ''}`;
   }
 
+  let profileMap;
   function renderProfile(saint) {
     state.active = saint.id;
     $('#profile-name').textContent = personTitle(saint);
@@ -405,6 +406,13 @@
     updateReadingSize();
 
     $('#profile-facts').innerHTML = factsHTML(saint);
+    if (window.SaintProfileMap) {
+      const host = $('#profile-map');
+      host.hidden = false;
+      profileMap ||= new window.SaintProfileMap(host);
+      profileMap.update(saint);
+    }
+
     const isShared = saint.biographyScope === 'group';
     const notice = isShared ? `<p class="shared-notice">Ovaj je svetac dio zajedničkog izvora „${esc(saint.source.title)}”. U nastavku je prikazan životopis skupine ili zajednički prikaz mučeništva; podaci iz zajedničkog izvora posebno su označeni.</p>` : '';
     const heading = isShared ? 'Zajednički životopis' : 'Život i svjedočanstvo';

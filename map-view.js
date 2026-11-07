@@ -124,5 +124,104 @@
       if(b.hasAttribute('data-map-mode'))this.setMode(b.dataset.mapMode);
     }
   }
+  class SaintProfileMap {
+    constructor(host) {
+      this.host = host;
+      this.data = window.SAINT_PLACES || { places: [], associations: [] };
+      this.places = new Map(this.data.places.map(place => [place.id, place]));
+      this.groups = [];
+      this.markers = new Map();
+      host.innerHTML = `<div class="profile-map-heading"><h3 id="profile-map-title">Mjesta iz života</h3><button type="button" data-profile-map-fit>Prikaži sva mjesta ↗</button></div><div class="profile-map-canvas" role="region" aria-label="Karta mjesta povezanih s ovom osobom"></div><p class="profile-map-empty" hidden></p><div class="profile-map-places" role="group" aria-label="Odaberi mjesto"></div><p class="profile-map-note">Oznake prikazuju naselje ili približno područje, a ne točnu kuću ili stratište.</p><details class="profile-map-evidence"><summary>O mjestima i izvorima</summary><div></div></details>`;
+      this.q = selector => host.querySelector(selector);
+      host.addEventListener('click', event => {
+        const button = event.target.closest('button');
+        if (button?.hasAttribute('data-profile-map-place')) this.select(button.dataset.profileMapPlace);
+        if (button?.hasAttribute('data-profile-map-fit')) { this.selected = null; this.fit(); this.updateSelection(); }
+      });
+    }
+    update(person) {
+      this.person = person;
+      this.selected = null;
+      this.q('details').open = false;
+      const grouped = new Map();
+      for (const association of this.data.associations.filter(a => a.saintId === person.id)) {
+        const place = this.places.get(association.placeId);
+        if (!place) continue;
+        if (!grouped.has(place.id)) grouped.set(place.id, { place, associations: [] });
+        grouped.get(place.id).associations.push(association);
+      }
+      const order = {birth:0,origin:1,formation:2,study:3,ordination:4,activity:5,imprisonment:6,death:7,burial:8,other:9};
+      this.groups = [...grouped.values()].sort((a,b) => Math.min(...a.associations.map(x=>order[x.kind])) - Math.min(...b.associations.map(x=>order[x.kind])) || a.place.name.localeCompare(b.place.name,'hr'));
+      this.q('.profile-map-places').innerHTML = this.groups.map(({place,associations}) => `<button type="button" data-profile-map-place="${esc(place.id)}" aria-pressed="false"><strong>${esc(place.name)}</strong><span>${[...new Set(associations.map(a=>a.kind))].map(kind=>`<span><i class="map-dot ${bucket(kind)}" aria-hidden="true"></i>${esc(labels[kind])}</span>`).join('')}</span></button>`).join('');
+      this.q('.profile-map-evidence div').innerHTML = this.groups.map(({place,associations}) => `<section><h4>${esc(place.name)}</h4>${associations.map(a=>`<p><strong>${esc(labels[a.kind])}.</strong> ${esc(a.evidence.text)} <a href="${esc(a.evidence.sourceUrl)}" target="_blank" rel="noopener noreferrer">Izvor ↗</a></p>`).join('')}<p class="profile-map-coordinate">Koordinate: <a href="${esc(place.coordinateSource.url)}" target="_blank" rel="noopener noreferrer">${esc(place.coordinateSource.publisher)}</a></p></section>`).join('') + '<p>Podloga: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">Natural Earth</a> (javno dobro). Koordinate: <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</a> (CC BY 4.0). Karta je dostupna i bez interneta.</p>';
+      const empty = !this.groups.length;
+      this.q('[data-profile-map-fit]').hidden = empty;
+      this.q('.profile-map-places').hidden = empty;
+      this.q('.profile-map-note').hidden = empty;
+      this.q('.profile-map-evidence').hidden = empty;
+      this.q('.profile-map-canvas').hidden = empty;
+      this.q('.profile-map-empty').hidden = !empty;
+      this.q('.profile-map-empty').textContent = 'Za ovu osobu još nisu potvrđene dovoljno precizne oznake na karti. Poznata mjesta navedena su u podacima i životopisu.';
+      this.host.dataset.personId = person.id;
+      this.host.dataset.placeCount = String(this.groups.length);
+      // Open-profile layout is measurable on the next frame, including direct links.
+      requestAnimationFrame(() => {
+        if (this.person.id !== person.id || !this.host.offsetWidth || empty) return;
+        this.initMap(); this.drawMarkers(); this.map?.invalidateSize({pan:false}); this.fit();
+      });
+    }
+    initMap() {
+      if (this.map) return;
+      try {
+        const L = window.L;
+        if (!L || !this.data.world) throw new Error('Map unavailable');
+        this.map = L.map(this.q('.profile-map-canvas'), {scrollWheelZoom:false,minZoom:1,maxZoom:8,attributionControl:true,zoomControl:false});
+        L.control.zoom({zoomInTitle:'Povećaj kartu',zoomOutTitle:'Smanji kartu'}).addTo(this.map);
+        this.map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
+        this.map.attributionControl.addAttribution('<a href="https://www.naturalearthdata.com/">Natural Earth</a> · <a href="https://www.geonames.org/">GeoNames</a>');
+        L.geoJSON(this.data.world,{style:{fillColor:'#ded8c7',fillOpacity:1,color:'#f5f1e8',weight:0.7},interactive:false}).addTo(this.map);
+        this.layer = L.layerGroup().addTo(this.map);
+        this.resizeObserver = typeof ResizeObserver === 'function' ? new ResizeObserver(() => {
+          if (this.host.offsetWidth && !this.host.hidden) { this.map.invalidateSize({pan:false}); if (!this.selected) this.fit(); }
+        }) : null;
+        this.resizeObserver?.observe(this.q('.profile-map-canvas'));
+        this.q('.profile-map-canvas').hidden = false;
+      } catch (error) {
+        this.map?.remove(); this.map = null;
+        this.q('.profile-map-canvas').hidden = true;
+        this.q('.profile-map-empty').hidden = false;
+        this.q('.profile-map-empty').textContent = 'Karta trenutačno nije dostupna. Mjesta i njihovi izvori dostupni su u popisu.';
+      }
+    }
+    drawMarkers() {
+      if (!this.map) return;
+      this.layer.clearLayers(); this.markers.clear();
+      const L = window.L;
+      for (const {place,associations} of this.groups) {
+        const kinds = new Set(associations.map(a=>bucket(a.kind)));
+        const kind = kinds.size === 1 ? [...kinds][0] : 'mixed';
+        const description = [...new Set(associations.map(a=>labels[a.kind]))].join(', ');
+        const marker = L.marker([place.lat,place.lng], {title:place.name,alt:place.name+': '+description,keyboard:true,icon:L.divIcon({className:'saint-map-pin '+kind,html:'<span></span>',iconSize:[22,22],iconAnchor:[11,11]})}).addTo(this.layer);
+        marker.bindTooltip(esc(place.name)+': '+esc(description),{direction:'top',offset:[0,-10]});
+        marker.on('click',()=>this.select(place.id,true)); this.markers.set(place.id,marker);
+      }
+    }
+    select(id, fromMap=false) {
+      const marker = this.markers.get(id);
+      this.selected = id; this.updateSelection();
+      if (marker) { this.map.setView(marker.getLatLng(),6,{animate:false}); marker.openTooltip(); }
+      if (fromMap) this.host.querySelector(`[data-profile-map-place="${id}"]`)?.focus({preventScroll:true});
+    }
+    updateSelection() {
+      for (const button of this.host.querySelectorAll('[data-profile-map-place]')) button.setAttribute('aria-pressed',String(button.dataset.profileMapPlace===this.selected));
+      for (const [id,marker] of this.markers) marker.getElement()?.classList.toggle('selected',id===this.selected);
+    }
+    fit() {
+      if (!this.map || !this.groups.length) return;
+      this.map.fitBounds(this.groups.map(g=>[g.place.lat,g.place.lng]),{padding:[28,28],maxZoom:6,animate:false});
+    }
+  }
+  window.SaintProfileMap = SaintProfileMap;
+
   window.SaintMapView=SaintMapView;
 })();
