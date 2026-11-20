@@ -520,6 +520,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.2; }
 .seo-sources, .seo-related { font-size: 15px; line-height: 1.8; overflow-wrap: anywhere; }
 .seo-sources li, .seo-related li { padding-block: 6px; }
 .seo-library-link { display: inline-flex; min-height: 44px; align-items: center; gap: 10px; padding: 10px 16px; margin-block: 18px; border: 1px solid var(--line); border-radius: 10px; color: var(--burgundy); text-decoration: none; background: var(--paper-light); }
+.seo-library-link:hover { background: #eee8dc; border-color: var(--burgundy); }
 .seo-footer { max-width: 960px; padding: 24px var(--gutter); margin-inline: auto; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 .seo-directory { width: calc(100% - 2 * var(--gutter)); max-width: calc(1440px - 2 * var(--gutter)); margin: 16px auto 30px; padding: 0 20px; border: 1px solid var(--line); border-radius: 12px; }
 .seo-directory > summary { font-size: 15px; cursor: pointer; min-height: 50px; padding-block: 14px; color: var(--burgundy); }
