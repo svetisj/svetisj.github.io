@@ -4,25 +4,9 @@
     "file": "Isusovacki_svetci_blazenici_HR_rimski_doc_2.xlsx",
     "sheet": "Lista",
     "sha256": "185602fe43e3dd1f4a7efbe75d0090a1b8250cb75ac7e76a3ea831eb371eee8a",
-    "recordCount": 217,
-    "excludedRows": [
-      "218",
-      "219",
-      "220",
-      "221",
-      "222",
-      "223",
-      "224",
-      "225",
-      "226",
-      "227",
-      "228",
-      "229",
-      "230",
-      "231",
-      "232"
-    ],
-    "matchedExisting": 208,
+    "recordCount": 232,
+    "excludedRows": [],
+    "matchedExisting": 209,
     "addedProfiles": [
       "petar-calungsod",
       "bl-eduard-profittlich",
@@ -32,13 +16,26 @@
       "bl-manuel-pacheco",
       "marija-zhu-wu",
       "bl-manuel-solorzano",
-      "bl-nelson-rutilio-lemus"
+      "bl-nelson-rutilio-lemus",
+      "jacint-alegre-pujals",
+      "alfonz-de-barzana",
+      "vilim-eberschweiler",
+      "josip-marko-figueroa",
+      "emanuel-garcia-nieto",
+      "stjepan-kaszap",
+      "euzebije-franjo-kino",
+      "alojzije-la-nuza",
+      "adolf-petit",
+      "josip-picco",
+      "ljudevit-de-la-puente",
+      "matej-ricci",
+      "jakov-sevin",
+      "franjo-paulski-tarin"
     ],
     "supplementaryProfiles": [
       "ivan-sarkander",
       "ivan-wall",
       "andrija-de-soveral",
-      "petar-barbaric",
       "ante-gabric",
       "ivan-merz"
     ],
@@ -110,8 +107,8 @@
       }
     ]
   },
-  "sourceCount": 208,
-  "importedSourceCount": 208,
+  "sourceCount": 222,
+  "importedSourceCount": 222,
   "collectedAt": "2026-11-01T00:10:28.278419+00:00",
   "categories": [
     {
@@ -157,6 +154,10 @@
     {
       "id": "servants-of-god",
       "name": "Sluge Božji"
+    },
+    {
+      "id": "venerable",
+      "name": "Časni sluge Božji"
     },
     {
       "id": "laity",
@@ -84699,17 +84700,18 @@
       "name": "Petar Barbarić",
       "honorific": "Časni sluga Božji",
       "venerationStatus": "venerable",
-      "groupId": "servants-of-god",
-      "groupLabel": "Sluge Božji",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
       "isLayPerson": false,
       "aliases": [
+        "Peter Barbarić",
+        "Peter",
         "Časni sluga Božji Petar Barbarić",
         "Petar Barbaric"
       ],
       "summary": "Hercegovački sjemeništarac u Travniku isticao se vjernošću svakodnevnim dužnostima, molitvom i brigom za druge. Pred smrt položio je zavjete u Družbi Isusovoj.",
       "roles": [
-        "Isusovački novak",
-        "Sjemeništarac"
+        "Skolastik (redovnik u formaciji)"
       ],
       "life": "1874. – 1897.",
       "deathDate": {
@@ -84718,9 +84720,9 @@
         "year": 1897
       },
       "feast": {
-        "label": "15. travnja",
         "month": 4,
         "day": 15,
+        "label": "15. travnja",
         "scope": "individual",
         "kind": "anniversary",
         "basis": "death-date",
@@ -84733,20 +84735,48 @@
           "value": "Časni sluga Božji"
         },
         {
-          "label": "Rođenje",
-          "value": "19. svibnja 1874., Šiljevišta, župa Klobuk"
-        },
-        {
-          "label": "Smrt",
-          "value": "15. travnja 1897., Travnik"
-        },
-        {
           "label": "Priznanje herojskih kreposti",
           "value": "18. ožujka 2015., papa Franjo"
         },
         {
           "label": "Počivalište",
           "value": "Sjemenišna crkva sv. Alojzija, Travnik"
+        },
+        {
+          "label": "Rođenje",
+          "value": "19. svibnja 1874., Šiljevišta, župa Klobuk, Bosna i Hercegovina"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Bosna i Hercegovina"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "15.04.1897."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Travnik, Bosna i Hercegovina"
+        },
+        {
+          "label": "Uloga",
+          "value": "Skolastik (redovnik u formaciji)"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Peter Barbarić · Peter · Časni sluga Božji Petar Barbarić · Petar Barbaric"
         }
       ],
       "biographyHtml": "<p>Petar Barbarić rođen je 19. svibnja 1874. u Šiljevištima, u hercegovačkoj župi Klobuk, kao dijete Ante i Kate, rođene Tolj. Obitelj s devetero djece živjela je skromno, uz rad, zajedničku molitvu i nedjeljnu misu. Pismeni roditelji bili su mu prvi učitelji; njegov stariji brat Marko postao je franjevac. Petar je zavolio katekizam i druge poučne knjige te ih nosio i dok je čuvao stoku.</p>\n<p>Kad se 1886. otvorila škola u Veljacima, do nje je svakodnevno pješačio preko brda i potoka. Četiri je razreda završio u dvije godine. Poslije je kao trgovački pomoćnik radio u Vitini, premda je želio nastaviti učiti. Učitelj Tomislav Vuksan preporučio ga je travničkom sjemeništu, pa je 1889. s očevim pristankom započeo novo školovanje. U gimnaziji se isticao marljivošću, pristupačnošću i spremnošću pomoći drugovima.</p>\n<p>Marijina kongregacija i pobožnost Srcu Isusovu oblikovale su njegov apostolat među vršnjacima. Molio je i dijelio krunice, a od petoga razreda vodio kongregaciju. Svetost nije povezivao s izvanrednim uspjesima, nego s vjernim izvršavanjem običnih dužnosti. Želja za Družbom Isusovom sazrela je tijekom školovanja, no odgojitelji su preporučili da pričeka maturu.</p>\n<p>Plućna tuberkuloza prekinula je taj plan. U dugoj je bolesti strpljivo prihvaćao nemoć i pisao obitelji s pouzdanjem u Boga. Posebnim dopuštenjem položio je redovničke zavjete dva dana prije smrti na Veliki četvrtak, 15. travnja 1897. Pokopan je na Bojni, a 1935. prenesen u sjemenišnu crkvu. Njegov glas svetosti prelazio je vjerske granice, a životopis odgojitelja Antuna Puntigama širio njegovo poznavanje. Papa Franjo odobrio je 18. ožujka 2015. dekret o herojskim krepostima; ostaje časni sluga Božji.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Barbarićevo sudjelovanje u Marijinoj kongregaciji uključivalo je i preuzimanje odgovornosti među učenicima. Njegova se pobožnost razvijala unutar škole, s redovitim obvezama učenja i zajedničkoga života. Prije sjemeništa radio je kao trgovački pomoćnik, pa izbor svećeničkoga puta nije započeo izvan iskustva svakodnevnoga rada. Kasnije štovanje u Travniku čuva uspomenu na učenika koji nije dočekao svećeništvo. Priznanje herojskih kreposti i naziv časnoga sluge Božjega različiti su od beatifikacije, koju se ne smije pretpostaviti iz same raširenosti pobožnosti.</p>\n</section>",
@@ -84798,6 +84828,55 @@
       ],
       "status": "complete",
       "number": 212,
+      "editorialName": "Petar Barbarić",
+      "workbook": {
+        "spreadsheetId": "219",
+        "sheetRow": 220,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1874,
+        "birthPrecision": "1874.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Bosna i Hercegovina",
+        "deathDate": {
+          "day": 15,
+          "month": 4,
+          "year": 1897
+        },
+        "deathDateText": "15.04.1897.",
+        "deathPlace": "Travnik, Bosna i Hercegovina",
+        "deathCircumstances": null,
+        "role": "Skolastik (redovnik u formaciji)",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 4,
+          "day": 15,
+          "label": "15. travnja",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Peter",
+        "englishName": "Peter Barbarić",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "editorialBirth": {
+        "dateText": "19.05.1874.",
+        "year": 1874,
+        "place": "Šiljevišta, župa Klobuk, Bosna i Hercegovina",
+        "sourceUrl": "https://hkm.hr/vijesti/domovina/casni-sluga-bozji-petar-barbaric-divan-mladic/"
+      },
+      "birthDate": null,
       "gallery": [
         {
           "src": "assets/images/dfda8b26dea37e59d345-full.jpg",
@@ -84860,12 +84939,14 @@
         "deathYear": 1897,
         "birthApproximate": false,
         "deathApproximate": false,
-        "evidence": "Osobni životni vijek naveden u profilu: 1874. – 1897.",
-        "sourceUrl": "https://hkm.hr/vijesti/domovina/casni-sluga-bozji-petar-barbaric-divan-mladic/",
         "centuries": [
           19
         ],
-        "coverageBasis": "life-span"
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1874.; dan i mjesec rođenja nisu provjereni. Datum smrti: 15.04.1897.",
+        "sourceUrl": "https://hkm.hr/vijesti/domovina/casni-sluga-bozji-petar-barbaric-divan-mladic/",
+        "limitations": "1874.; dan i mjesec rođenja nisu provjereni."
       }
     },
     {
@@ -88525,6 +88606,3448 @@
         "evidence": "Potvrđen puni datum: 10.11.1960. Datum smrti: 12.03.1977.",
         "sourceUrl": "https://www.causesanti.va/it/santi-e-beati/rutilio-grande-garcia-e-2-compagni.html",
         "limitations": ""
+      }
+    },
+    {
+      "id": "jacint-alegre-pujals",
+      "number": 224,
+      "name": "Jacint Alegre Pujals",
+      "aliases": [
+        "Hyacinth Alegre Pujals",
+        "Hyacinth"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Katalonski isusovac koji je gotovo dva desetljeća u Barceloni ispovijedao, poučavao katekizam i obilazio bolesnike. Nadahnut torinskim Cottolengom, pokrenuo je zamisao kuće za najsiromašnije neizlječive bolesnike, ostvarenu nakon njegove smrti.",
+      "roles": [
+        "Svećenik"
+      ],
+      "life": "1874. – 1930.",
+      "feast": {
+        "month": 12,
+        "day": 10,
+        "label": "10. prosinca",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Jacint Alegre Pujals",
+      "portrait": {
+        "src": "assets/images/aea3439856d20320c95f-full.jpg",
+        "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+        "width": 902,
+        "height": 1200,
+        "thumbWidth": 451,
+        "thumbHeight": 600,
+        "isLocal": true,
+        "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+        "isGroup": true,
+        "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+        "caption": "Zajednički prikaz; nije osobni portret.",
+        "originalAssetPath": "assets/hero-saints.jpg"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "24. prosinca 1874., Terrassa, Španjolska"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Španjolska"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "10.12.1930."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Barcelona, Španjolska"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Hyacinth Alegre Pujals · Hyacinth"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "9. svibnja 2014., Franjo"
+        },
+        {
+          "label": "Počivalište",
+          "value": "Kapela Cottolenga oca Alegrea, Barcelona"
+        }
+      ],
+      "biographyHtml": "<p>Jacint Alegre Pujals rođen je 24. prosinca 1874. u Terrassi, industrijskom gradu nedaleko od Barcelone, gdje je proveo djetinjstvo i završio srednju školu. Za vrijeme uskrsnih praznika 1889. stric ga je poveo u svetište Montserrat i ondje je prvi put ozbiljno osjetio poziv na redovnički život. Obitelj se 1891. preselila u Barcelonu, a sljedeće je godine, nakon početnog oklijevanja majke, stupio u novicijat Družbe Isusove u Veruelu.</p>\n<p>Redovničke zavjete položio je 1894. Slijedilo je dugo razdoblje formacije u Veruelu, Tortosi, Valenciji i Barceloni, tijekom kojega je studirao humanističke predmete i teologiju te je i sam poučavao mlađe. Za svećenika je zaređen 30. srpnja 1907.</p>\n<p>Od srpnja 1909. djelovao je u barcelonskom kolegiju Presvetog Srca. Ondje je odmah na početku proživio takozvani Tragični tjedan, kada su u gradu gorjele brojne crkve i samostani. U kolegiju je bio nadzornik i profesor matematike, a od 1918. vodio je marijansku kongregaciju mlađih učenika. Izvan škole bio je ispovjednik, duhovni voditelj i katehist radnika, a najviše je vremena davao siromasima i bolesnicima u gradskim bolnicama, pa su ga prozvali apostolom bolesnika. Od 1922. organizirao je hodočašća bolesnika u Lourdes.</p>\n<p>Na hodočašću u Rim 1926. primio ga je papa Pio XI., a generalu Družbe izložio je svoju zabrinutost da se kršćanska dužnost davanja milostinje premalo propovijeda bogatima. Godinu poslije, na poziv kardinala Vidala i Barraquera, obišao je bolnice u Münchenu i zatim Torino, gdje je upoznao Malu kuću Božje providnosti svetoga Josipa Benedikta Cottolenga. Otada mu je glavna želja bila otvoriti sličnu kuću u Barceloni, za bolesnike koje nitko drugi ne prima.</p>\n<p>Godine 1930. postao je ispovjednik novoga barcelonskog biskupa Manuela Irurite, koji ga je često pratio u posjetima bolesnima. Iste je jeseni obolio od zloćudnog tumora u području uha i nosa koji se brzo proširio. Umro je u Barceloni 10. prosinca 1930. Kad ga je biskup pitao što bi trebao činiti za biskupiju, odgovorio je kratko: župe i bolnice.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Alegre nije dočekao ostvarenje svoje zamisli. Njegov prijatelj, laik Rómulo Zaragoza, nastavio je pothvat i 1932. u Barceloni je otvorena kuća nazvana Cottolengo oca Alegrea, namijenjena najsiromašnijim i neizlječivim bolesnicima. Ustanova je od početka zamišljena u duhu potpunog oslanjanja na Božju providnost, koje je Alegre upoznao u Torinu. Godine 1939. Dolores Permanyer osnovala je družbu Služavki Isusovih, koja otada vodi to djelo. Danas postoji devet takvih kuća u Španjolskoj, Kolumbiji i Portugalu.</p>\n<p>Prvotno je pokopan među preminulom subraćom isusovcima, a 1955. njegovi su posmrtni ostatci preneseni u kapelu barcelonskog Cottolenga. Biskupijski postupak za proglašenje blaženim vođen je u Barceloni od 1952. do 1957., a dopunsko istraživanje od 1997. do 1999. Konzultori su 2013. jednoglasno potvrdili herojski stupanj njegovih kreposti, a papa Franjo odobrio je 9. svibnja 2014. objavu dekreta o herojskim krepostima. Time je postao časni sluga Božji; za beatifikaciju se još očekuje priznanje čuda po njegovu zagovoru.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://www.causesanti.va/it/venerabili/jacinto-alegre-pujals.html",
+        "title": "Dikasterij za kauze svetaca — životopis časnoga sluge Božjega Jacinta Alegrea Pujalsa",
+        "publisher": "Dicastero delle Cause dei Santi",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://www.jesuit.org.sg/dec-hyacinth-alegre-sj/",
+          "title": "Isusovci u Singapuru — životopis o. Jacinta Alegrea",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2014/05/10/0338/00743.html",
+          "title": "press.vatican.va — biografski podaci",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.religionenlibertad.com/accion-social/110801/solo-acogen-a-los-incurables-y-a-los-mas-pobres-no_13035.html",
+          "title": "Religión en Libertad — o Cottolengu oca Alegrea i Služavkama Isusovim",
+          "kind": "biography-enrichment"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "218",
+        "sheetRow": 219,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1874,
+        "birthPrecision": "1874.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Španjolska",
+        "deathDate": {
+          "day": 10,
+          "month": 12,
+          "year": 1930
+        },
+        "deathDateText": "10.12.1930.",
+        "deathPlace": "Barcelona, Španjolska",
+        "deathCircumstances": null,
+        "role": "Svećenik",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 12,
+          "day": 10,
+          "label": "10. prosinca",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Hyacinth",
+        "englishName": "Hyacinth Alegre Pujals",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "24.12.1874.",
+        "year": 1874,
+        "place": "Terrassa, Španjolska",
+        "sourceUrl": "https://www.causesanti.va/it/venerabili/jacinto-alegre-pujals.html"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 10,
+        "month": 12,
+        "year": 1930
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/aea3439856d20320c95f-full.jpg",
+          "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+          "width": 902,
+          "height": 1200,
+          "thumbWidth": 451,
+          "thumbHeight": 600,
+          "isLocal": true,
+          "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+          "isGroup": true,
+          "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+          "caption": "Zajednički prikaz; nije osobni portret.",
+          "originalAssetPath": "assets/hero-saints.jpg"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 314,
+        "addedWords": 148,
+        "growthPercent": 47.13,
+        "sourceUrls": [
+          "https://www.religionenlibertad.com/accion-social/110801/solo-acogen-a-los-incurables-y-a-los-mas-pobres-no_13035.html",
+          "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2014/05/10/0338/00743.html",
+          "https://www.jesuit.org.sg/dec-hyacinth-alegre-sj/"
+        ]
+      },
+      "lifeThemes": [
+        "youth",
+        "devotions",
+        "poverty",
+        "healthcare"
+      ],
+      "centuries": [
+        19,
+        20
+      ],
+      "lifePeriod": {
+        "birthYear": 1874,
+        "deathYear": 1930,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          19,
+          20
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1874.; dan i mjesec rođenja nisu provjereni. Datum smrti: 10.12.1930.",
+        "sourceUrl": "https://www.causesanti.va/it/venerabili/jacinto-alegre-pujals.html",
+        "limitations": "1874.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "alfonz-de-barzana",
+      "number": 225,
+      "name": "Alfonz de Barzana",
+      "aliases": [
+        "Alonso de Barzana",
+        "Alonso"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Španjolski isusovac koji je gotovo tri desetljeća bio misionar u Peruu, Tucumánu i Paragvaju. Učio je jezike domorodačkih naroda, sastavljao za njih katekizme i rječnike te umro iscrpljen radom u Cuzcu.",
+      "roles": [
+        "Svećenik"
+      ],
+      "life": "1530. – 1597.",
+      "feast": {
+        "month": 12,
+        "day": 31,
+        "label": "31. prosinca",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Alfonz de Barzana",
+      "portrait": {
+        "src": "assets/images/aea3439856d20320c95f-full.jpg",
+        "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+        "width": 902,
+        "height": 1200,
+        "thumbWidth": 451,
+        "thumbHeight": 600,
+        "isLocal": true,
+        "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+        "isGroup": true,
+        "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+        "caption": "Zajednički prikaz; nije osobni portret.",
+        "originalAssetPath": "assets/hero-saints.jpg"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "1530., Belinchón, Španjolska"
+        },
+        {
+          "label": "Rođenje — dostupni podaci",
+          "value": "1530.; dan i mjesec rođenja nisu provjereni."
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Španjolska"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "31.12.1597."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Cuzco, Peru"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Alonso de Barzana · Alonso"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "18. prosinca 2017., Franjo"
+        }
+      ],
+      "biographyHtml": "<p>Alfonz de Barzana rođen je oko 1530. u Belinchónu u pokrajini Cuenca. Otac mu je bio putujući liječnik, pa se obitelj više puta selila; nakon očeve smrti nastanila se oko 1545. u Baezi. Ondje je mladić upoznao krug učenika sv. Ivana Avilskoga. Jedna propovijed potaknula ga je na dubok obrat i godine strogoga pokorničkog života. Na sveučilištu u Baezi stekao je magisterij iz umjetnosti i bakalaureat iz teologije, a za svećenika je zaređen 1555.</p>\n<p>U Družbu Isusovu stupio je 1565., a četiri godine poslije otplovio je u Peru. Prema predaji, bio je ispovjednik posljednjega inkanskog vladara Túpaca Amarua I. Godine 1577. poslan je u misiju Juli na obali jezera Titicaca, jednu od prvih isusovačkih misija među domorocima. Ondje je naučio ajmarski i služio se njime u navještaju. Oko jedanaest godina proveo je na području današnje Bolivije.</p>\n<p>Provincijal Juan de Atienza poslao ga je zatim u Tucumán, na sjever današnje Argentine. Ondje je s malobrojnom subraćom djelovao među narodima Calchaquí dolina i Gran Chaca, a potom i u Paragvaju. Iz Asuncióna je 8. rujna 1594. napisao pismo s pomnim opisom tamošnjih naroda i njihovih jezika. Pripisuje mu se praktično poznavanje jedanaest domorodačkih jezika, za koje je sastavljao gramatike, rječnike i katekizme; većina tih rukopisa nije sačuvana.</p>\n<p>Posljednje razdoblje života proveo je u Peruu. Poslanju među domorodačkim narodima posvetio je gotovo tri desetljeća svećeničkoga života, krećući se golemim i teško prohodnim prostranstvima od Anda do rijeke Paragvaja. Iscrpljen dugim i napornim radom, umro je u Cuzcu 31. prosinca 1597.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Spomen na Barzanu ostao je živ osobito u Tucumánu, gdje je za njegov rad doznao i Jorge Mario Bergoglio. Kao papa Franjo poticao je povijesna istraživanja koja su pripremila postupak. Biskupija Cuzco otvorila je postupak za njegovo proglašenje blaženim u ožujku 2016., a papa Franjo odobrio je 18. prosinca 2017., u audijenciji s kardinalom Angelom Amatom, pročelnikom Kongregacije za proglašenje svetih, objavu dekreta o njegovim herojskim krepostima. Otada nosi naslov časnoga sluge Božjega.</p>\n<p>Njegovo nasljeđe najviše se vidi u misionarskoj metodi koja je navještaj vezala uz strpljivo učenje jezika i upoznavanje kulture naroda. Pismo iz Asuncióna objavljeno je 1885. i danas je vrijedan izvor za poznavanje naroda Tucumána. Sačuvan je i rukopis o jeziku Toba, objavljen 1893. Mjesto njegova ukopa nije pouzdano utvrđeno u dostupnim izvorima.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://laciviltacattolica.it/articolo/alonso-de-barzana",
+        "title": "Životopis — Alfonz de Barzana, isusovački misionar u Južnoj Americi",
+        "publisher": "La Civiltà Cattolica",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://es.wikipedia.org/wiki/Alonso_de_B%C3%A1rcena",
+          "title": "Enciklopedijski životopis — Alonso de Bárcena (španjolski)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.newadvent.org/cathen/02291a.htm",
+          "title": "Katolička enciklopedija — Alonzo de Barcena",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Alonzo_de_Barcena",
+          "title": "Enciklopedijski životopis i podaci o postupku — Alonzo de Barcena (engleski)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.vaticannews.va/it/vaticano/news/2017-12/papa-francesco---la-chiesa-avra-quattro-nuovi-beati.html",
+          "title": "vaticannews.va — biografski podaci",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.ewtnnews.com/vatican/polish-cardinal-rosary-priest-among-sainthood-causes-moving-forward",
+          "title": "ewtnnews.com — biografski podaci",
+          "kind": "biography-research"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "220",
+        "sheetRow": 221,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1530,
+        "birthPrecision": "1530.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Španjolska",
+        "deathDate": {
+          "day": 31,
+          "month": 12,
+          "year": 1597
+        },
+        "deathDateText": "31.12.1597.",
+        "deathPlace": "Cuzco, Peru",
+        "deathCircumstances": null,
+        "role": "Svećenik",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 12,
+          "day": 31,
+          "label": "31. prosinca",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Alonso",
+        "englishName": "Alonso de Barzana",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": null,
+        "year": 1530,
+        "place": "Belinchón, Španjolska",
+        "sourceUrl": "https://www.vaticannews.va/it/vaticano/news/2017-12/papa-francesco---la-chiesa-avra-quattro-nuovi-beati.html"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 31,
+        "month": 12,
+        "year": 1597
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/aea3439856d20320c95f-full.jpg",
+          "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+          "width": 902,
+          "height": 1200,
+          "thumbWidth": 451,
+          "thumbHeight": 600,
+          "isLocal": true,
+          "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+          "isGroup": true,
+          "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+          "caption": "Zajednički prikaz; nije osobni portret.",
+          "originalAssetPath": "assets/hero-saints.jpg"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 247,
+        "addedWords": 126,
+        "growthPercent": 51.01,
+        "sourceUrls": [
+          "https://www.vaticannews.va/it/vaticano/news/2017-12/papa-francesco---la-chiesa-avra-quattro-nuovi-beati.html",
+          "https://www.ewtnnews.com/vatican/polish-cardinal-rosary-priest-among-sainthood-causes-moving-forward",
+          "https://en.wikipedia.org/wiki/Alonzo_de_Barcena",
+          "https://laciviltacattolica.it/articolo/alonso-de-barzana",
+          "https://es.wikipedia.org/wiki/Alonso_de_B%C3%A1rcena"
+        ]
+      },
+      "lifeThemes": [
+        "missions",
+        "culture",
+        "conversion"
+      ],
+      "centuries": [
+        16
+      ],
+      "lifePeriod": {
+        "birthYear": 1530,
+        "deathYear": 1597,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          16
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1530.; dan i mjesec rođenja nisu provjereni. Datum smrti: 31.12.1597.",
+        "sourceUrl": "https://laciviltacattolica.it/articolo/alonso-de-barzana",
+        "limitations": "1530.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "vilim-eberschweiler",
+      "number": 226,
+      "name": "Vilim Eberschweiler",
+      "aliases": [
+        "Wilhelm Eberschweiler",
+        "Wilhelm"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Njemački isusovac iz Saarske gotovo je pola stoljeća bio učitelj novaka, rektor i duhovnik mladih redovnika, ponajviše u izgnanstvu u Nizozemskoj i Engleskoj. Pamte ga kao skromna i jednostavna svjedoka radosne Božje ljubavi.",
+      "roles": [
+        "Svećenik"
+      ],
+      "life": "1837. – 1921.",
+      "feast": {
+        "month": 12,
+        "day": 23,
+        "label": "23. prosinca",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Vilim Eberschweiler",
+      "portrait": {
+        "src": "assets/images/gallery-4308f521a6dca7b88540-full.jpg",
+        "thumbSrc": "assets/images/gallery-4308f521a6dca7b88540-thumb.jpg",
+        "width": 707,
+        "height": 1200,
+        "thumbWidth": 235,
+        "thumbHeight": 400,
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/P._Wilhelm_Eberschweiler_S.J._%281837-1921%29%2C_gestorben_zu_Exaten_b._Baexem_im_Rufe_der_Heiligkeit_-_Portrait%2C_mi-corps%2C_face_-_btv1b10220059x.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:P._Wilhelm_Eberschweiler_S.J._(1837-1921),_gestorben_zu_Exaten_b._Baexem_im_Rufe_der_Heiligkeit_-_Portrait,_mi-corps,_face_-_btv1b10220059x.jpg",
+        "alt": "Časni sluga Božji Vilim Eberschweiler",
+        "caption": "",
+        "credit": "Nepoznat autor; izdavač Herder & Co, Freiburg i. Br. (1926); izvor Bibliothèque nationale et universitaire de Strasbourg / Gallica · Wikimedia Commons",
+        "isGroup": false,
+        "isLocal": true,
+        "identityVerified": true,
+        "identityEvidence": "Katalogizirani portret iz 1926. s izvornim natpisom 'P. Wilhelm Eberschweiler S.J. (1837-1921), gestorben zu Exaten b. Baexem im Rufe der Heiligkeit'; zapis BnF/Gallica btv1b10220059x, predmet 'Portrait, Eberschweiler (Wilhelm)'.",
+        "license": "Public domain (PD-France; PD-1923 u SAD-u)",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-France",
+        "sourceDigest": "4308f521a6dca7b88540ff2ab04fe2b739c62bcfe693634dcdbd817d7ac9a66a"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "5. prosinca 1837., Püttlingen, Njemačka"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Njemačka"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "23.12.1921."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Valkenburg, Nizozemska"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Razlike u izvorima",
+          "value": "Mjesto smrti u podatcima zbirke: Valkenburg. Bilten Svete Stolice (2018.) i isusovački izvori navode dvorac Exaten kraj Baexema u nizozemskom Limburgu. Razlika izvora nije razriješena."
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Wilhelm Eberschweiler · Wilhelm"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "19. svibnja 2018., Franjo"
+        },
+        {
+          "label": "Počivalište",
+          "value": "Isusovačka crkva (crkva biskupijskoga sjemeništa), Trier"
+        }
+      ],
+      "biographyHtml": "<p>Vilim Eberschweiler rođen je 5. prosinca 1837. u Püttlingenu u Saarskoj, kao najstariji od petorice sinova u obitelji sa sedmero djece. Djetinjstvo je proveo u Waxweileru i Bitburgu, kamo se obitelj preselila, a od 1851. pohađao je gimnaziju u Trieru. Nakon mature odlučio se za život u Družbi Isusovoj, u koju su kasnije stupila i trojica njegove braće.</p>\n<p>U novicijat u Friedrichsburgu kraj Münstera ušao je 1858. Slijedio je uobičajeni put isusovačke formacije: humanističke studije u Münsteru, filozofiju u Aachenu i teologiju u Maria Laachu, gdje je 13. rujna 1868. zaređen za svećenika. Konačne zavjete položio je 1872. U prvim godinama službe četiri je godine vodio Marijinu kongregaciju, a zatim je postao učitelj novaka u Gorheimu kraj Sigmaringena.</p>\n<p>Kulturkampf je prekinuo taj rad: kuća u Gorheimu zatvorena je, a njemački su isusovci svoje odgojne zajednice morali premjestiti u inozemstvo. Eberschweiler je dijelio sudbinu izgnane provincije. Do 1876. bio je rektor juniorata, a potom duhovnik mladih isusovaca u istoj zajednici. Od 1884. šest je godina bio duhovnik studenata teologije u Ditton Hallu u Engleskoj, nakon čega se vratio u Wijnandsrade u Nizozemskoj.</p>\n<p>Godine 1894. preselio je s junioratom u Exaten kraj Baexema u nizozemskom Limburgu i ondje ostao duhovnik mladih redovnika do kraja života. Gotovo je pola stoljeća pratio duhovni rast stotina isusovaca, bogoslova, redovnika i laika. Suvremenici su ga pamtili kao ljubazna i nenametljiva čovjeka kojemu je središte života bila radosna ljubav prema Bogu. Umro je mirno 23. prosinca 1921., a na Božić je pokopan na isusovačkom groblju u Exatenu.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Glas o Eberschweilerovoj svetosti nije se ugasio nakon njegove smrti. Kardinal Augustin Bea, i sam isusovac, u jednom je pismu zapisao da je od susreta s njim ponio nezaboravan dojam. Postupak za proglašenje blaženim vodi se u Rimu od 1951., a u svibnju 1958. njegovi su posmrtni ostatci preneseni iz Exatena u Trier i položeni u Isusovačku crkvu, koja pripada biskupijskom svećeničkom sjemeništu. Grob i danas pohode brojni vjernici.</p>\n<p>Papa Franjo primio je 19. svibnja 2018. u audijenciju kardinala Angela Amata, pročelnika Kongregacije za kauze svetaca, i odobrio objavu dekreta o herojskim krepostima, čime je Eberschweiler dobio naslov časnoga sluge Božjega. Trierski biskup Stephan Ackermann opisuje ga kao duhovnu osobnost koja je seminaristima, svećenicima i laicima znala dati smjer u životu. Spomen na nj čuvaju i stup u rodnom Püttlingenu, mjesta iz djetinjstva u Bitburgu i Waxweileru te relikvije ugrađene u staru fijalu kölnske katedrale. Kauzu promiče udruga Eberschweiler Bund.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2018/05/21/180521a.html",
+        "title": "Dekret o herojskim krepostima Vilima Eberschweilera (bilten Tiskovnoga ureda Svete Stolice, 21. svibnja 2018.)",
+        "publisher": "Tiskovni ured Svete Stolice",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://www.jesuit.org.sg/?p=6622",
+          "title": "Životopis o. Vilima Eberschweilera — isusovci u Singapuru",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.keralajesuits.org/news/news-events/fr-wilhelm-eberschweiler-sj-1837-1921-declared-venerable/4",
+          "title": "Vijest o proglašenju časnim — isusovci u Kerali",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.bistum-trier.de/export/sites/portal/.galleries/dokumente/50_kultur_musik/PaterWilhelmEberschweilerSJ_rollup.pdf",
+          "title": "bistum-trier.de — biografski podaci",
+          "kind": "biography-research"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "221",
+        "sheetRow": 222,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1837,
+        "birthPrecision": "1837.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Njemačka",
+        "deathDate": {
+          "day": 23,
+          "month": 12,
+          "year": 1921
+        },
+        "deathDateText": "23.12.1921.",
+        "deathPlace": "Valkenburg, Nizozemska",
+        "deathCircumstances": null,
+        "role": "Svećenik",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 12,
+          "day": 23,
+          "label": "23. prosinca",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Wilhelm",
+        "englishName": "Wilhelm Eberschweiler",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "05.12.1837.",
+        "year": 1837,
+        "place": "Püttlingen, Njemačka",
+        "sourceUrl": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2018/05/21/180521a.html"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 23,
+        "month": 12,
+        "year": 1921
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/gallery-4308f521a6dca7b88540-full.jpg",
+          "thumbSrc": "assets/images/gallery-4308f521a6dca7b88540-thumb.jpg",
+          "width": 707,
+          "height": 1200,
+          "thumbWidth": 235,
+          "thumbHeight": 400,
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/P._Wilhelm_Eberschweiler_S.J._%281837-1921%29%2C_gestorben_zu_Exaten_b._Baexem_im_Rufe_der_Heiligkeit_-_Portrait%2C_mi-corps%2C_face_-_btv1b10220059x.jpg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:P._Wilhelm_Eberschweiler_S.J._(1837-1921),_gestorben_zu_Exaten_b._Baexem_im_Rufe_der_Heiligkeit_-_Portrait,_mi-corps,_face_-_btv1b10220059x.jpg",
+          "alt": "Časni sluga Božji Vilim Eberschweiler",
+          "caption": "",
+          "credit": "Nepoznat autor; izdavač Herder & Co, Freiburg i. Br. (1926); izvor Bibliothèque nationale et universitaire de Strasbourg / Gallica · Wikimedia Commons",
+          "isGroup": false,
+          "isLocal": true,
+          "identityVerified": true,
+          "identityEvidence": "Katalogizirani portret iz 1926. s izvornim natpisom 'P. Wilhelm Eberschweiler S.J. (1837-1921), gestorben zu Exaten b. Baexem im Rufe der Heiligkeit'; zapis BnF/Gallica btv1b10220059x, predmet 'Portrait, Eberschweiler (Wilhelm)'.",
+          "license": "Public domain (PD-France; PD-1923 u SAD-u)",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-France",
+          "sourceDigest": "4308f521a6dca7b88540ff2ab04fe2b739c62bcfe693634dcdbd817d7ac9a66a"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 250,
+        "addedWords": 150,
+        "growthPercent": 60.0,
+        "sourceUrls": [
+          "https://www.bistum-trier.de/export/sites/portal/.galleries/dokumente/50_kultur_musik/PaterWilhelmEberschweilerSJ_rollup.pdf",
+          "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2018/05/21/180521a.html"
+        ]
+      },
+      "lifeThemes": [
+        "education",
+        "discernment",
+        "persecution"
+      ],
+      "centuries": [
+        19,
+        20
+      ],
+      "lifePeriod": {
+        "birthYear": 1837,
+        "deathYear": 1921,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          19,
+          20
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1837.; dan i mjesec rođenja nisu provjereni. Datum smrti: 23.12.1921.",
+        "sourceUrl": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2018/05/21/180521a.html",
+        "limitations": "1837.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "josip-marko-figueroa",
+      "number": 227,
+      "name": "Josip Marko Figueroa",
+      "aliases": [
+        "José Marcos Figueroa",
+        "José Marcos"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Isusovački brat s Kanarskih otoka koji je više od pola stoljeća bio vratar Kolegija Bezgrješnog začeća u Santa Feu, poznat po strpljivosti, gostoljubivosti i tihoj pomoći sjemeništarcima.",
+      "roles": [
+        "Brat (koadjutor)"
+      ],
+      "life": "1865. – 1942.",
+      "feast": {
+        "month": 11,
+        "day": 19,
+        "label": "19. studenoga",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Josip Marko Figueroa",
+      "portrait": {
+        "src": "assets/images/aea3439856d20320c95f-full.jpg",
+        "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+        "width": 902,
+        "height": 1200,
+        "thumbWidth": 451,
+        "thumbHeight": 600,
+        "isLocal": true,
+        "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+        "isGroup": true,
+        "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+        "caption": "Zajednički prikaz; nije osobni portret.",
+        "originalAssetPath": "assets/hero-saints.jpg"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "7. listopada 1865., Tinajo (Lanzarote, Kanarski otoci), Španjolska"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Španjolska (Kanarski otoci)"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "19.11.1942."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Santa Fe, Argentina"
+        },
+        {
+          "label": "Uloga",
+          "value": "Brat (koadjutor)"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "José Marcos Figueroa · José Marcos"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "17. prosinca 2022., Franjo"
+        },
+        {
+          "label": "Počivalište",
+          "value": "Svetište Gospe od čudesa (Nuestra Señora de los Milagros), Santa Fe, Argentina"
+        }
+      ],
+      "biographyHtml": "<p>Josip Marko Figueroa rođen je 7. listopada 1865. u Tinaju na otoku Lanzaroteu u Kanarskom otočju, kao najstarije od četvero djece siromašne seljačke obitelji. Godine 1873. obitelj se iselila u Urugvaj i nastanila na imanju kraj Santa Lucíje, nedaleko od Montevidea, gdje je odrastao uz poljske poslove.</p>\n<p>Kao mladić u Montevideu je zatražio primitak u Družbu Isusovu, a u kolovozu 1886. započeo je novicijat u Córdobi u Argentini. Izabrao je put brata pomoćnika (koadjutora), posvećenoga molitvi i službi u zajednici, a ne svećeništvo. U svibnju 1888. premješten je u Santa Fe, u Kolegij Bezgrješnog začeća, gdje je položio zavjete i gdje će ostati do kraja života.</p>\n<p>U kolegiju je najprije pomagao vrataru, a 1891. preuzeo je vratarsku službu i obavljao je više od pola stoljeća. Pred njegovim je očima škola rasla u broju učenika i zgrada. Dočekivao je posjetitelje, prenosio poruke i, kad je stigao telefon, tražio ljude po cijelom kompleksu, u svako doba i bez prigovora. Poznavao je gotovo svakoga učenika, a mnogi su s njim ostali povezani i nakon škole. Osobito je poštovao sjemeništarce, u kojima je gledao buduće svećenike: pomagao im je u učenju i duhovnom životu te za njih nabavljao knjige i časopise iz inozemstva, i nakon 1906., kad je sjemenište odvojeno od kolegija.</p>\n<p>Gotovo do starosti bio je dobra zdravlja. Od 1940. mučile su ga srčane tegobe, a u lipnju 1942. preboljio je tešku upalu pluća te se već u kolovozu vratio na svoje mjesto. Služio je do posljednjih dana i umro 19. studenoga 1942. u Santa Feu. Nadbiskup je odredio da zazvone zvona svih gradskih crkava, a gradske su vlasti pogrebnoj povorci odredile trasu kakva je bila predviđena za visoke državne dužnosnike.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Ubrzo nakon Figueroine smrti biskupija Santa Fe zauzela se za pokretanje postupka za njegovo proglašenje blaženim. Papa Franjo je 17. prosinca 2022., u audijenciji s kardinalom Marcellom Semerarom, pročelnikom Dikasterija za kauze svetih, odobrio proglašenje dekreta o njegovim herojskim krepostima. Tako je redovnik koji nikada nije bio zaređen dobio naslov časnoga sluge Božjega; za beatifikaciju bi još trebalo priznati čudo po njegovu zagovoru.</p>\n<p>Njegovi posmrtni ostaci počivaju u svetištu Gospe od čudesa (Nuestra Señora de los Milagros) u Santa Feu, isusovačkoj crkvi uz kolegij u kojem je proveo gotovo cijeli redovnički život. U gradu je ostao zapamćen kao »vratar Bezgrješne«. Njegov lik podsjeća da se evanđelje može živjeti i u običnoj, svakodnevno istoj službi, kroz gostoljubivost, strpljivost i pozornost prema svakome tko pokuca na vrata.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://www.jesuit.org.sg/?p=5385",
+        "title": "Životopis sluge Božjega Josipa Marka Figueroe, DI",
+        "publisher": "Jesuits in Singapore (Družba Isusova)",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://es.wikipedia.org/wiki/Jos%C3%A9_Marcos_Figueroa",
+          "title": "José Marcos Figueroa – članak na španjolskoj Wikipediji",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.osservatoreromano.va/en/news/2022-12/ing-051/heroic-virtues-of-jesuit-missionary-in-china-and-martyred-polish.html",
+          "title": "L'Osservatore Romano – priznanje herojskih kreposti (prosinac 2022.)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2022/12/17/221217d.html",
+          "title": "press.vatican.va — biografski podaci",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.ewtnnews.com/es/vaticano/el-papa-francisco-reconoce-1-milagro-3-martirios-y-14-venerables?redirectedfrom=aci-prensa",
+          "title": "ACI Prensa / EWTN News – papa Franjo priznaje 14 časnih slugu Božjih",
+          "kind": "biography-enrichment"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "222",
+        "sheetRow": 223,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1865,
+        "birthPrecision": "1865.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Španjolska (Kanarski otoci)",
+        "deathDate": {
+          "day": 19,
+          "month": 11,
+          "year": 1942
+        },
+        "deathDateText": "19.11.1942.",
+        "deathPlace": "Santa Fe, Argentina",
+        "deathCircumstances": null,
+        "role": "Brat (koadjutor)",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 11,
+          "day": 19,
+          "label": "19. studenoga",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "José Marcos",
+        "englishName": "José Marcos Figueroa",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "07.10.1865.",
+        "year": 1865,
+        "place": "Tinajo (Lanzarote, Kanarski otoci), Španjolska",
+        "sourceUrl": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2022/12/17/221217d.html"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 19,
+        "month": 11,
+        "year": 1942
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/aea3439856d20320c95f-full.jpg",
+          "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+          "width": 902,
+          "height": 1200,
+          "thumbWidth": 451,
+          "thumbHeight": 600,
+          "isLocal": true,
+          "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+          "isGroup": true,
+          "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+          "caption": "Zajednički prikaz; nije osobni portret.",
+          "originalAssetPath": "assets/hero-saints.jpg"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 278,
+        "addedWords": 125,
+        "growthPercent": 44.96,
+        "sourceUrls": [
+          "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2022/12/17/221217d.html",
+          "https://www.osservatoreromano.va/en/news/2022-12/ing-051/heroic-virtues-of-jesuit-missionary-in-china-and-martyred-polish.html",
+          "https://www.ewtnnews.com/es/vaticano/el-papa-francisco-reconoce-1-milagro-3-martirios-y-14-venerables?redirectedfrom=aci-prensa",
+          "https://www.jesuit.org.sg/?p=5385",
+          "https://es.wikipedia.org/wiki/Jos%C3%A9_Marcos_Figueroa"
+        ]
+      },
+      "lifeThemes": [
+        "education",
+        "everyday",
+        "family"
+      ],
+      "centuries": [
+        19,
+        20
+      ],
+      "lifePeriod": {
+        "birthYear": 1865,
+        "deathYear": 1942,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          19,
+          20
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1865.; dan i mjesec rođenja nisu provjereni. Datum smrti: 19.11.1942.",
+        "sourceUrl": "https://www.jesuit.org.sg/?p=5385",
+        "limitations": "1865.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "emanuel-garcia-nieto",
+      "number": 228,
+      "name": "Emanuel García Nieto",
+      "aliases": [
+        "Manuel García Nieto",
+        "Manuel"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Španjolski svećenik koji je kao isusovac četrdeset godina bio duhovni otac bogoslova u sjemeništu u Comillasu. Generacije svećenika pamtile su ga kao strpljivog učitelja molitve, a mještani kao oca siromaha.",
+      "roles": [
+        "Svećenik"
+      ],
+      "life": "1898. – 1974.",
+      "feast": {
+        "month": 4,
+        "day": 13,
+        "label": "13. travnja",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Emanuel García Nieto",
+      "portrait": {
+        "src": "assets/images/aea3439856d20320c95f-full.jpg",
+        "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+        "width": 902,
+        "height": 1200,
+        "thumbWidth": 451,
+        "thumbHeight": 600,
+        "isLocal": true,
+        "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+        "isGroup": true,
+        "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+        "caption": "Zajednički prikaz; nije osobni portret.",
+        "originalAssetPath": "assets/hero-saints.jpg"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "5. travnja 1894., Macotera, Španjolska"
+        },
+        {
+          "label": "Rođenje — dostupni podaci",
+          "value": "1898.; dan i mjesec rođenja nisu provjereni."
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Španjolska"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "13.04.1974."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Comillas, Španjolska"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Razlike u izvorima",
+          "value": "Godina rođenja u podatcima zbirke: 1898. Izvori životopisa navode 5. travnja 1894. Razlika izvora nije razriješena."
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Manuel García Nieto · Manuel"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "12. veljače 2019., Franjo"
+        },
+        {
+          "label": "Počivalište",
+          "value": "Salamanca, Španjolska"
+        }
+      ],
+      "biographyHtml": "<p>Emanuel García Nieto rođen je 5. travnja 1894. u Macoteri, selu u pokrajini Salamanci, kao najmlađe od devetero djece. Petero braće i sestara umrlo je u ranoj dobi, a majka je rano ostala udovica. Dvije su mu sestre postale redovnice, a brat Ramón pošao je u sjemenište. S četrnaest godina i sam je zamolio da ga upišu u malo sjemenište, iako se majka bojala za njegovo slabo zdravlje.</p>\n<p>Školovanje je, uz prekide zbog bolesti, nastavio u sjemeništu u Salamanci, gdje je devet godina studirao retoriku, filozofiju i teologiju. Za svećenika Salamanske nadbiskupije zaređen je 16. svibnja 1920. Sljedećih je šest godina proveo u seoskim župama, najprije kao kapelan u Cantalapiedri, a zatim u Santa Maríji de Sando, revno se brinući za vjernike.</p>\n<p>U srpnju 1926. stupio je u Družbu Isusovu. Novicijat je proveo u Carriónu de los Condes i Salamanci, a potom je godinu dana u Oñi obnavljao teološki studij. Godine 1929. poslan je u papinsko sjemenište u Comillasu na kantabrijskoj obali, koje mu je ostalo jedino mjesto službe do kraja života. Najprije je bio duhovni otac najmlađih sjemeništaraca, a od 1932. duhovni voditelj cijeloga sjemeništa. Poučavao je i pastoralnu i duhovnu teologiju.</p>\n<p>Kada je Druga Republika raspustila Družbu u Španjolskoj, ostao je u Comillasu i nastavio rad sa sjemeništarcima. Na početku građanskog rata, u kolovozu 1936., sjemeništarci i poglavari odvedeni su u Santander i ondje kratko zatočeni. On je ostao u gradu, potajno slavio misu i brinuo se za mladiće dok se nisu mogli vratiti.</p>\n<p>Nakon Drugoga vatikanskog sabora povukao se iz vodstva sjemeništa i preselio u isusovačku kuću u Comillasu. Ondje je nastavio duhovno voditi, propovijedati duhovne vježbe i pomagati siromašnima dok mu nisu oslabili vid i sluh. Posljednju je misu slavio na Veliki četvrtak, a umro je na Veliku subotu, 13. travnja 1974.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>U Comillasu je kroz četiri desetljeća pratio velik broj budućih svećenika; samo je oko 1950. ondje vodio oko 240 bogoslova, a nadbiskup Gabino Díaz Merchán kasnije je posvjedočio da je njegov život bio primjer svima koji su ga poznavali. Mještani ga nisu pamtili samo kao profesora: zvali su ga ocem siromaha, a pokrenuo je i školu za osnovno obrazovanje ribarskih obitelji. Kada je umro, u Comillasu se govorilo da je umro svetac. Njegovi su posmrtni ostatci kasnije preneseni u Salamancu.</p>\n<p>Španjolska pošta izdala je 1994. marku u povodu stote obljetnice njegova rođenja. Papa Franjo je 12. veljače 2019., u audijenciji kardinalu Angelu Becciuu, odobrio objavu dekreta o herojskim krepostima, čime je García Nieto postao časni sluga Božji. Za beatifikaciju se još očekuje priznanje čuda po njegovu zagovoru.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://www.jesuit.org.sg/?p=758",
+        "title": "Isusovci u Singapuru — životopis o. Emanuela Garcíje Nieta",
+        "publisher": "Jesuits in Singapore",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://infovaticana.com/blogs/cigona/el-p-manuel-garcia-nieto-sj-en-opinion-de-muchos-un-sato/",
+          "title": "InfoVaticana — životopis o. Garcíje Nieta (prema Manuelu Revuelti)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://manresa-sj.org/stamps/1_Nieto.htm",
+          "title": "Manresa SJ — o. García Nieto na španjolskoj poštanskoj marki",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://press.vatican.va/content/salastampa/es/bollettino/pubblico/2019/02/13/dec.pdf",
+          "title": "press.vatican.va — biografski podaci",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.ewtnnews.com/es/mundo/espana/papa-francisco-aprobo-virtudes-heroicas-del-jesuita-p-nieto?redirectedfrom=aci-prensa",
+          "title": "ACI Prensa — papa Franjo odobrio herojske kreposti o. Nieta",
+          "kind": "biography-enrichment"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "223",
+        "sheetRow": 224,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1898,
+        "birthPrecision": "1898.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Španjolska",
+        "deathDate": {
+          "day": 13,
+          "month": 4,
+          "year": 1974
+        },
+        "deathDateText": "13.04.1974.",
+        "deathPlace": "Comillas, Španjolska",
+        "deathCircumstances": null,
+        "role": "Svećenik",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 4,
+          "day": 13,
+          "label": "13. travnja",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Manuel",
+        "englishName": "Manuel García Nieto",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "05.04.1894.",
+        "year": 1894,
+        "place": "Macotera, Španjolska",
+        "sourceUrl": "https://press.vatican.va/content/salastampa/es/bollettino/pubblico/2019/02/13/dec.pdf"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 13,
+        "month": 4,
+        "year": 1974
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/aea3439856d20320c95f-full.jpg",
+          "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+          "width": 902,
+          "height": 1200,
+          "thumbWidth": 451,
+          "thumbHeight": 600,
+          "isLocal": true,
+          "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+          "isGroup": true,
+          "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+          "caption": "Zajednički prikaz; nije osobni portret.",
+          "originalAssetPath": "assets/hero-saints.jpg"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 296,
+        "addedWords": 127,
+        "growthPercent": 42.91,
+        "sourceUrls": [
+          "https://www.jesuit.org.sg/?p=758",
+          "https://press.vatican.va/content/salastampa/es/bollettino/pubblico/2019/02/13/dec.pdf",
+          "https://manresa-sj.org/stamps/1_Nieto.htm",
+          "https://infovaticana.com/blogs/cigona/el-p-manuel-garcia-nieto-sj-en-opinion-de-muchos-un-sato/",
+          "https://www.ewtnnews.com/es/mundo/espana/papa-francisco-aprobo-virtudes-heroicas-del-jesuita-p-nieto?redirectedfrom=aci-prensa"
+        ]
+      },
+      "lifeThemes": [
+        "education",
+        "discernment",
+        "poverty",
+        "trials"
+      ],
+      "centuries": [
+        19,
+        20
+      ],
+      "lifePeriod": {
+        "birthYear": 1898,
+        "deathYear": 1974,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          19,
+          20
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1898.; dan i mjesec rođenja nisu provjereni. Datum smrti: 13.04.1974.",
+        "sourceUrl": "https://www.jesuit.org.sg/?p=758",
+        "limitations": "1898.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "stjepan-kaszap",
+      "number": 229,
+      "name": "Stjepan Kaszap",
+      "aliases": [
+        "István Kaszap",
+        "István"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Mađarski isusovački novak iz Székesfehérvára, izvrstan gimnastičar i izviđač, u Družbu Isusovu stupio je 1934. godine. Tešku bolest, koja ga je odnijela s devetnaest godina, podnosio je strpljivo i s mirnom vjerom.",
+      "roles": [
+        "Novak"
+      ],
+      "life": "1916. – 1935.",
+      "feast": {
+        "month": 12,
+        "day": 17,
+        "label": "17. prosinca",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Stjepan Kaszap",
+      "portrait": {
+        "src": "assets/images/gallery-2bfc49042f41d9096e26-full.jpg",
+        "thumbSrc": "assets/images/gallery-2bfc49042f41d9096e26-thumb.jpg",
+        "width": 844,
+        "height": 1200,
+        "thumbWidth": 281,
+        "thumbHeight": 400,
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Kaszap_Istv%C3%A1n.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Kaszap_Istv%C3%A1n.jpg",
+        "alt": "Časni sluga Božji Stjepan Kaszap",
+        "caption": "",
+        "credit": "Nepoznati autor · Wikimedia Commons",
+        "isGroup": false,
+        "isLocal": true,
+        "identityVerified": true,
+        "identityEvidence": "Opis datoteke na Commonsu glasi „Kaszap István magyar jezsuita novicius. Postcard.” – razglednica iz razdoblja oko 1935. – 1940. s imenom osobe.",
+        "license": "Javno vlasništvo (PD-HU-unknown)",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-HU-unknown",
+        "sourceDigest": "2bfc49042f41d9096e2681d143b8cbbb9c605fad41f75aa7c0b3bde7f4225c10"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "25. ožujka 1916., Székesfehérvár, Mađarska"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Mađarska"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "17.12.1935."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Budimpešta, Mađarska"
+        },
+        {
+          "label": "Uloga",
+          "value": "Novak"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Razlike u izvorima",
+          "value": "Mjesto smrti u podatcima zbirke: Budimpešta. Mađarski izvori i cistercitska opatija u Dallasu navode bolnicu u Székesfehérváru i noć 16. prosinca 1935. Razlika izvora nije razriješena."
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "István Kaszap · István"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "16. prosinca 2006., Benedikt XVI."
+        },
+        {
+          "label": "Počivalište",
+          "value": "Kripta uz Prohászkinu spomen-crkvu (crkva Dobroga Pastira), Székesfehérvár"
+        }
+      ],
+      "biographyHtml": "<p>Stjepan Kaszap rođen je 25. ožujka 1916. u Székesfehérváru. Odrastao je u pobožnoj obitelji poštanskoga službenika, s dvojicom starije braće i dvjema mlađim sestrama. Kao dječak bio je tvrdoglav i sklon izljevima ljutnje, što je poslije i sam otvoreno priznavao. Osam godina pohađao je cistercitsku gimnaziju sv. Stjepana u rodnome gradu i završio je s odličnim uspjehom.</p>\n<p>U školi se priključio novoosnovanoj izviđačkoj četi, u kojoj je s vremenom preuzeo vođenje ophodnje. Na ljetnim logorima znao je ustati prije drugih kako bi molio na rubu šume. Gimnastikom se ozbiljnije počeo baviti tek u starijim razredima, ali je brzo postao jedan od najboljih u svojemu kraju: skupio je niz medalja, a u ožujku 1934. pobijedio je na natjecanju zapadne Mađarske.</p>\n<p>Pred kraj gimnazije, nakon duhovnih vježbi i čitanja djela biskupa Ottokára Prohászke, odlučio je postati isusovac, iako se majka pribojavala siromašnoga redovničkog života. Krajem srpnja 1934. započeo je novicijat u budimskoj kući Manréza. Ondje je strpljivo radio na vlastitoj naravi, učeći poslušnost i svakodnevnu vjernost malim dužnostima.</p>\n<p>Već uoči Božića 1934. pojavile su se prve tegobe: otekline i bolovi u zglobovima, groznica i upala krajnika. Liječnici dugo nisu mogli otkriti uzrok, a u studenome 1935. ustanovljen je erizipel. Zbog bolesti je morao napustiti novicijat. Nakon odstranjivanja krajnika i zahvata na grkljanu ostao je bez glasa, pa se s bližnjima sporazumijevao kratkim pisanim porukama. Bolest je prihvaćao kao križ koji valja nositi spremno i radosno. Umro je 17. prosinca 1935., tri mjeseca prije dvadesetoga rođendana. Roditeljima je ostavio poruku da ne plaču, jer mu je to rođendan u nebu.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Glas o mladome novaku brzo se proširio izvan obitelji i škole. Vjernici su dolazili na njegov grob, a mjesni biskup dopustio je javno iskazivanje štovanja na tom mjestu. Mnogi mladi, osobito izviđači i sportaši, prepoznali su u njemu vršnjaka koji je vjeru živio u sasvim običnim okolnostima: u razredu, na treningu i na logoru.</p>\n<p>Biskupijski postupak za proglašenje blaženim otvoren je u Székesfehérváru 11. listopada 1941., ali ga je prekinuo rat; spisi su 1946. poslani u Rim. Papa Benedikt XVI. odobrio je 16. prosinca 2006. proglašenje dekreta o njegovim herojskim krepostima, čime je dobio naslov časnoga sluge Božjega. Biskupija Székesfehérvár u novije je vrijeme ponovno pokrenula rad na kauzi, a za beatifikaciju je potrebno priznanje čuda po njegovu zagovoru.</p>\n<p>Isprva je pokopan na groblju Sóstó u Székesfehérváru. Posmrtni ostaci kasnije su preneseni u kriptu uz Prohászkinu spomen-crkvu, poznatu i kao crkva Dobroga Pastira, gdje mu je grob smješten pod arkadama crkvenoga dvorišta. O stotoj obljetnici rođenja grob je uvršten u Nemzeti Sírkert, mađarski nacionalni popis zaštićenih grobova znamenitih osoba.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://www.jesuit.org.sg/?p=6614",
+        "title": "Životopis sluge Božjega Stjepana Kaszapa",
+        "publisher": "Jesuits in Singapore",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://aleteia.org/2017/12/31/meet-stephen-kaszap-a-boy-scout-and-gold-medal-gymnast-on-his-way-to-sainthood",
+          "title": "Stjepan Kaszap – izviđač i gimnastičar na putu svetosti (Aleteia)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://abbey.cistercian.org/history/our-saintly-inspiration/istvan-stephen-kaszap/",
+          "title": "István Kaszap – cistercitska opatija Dallas",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.cirkev.cz/archiv/061220-new-decrees-4-canonizations-and-78-beatifications",
+          "title": "cirkev.cz — biografski podaci",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://hu.wikipedia.org/wiki/Kaszap_Istv%C3%A1n",
+          "title": "hu.wikipedia.org — biografski podaci",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Kaszap_Istv%C3%A1n_s%C3%ADrja,_2017_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r.jpg",
+          "title": "Grob Stjepana Kaszapa u Székesfehérváru (Wikimedia Commons)",
+          "kind": "biography-enrichment"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "224",
+        "sheetRow": 225,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1916,
+        "birthPrecision": "1916.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Mađarska",
+        "deathDate": {
+          "day": 17,
+          "month": 12,
+          "year": 1935
+        },
+        "deathDateText": "17.12.1935.",
+        "deathPlace": "Budimpešta, Mađarska",
+        "deathCircumstances": null,
+        "role": "Novak",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 12,
+          "day": 17,
+          "label": "17. prosinca",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "István",
+        "englishName": "István Kaszap",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "25.03.1916.",
+        "year": 1916,
+        "place": "Székesfehérvár, Mađarska",
+        "sourceUrl": "https://www.jesuit.org.sg/?p=6614"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 17,
+        "month": 12,
+        "year": 1935
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/gallery-2bfc49042f41d9096e26-full.jpg",
+          "thumbSrc": "assets/images/gallery-2bfc49042f41d9096e26-thumb.jpg",
+          "width": 844,
+          "height": 1200,
+          "thumbWidth": 281,
+          "thumbHeight": 400,
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Kaszap_Istv%C3%A1n.jpg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Kaszap_Istv%C3%A1n.jpg",
+          "alt": "Časni sluga Božji Stjepan Kaszap",
+          "caption": "",
+          "credit": "Nepoznati autor · Wikimedia Commons",
+          "isGroup": false,
+          "isLocal": true,
+          "identityVerified": true,
+          "identityEvidence": "Opis datoteke na Commonsu glasi „Kaszap István magyar jezsuita novicius. Postcard.” – razglednica iz razdoblja oko 1935. – 1940. s imenom osobe.",
+          "license": "Javno vlasništvo (PD-HU-unknown)",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-HU-unknown",
+          "sourceDigest": "2bfc49042f41d9096e2681d143b8cbbb9c605fad41f75aa7c0b3bde7f4225c10"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 257,
+        "addedWords": 169,
+        "growthPercent": 65.76,
+        "sourceUrls": [
+          "https://www.cirkev.cz/archiv/061220-new-decrees-4-canonizations-and-78-beatifications",
+          "https://hu.wikipedia.org/wiki/Kaszap_Istv%C3%A1n",
+          "https://commons.wikimedia.org/wiki/File:Kaszap_Istv%C3%A1n_s%C3%ADrja,_2017_Sz%C3%A9kesfeh%C3%A9rv%C3%A1r.jpg",
+          "https://abbey.cistercian.org/history/our-saintly-inspiration/istvan-stephen-kaszap/"
+        ]
+      },
+      "lifeThemes": [
+        "youth",
+        "discernment",
+        "trials"
+      ],
+      "centuries": [
+        20
+      ],
+      "lifePeriod": {
+        "birthYear": 1916,
+        "deathYear": 1935,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          20
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1916.; dan i mjesec rođenja nisu provjereni. Datum smrti: 17.12.1935.",
+        "sourceUrl": "https://www.jesuit.org.sg/?p=6614",
+        "limitations": "1916.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "euzebije-franjo-kino",
+      "number": 230,
+      "name": "Euzebije Franjo Kino (Chini)",
+      "aliases": [
+        "Eusebio Francisco Kino (Chini)",
+        "Eusebio Francisco"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Isusovac iz Trentina koji je više od dva desetljeća djelovao u Pimeriji Alti na sjeveru Nove Španjolske, osnivao misije, branio domorodačko stanovništvo i kao kartograf dokazao da je Kalifornija poluotok.",
+      "roles": [
+        "Svećenik, misionar"
+      ],
+      "life": "1645. – 1711.",
+      "feast": {
+        "month": 3,
+        "day": 15,
+        "label": "15. ožujka",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Euzebije Franjo Kino (Chini)",
+      "portrait": {
+        "src": "assets/images/aea3439856d20320c95f-full.jpg",
+        "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+        "width": 902,
+        "height": 1200,
+        "thumbWidth": 451,
+        "thumbHeight": 600,
+        "isLocal": true,
+        "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+        "isGroup": true,
+        "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+        "caption": "Zajednički prikaz; nije osobni portret.",
+        "originalAssetPath": "assets/hero-saints.jpg"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "10. kolovoza 1645., Segno, Italija"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Italija (Tirol)"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "15.03.1711."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Magdalena de Kino, Meksiko"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik, misionar"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Eusebio Francisco Kino (Chini) · Eusebio Francisco"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "10. srpnja 2020., papa Franjo"
+        },
+        {
+          "label": "Počivalište",
+          "value": "Kripta na Plaza Monumental, Magdalena de Kino, Meksiko"
+        }
+      ],
+      "biographyHtml": "<p>Euzebije Franjo Kino (Chini) rođen je 10. kolovoza 1645. u Segnu, selu u dolini Val di Non u Trentinu. Za vrijeme teške bolesti zavjetovao se svetom Franji Ksaverskom da će, ako ozdravi, poći u misije. Stupio je u Družbu Isusovu i školovao se u isusovačkim kolegijima u Trentu i Hallu te na sveučilištima u Ingolstadtu, Innsbrucku i drugim njemačkim gradovima, gdje je stekao temeljito znanje iz matematike, astronomije i kartografije.</p>\n<p>Zaređen je za svećenika 1677., a iduće je godine iz Genove otputovao u Španjolsku, gdje je gotovo tri godine čekao prijevoz preko oceana. U Veracruz u Novoj Španjolskoj stigao je u svibnju 1681. Kao misionar i kraljevski kozmograf sudjelovao je u ekspediciji u Kaliforniju, gdje je 1683. kod Loreta pomagao podići misiju San Bruno. Zbog teških uvjeta pothvat je nakon dvije godine napušten.</p>\n<p>Godine 1687. došao je u Pimeriju Altu, kraj koji obuhvaća današnju Sonoru i južnu Arizonu, i osnovao misiju Nuestra Señora de los Dolores u Cósariju, koja mu je bila uporište sljedeće dvadeset i četiri godine. Podigao je niz misija i naselja, među njima San Xavier del Bac kraj današnjeg Tucsona, uveo uzgoj stoke i nove poljodjelske tehnike te krstio više tisuća domorodaca. Branio ih je od izrabljivanja u rudnicima srebra, a jednom je u tjedan dana dojahao sve do Ciudad de Méxica kako bi se za njih zauzeo pred španjolskim vlastima.</p>\n<p>Na brojnim putovanjima istraživao je porječja Gile i Colorada, a 1702. uvjerio se da Kalifornija nije otok, nego poluotok do kojega se može doći kopnom. Njegove su karte još stoljeće i pol nakon njegove smrti ostale mjerodavne. Umro je 15. ožujka 1711. u Magdaleni, nedugo nakon što je ondje blagoslovio novu kapelu svetoga Franje Ksaverskoga.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Sutradan nakon smrti pokopao ga je subrat Agustín de Campos uz oltar kapele u Magdaleni. Kapela je s vremenom propala, a mjesto groba palo je u zaborav. Tek 19. svibnja 1966. pronašla ga je meksičko-američka skupina istraživača, koja je posmrtne ostatke prepoznala po položaju groba, brončanom raspelu i tragovima bolesti na kostima. Grad je potom preimenovan u Magdalena de Kino, a nad kriptom u kojoj su njegovi ostaci izloženi pod staklom podignut je spomenik posvećen 1971.</p>\n<p>Rad na postupku za proglašenje blaženim započeo je nakon otkrića groba, pod vodstvom nadbiskupije Hermosillo, a opsežna positio o njegovu životu i krepostima predana je u Rim 2016. Papa Franjo je 10. srpnja 2020. odobrio dekret o njegovim herojskim krepostima, čime je postao časni sluga Božji. Za proglašenje blaženim potrebno je još priznanje čuda po njegovu zagovoru. Uspomenu na oca Kina čuvaju Meksiko i Sjedinjene Države: od 1965. njegov kip stoji u Kapitolu u Washingtonu, kao znak priznanja misionaru koji je navještaj spajao sa znanstvenim radom i brigom za domorodačke zajednice.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://www.nps.gov/articles/padre-kino.htm",
+        "title": "Euzebije Franjo Kino — životopis i kronologija",
+        "publisher": "National Park Service (Tumacácori National Historical Park)",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://www.catholicworldreport.com/2020/07/16/phoenix-bishop-welcomes-venerable-designation-of-padre-kino/",
+          "title": "Biskup Phoenixa o proglašenju oca Kina časnim (Catholic World Report, 2020.)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2020/07/11/200711b.html",
+          "title": "press.vatican.va — biografski podaci",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://padrekino.com/index.php/khs_home/kino-heritage/kino-grave-discovery",
+          "title": "padrekino.com — biografski podaci",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://mail.padrekino.com/index.php/khs_home/kino-heritage/sainthood-cause",
+          "title": "Postupak za proglašenje oca Kina svetim (Kino Historical Society)",
+          "kind": "biography-enrichment"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "225",
+        "sheetRow": 226,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1645,
+        "birthPrecision": "1645.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Italija (Tirol)",
+        "deathDate": {
+          "day": 15,
+          "month": 3,
+          "year": 1711
+        },
+        "deathDateText": "15.03.1711.",
+        "deathPlace": "Magdalena de Kino, Meksiko",
+        "deathCircumstances": null,
+        "role": "Svećenik, misionar",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 3,
+          "day": 15,
+          "label": "15. ožujka",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Eusebio Francisco",
+        "englishName": "Eusebio Francisco Kino (Chini)",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "10.08.1645.",
+        "year": 1645,
+        "place": "Segno, Italija",
+        "sourceUrl": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2020/07/11/200711b.html"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 15,
+        "month": 3,
+        "year": 1711
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/aea3439856d20320c95f-full.jpg",
+          "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+          "width": 902,
+          "height": 1200,
+          "thumbWidth": 451,
+          "thumbHeight": 600,
+          "isLocal": true,
+          "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+          "isGroup": true,
+          "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+          "caption": "Zajednički prikaz; nije osobni portret.",
+          "originalAssetPath": "assets/hero-saints.jpg"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 279,
+        "addedWords": 167,
+        "growthPercent": 59.86,
+        "sourceUrls": [
+          "https://www.nps.gov/articles/padre-kino.htm",
+          "https://padrekino.com/index.php/khs_home/kino-heritage/kino-grave-discovery",
+          "https://mail.padrekino.com/index.php/khs_home/kino-heritage/sainthood-cause",
+          "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2020/07/11/200711b.html"
+        ]
+      },
+      "lifeThemes": [
+        "missions",
+        "culture",
+        "justice"
+      ],
+      "centuries": [
+        17,
+        18
+      ],
+      "lifePeriod": {
+        "birthYear": 1645,
+        "deathYear": 1711,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          17,
+          18
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1645.; dan i mjesec rođenja nisu provjereni. Datum smrti: 15.03.1711.",
+        "sourceUrl": "https://www.nps.gov/articles/padre-kino.htm",
+        "limitations": "1645.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "alojzije-la-nuza",
+      "number": 231,
+      "name": "Alojzije La Nuza",
+      "aliases": [
+        "Luigi La Nuza",
+        "Luigi"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Sicilski isusovac i pučki propovjednik koji je gotovo trideset godina obilazio gradove, sela i otoke Sicilije te dopirao do Malte. Zbog propovijedanja, ispovijedanja i brige za zatvorenike i siromahe prozvan je apostolom Sicilije.",
+      "roles": [
+        "Svećenik"
+      ],
+      "life": "1591. – 1656.",
+      "feast": {
+        "month": 10,
+        "day": 21,
+        "label": "21. listopada",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Alojzije La Nuza",
+      "portrait": {
+        "src": "assets/images/gallery-4eb6b099300365a4022b-full.jpg",
+        "thumbSrc": "assets/images/gallery-4eb6b099300365a4022b-thumb.jpg",
+        "width": 874,
+        "height": 1200,
+        "thumbWidth": 291,
+        "thumbHeight": 400,
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Portret_van_geestelijke_Luigi_la_Nuza%2C_RP-P-1909-4976.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Portret_van_geestelijke_Luigi_la_Nuza,_RP-P-1909-4976.jpg",
+        "alt": "Časni sluga Božji Alojzije La Nuza",
+        "caption": "",
+        "credit": "Gennaro Guttierez (bakrorez, 18. st.); Rijksmuseum Amsterdam · Wikimedia Commons",
+        "isGroup": false,
+        "isLocal": true,
+        "identityVerified": true,
+        "identityEvidence": "Rijksmuseumov bakrorez RP-P-1909-4976 naslovljen 'Portret van geestelijke Luigi la Nuza'; isti se portret koristi u talijanskoj Wikipediji za ovoga isusovca.",
+        "license": "CC0 1.0 (javno dobro)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sourceDigest": "4eb6b099300365a4022bd656cfde19da059931946e91b5b1245d3293f464f83a"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "1591., Licata, Sicilija"
+        },
+        {
+          "label": "Rođenje — dostupni podaci",
+          "value": "1591.; dan i mjesec rođenja nisu provjereni."
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Italija (Sicilija)"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "21.10.1656."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Palermo, Italija"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Luigi La Nuza · Luigi"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "25. ožujka 1847., Pio IX."
+        },
+        {
+          "label": "Počivalište",
+          "value": "Crkva Gesù (Casa Professa), Palermo"
+        }
+      ],
+      "biographyHtml": "<p>Alojzije La Nuza rođen je 1591. u Licati, na južnoj obali Sicilije, kao sin španjolskoga časnika. Djetinjstvo je dijelom proveo u Španjolskoj, gdje je otac služio vojsku, a nakon povratka obitelji na Siciliju pohađao je isusovački kolegij u Palermu. Ondje je sazrela njegova želja za redovničkim životom, no poglavari su ga zbog slaba zdravlja nekoliko godina odbijali.</p>\n<p>Kad mu je bilo osamnaest godina, 1609., primljen je u novicijat Družbe Isusove u Messini. Slijedile su godine studija humanističkih predmeta, filozofije i teologije, a između njih i sam je poučavao, među ostalim u Trapaniju i Palermu. Za svećenika je zaređen sredinom dvadesetih godina 17. stoljeća, a svečane zavjete položio je 1626. u palermskoj crkvi Gesù.</p>\n<p>Glavnina njegova svećeničkoga rada bila je propovijedanje. Gotovo trideset godina obilazio je gradove, sela i otoke Sicilije, a s pučkim misijama stigao je i do Kalabrije i Malte. Propovijedao je na trgovima i ulicama, vodio adventske i korizmene cikluse propovijedi te dugo sjedio u ispovjedaonici. Posjećivao je bolesnike, zatvorenike i veslače na galijama, mirio zavađene obitelji i pomagao siromasima i siročadi. Puk ga je zato prozvao apostolom Sicilije.</p>\n<p>U listopadu 1656., dok je vodio misiju u Cariniju nedaleko od Palerma, teško je obolio od upale pluća. Prenesen je u isusovačku kuću u Palermu, ali se više nije oporavio te je ondje umro 21. listopada 1656. Pred kućom se tada okupilo mnoštvo ljudi koji su se htjeli oprostiti od propovjednika kojega su mnogi poznavali iz vlastitih župa i sela.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Glas o svetosti njegova života nije se ugasio nakon smrti, pa je postupak za njegovo proglašenje blaženim uveden u Rimu 17. veljače 1713. Nakon dugoga ispitivanja svjedočanstava papa Pio IX. odobrio je 25. ožujka 1847. dekret o njegovim herojskim krepostima. Otada ga Crkva naziva časnim slugom Božjim, a postupak za beatifikaciju nije dovršen.</p>\n<p>Pokopan je u palermskoj crkvi Gesù, poznatoj i kao Casa Professa, uz koju je bio vezan velik dio njegova redovničkoga života. Njegovi posmrtni ostaci više su puta službeno pregledani, posljednji put 1954. U sjećanju sicilske Crkve ostao je primjer svećenika koji je navještaj Evanđelja povezivao s konkretnom brigom za zatvorenike, bolesne i siromašne te s mirenjem zavađenih.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://www.jesuit.org.sg/?p=4900",
+        "title": "Životopis časnoga sluge Božjega Alojzija La Nuze",
+        "publisher": "Družba Isusova – Singapur (jesuit.org.sg)",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://it.wikipedia.org/wiki/Luigi_La_Nuza",
+          "title": "Luigi La Nuza – enciklopedijski članak (Wikipedia, talijanski)",
+          "kind": "biography-research"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "226",
+        "sheetRow": 227,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1591,
+        "birthPrecision": "1591.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Italija (Sicilija)",
+        "deathDate": {
+          "day": 21,
+          "month": 10,
+          "year": 1656
+        },
+        "deathDateText": "21.10.1656.",
+        "deathPlace": "Palermo, Italija",
+        "deathCircumstances": null,
+        "role": "Svećenik",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 10,
+          "day": 21,
+          "label": "21. listopada",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Luigi",
+        "englishName": "Luigi La Nuza",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": null,
+        "year": 1591,
+        "place": "Licata, Sicilija",
+        "sourceUrl": "https://www.jesuit.org.sg/?p=4900"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 21,
+        "month": 10,
+        "year": 1656
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/gallery-4eb6b099300365a4022b-full.jpg",
+          "thumbSrc": "assets/images/gallery-4eb6b099300365a4022b-thumb.jpg",
+          "width": 874,
+          "height": 1200,
+          "thumbWidth": 291,
+          "thumbHeight": 400,
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Portret_van_geestelijke_Luigi_la_Nuza%2C_RP-P-1909-4976.jpg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Portret_van_geestelijke_Luigi_la_Nuza,_RP-P-1909-4976.jpg",
+          "alt": "Časni sluga Božji Alojzije La Nuza",
+          "caption": "",
+          "credit": "Gennaro Guttierez (bakrorez, 18. st.); Rijksmuseum Amsterdam · Wikimedia Commons",
+          "isGroup": false,
+          "isLocal": true,
+          "identityVerified": true,
+          "identityEvidence": "Rijksmuseumov bakrorez RP-P-1909-4976 naslovljen 'Portret van geestelijke Luigi la Nuza'; isti se portret koristi u talijanskoj Wikipediji za ovoga isusovca.",
+          "license": "CC0 1.0 (javno dobro)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "sourceDigest": "4eb6b099300365a4022bd656cfde19da059931946e91b5b1245d3293f464f83a"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 241,
+        "addedWords": 110,
+        "growthPercent": 45.64,
+        "sourceUrls": [
+          "https://www.jesuit.org.sg/?p=4900",
+          "https://it.wikipedia.org/wiki/Luigi_La_Nuza"
+        ]
+      },
+      "lifeThemes": [
+        "missions",
+        "poverty",
+        "family"
+      ],
+      "centuries": [
+        16,
+        17
+      ],
+      "lifePeriod": {
+        "birthYear": 1591,
+        "deathYear": 1656,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          16,
+          17
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1591.; dan i mjesec rođenja nisu provjereni. Datum smrti: 21.10.1656.",
+        "sourceUrl": "https://www.jesuit.org.sg/?p=4900",
+        "limitations": "1591.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "adolf-petit",
+      "number": 232,
+      "name": "Adolf Petit",
+      "aliases": [
+        "Adolphe Petit",
+        "Adolphe"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Belgijski isusovac iz Genta gotovo je pola stoljeća u Drongenu odgajao mlade redovnike i vodio duhovne vježbe za svećenike, redovnike i laike. Bio je cijenjen duhovni vođa, poznat po jednostavnosti i blizini siromašnima.",
+      "roles": [
+        "Svećenik"
+      ],
+      "life": "1822. – 1914.",
+      "feast": {
+        "month": 5,
+        "day": 20,
+        "label": "20. svibnja",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Adolf Petit",
+      "portrait": {
+        "src": "assets/images/gallery-c4e9817a0a1eff3cf0f9-full.jpg",
+        "thumbSrc": "assets/images/gallery-c4e9817a0a1eff3cf0f9-thumb.jpg",
+        "width": 755,
+        "height": 1200,
+        "thumbWidth": 252,
+        "thumbHeight": 400,
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Adolphe_Petit_%281822-1914%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Adolphe_Petit_(1822-1914).jpg",
+        "alt": "Časni sluga Božji Adolf Petit",
+        "caption": "",
+        "credit": "Nepoznati fotograf · Wikimedia Commons",
+        "isGroup": false,
+        "isLocal": true,
+        "identityVerified": true,
+        "identityEvidence": "Opis datoteke: 'An ancient photograph of the Venerable Adolphe Petit, Belgian Jesuit (1822-1914)'; datoteka je u kategoriji Category:Adolphe Petit i povezana s Wikidata Q2141457.",
+        "license": "Javno dobro (fotografija nepoznatoga autora, prije 1914.)",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+        "sourceDigest": "c4e9817a0a1eff3cf0f9020a80ddbc05dbd9f4432301183e564bc9a550ef24e5"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "22. svibnja 1822., Gent, Belgija"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Belgija"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "20.05.1914."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Drongen (Tronchiennes), Belgija"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Adolphe Petit · Adolphe"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "15. prosinca 1966., Pavao VI."
+        },
+        {
+          "label": "Počivalište",
+          "value": "Kapela sv. Josipa na prostoru Stare opatije, Drongen"
+        }
+      ],
+      "biographyHtml": "<p>Adolf Petit rođen je 22. svibnja 1822. u Gentu, u skromnoj krojačkoj obitelji iz jedne od gradskih pučkih četvrti. Majku je izgubio kad mu je bilo pet godina, a kako se otac nije mogao brinuti za djecu, prihvatio ga je kum. Pohađao je seosku školu i već s dvanaest godina počeo raditi kao pomoćnik graditelja klavira.</p>\n<p>Prekretnica je došla preko jedne gospođe koju je upoznao dok je molio u marijanskom svetištu gentske katedrale: ona mu je omogućila stipendiju za isusovački kolegij sv. Barbare u Gentu, gdje je počeo školovanje 1836. U rujnu 1842. ušao je u novicijat u Drongenu. Nakon zavjeta studirao je filozofiju u Namuru, četiri godine predavao u Antwerpenu, a teologiju završio u Leuvenu. Za svećenika je zaređen 15. rujna 1855., a treću probaciju obavio je u Drongenu.</p>\n<p>Prve godine svećeništva proveo je kao nastavnik u kolegiju sv. Mihaela u Bruxellesu, a zatim kao duhovnik mladih isusovaca u Namuru. Godine 1865. trajno se vratio u Drongen, gdje je gotovo pola stoljeća pratio novozaređene svećenike i studente Družbe. Duhovne vježbe postale su njegovo glavno poslanje: okupljao je redovnice i redovnike, dijecezanske svećenike i laike, priređivao godišnje duhovne obnove za kler i objavio nekoliko svezaka razmatranja i nagovora.</p>\n<p>Bio je poznat po jednostavnosti i toplini, a siromašni i potrebiti uvijek su kod njega nalazili otvorena vrata. Sudjelovao je u nastanku briselskoga djela Oeuvre du Calvaire, koje se skrbilo za neizlječivo bolesne prepuštene samima sebi. Među onima koje je duhovno vodio bio je i irski isusovac Willie Doyle, tijekom svoje treće probacije 1907. i 1908. U svibnju 1914. obolio je od bronhalne upale pluća i preminuo u ranim jutarnjim satima 20. svibnja 1914.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Petit je najprije pokopan na tadašnjem groblju uz župni dvor u Drongenu. Zahvalni bivši sudionici duhovnih vježbi i njegova subraća ubrzo su počeli širiti njegovo štovanje, a o njegovu životu napisano je više životopisa. Postupak za proglašenje blaženim pokrenut je 1937., kada je dobio naslov sluge Božjega. Iste je godine na zemljištu Stare opatije u Drongenu podignuta kapela posvećena sv. Josipu, u koju su njegovi posmrtni ostatci svečano preneseni u nazočnosti gentskoga biskupa. Kada je lijes 1938. otvoren, tijelo je pronađeno neraspadnuto, što su mnogi shvatili kao znak svetosti.</p>\n<p>Dekret o herojskim krepostima proglašen je 15. prosinca 1966. u nazočnosti pape Pavla VI., zajedno s dekretima za još petero slugu Božjih, među kojima su bili Ivan Marija de la Mennais i Gašpar Bertoni. Time je Petit postao časni sluga Božji. Štovanje je s vremenom oslabilo, a prema drongenskim izvorima postupak je 1992. zaustavljen. Njegov utjecaj ipak se prenosio preko onih koje je odgajao: biografi Willieja Doylea djelomično pripisuju formaciji u Drongenu Doyleovu kasniju djelotvornost u vođenju duhovnih vježbi i u službi vojnoga kapelana.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://jesuit.org.sg/?p=8952",
+        "title": "Životopis o. Adolfa Petita — isusovci u Singapuru",
+        "publisher": "Jesuits in Singapore",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://ontdekdrongen.org/wp-content/uploads/2014/11/heldenboekje2.pdf",
+          "title": "Drongenski velikani — Adolf Petit (Ontdek Drongen)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://williedoyle.org/?p=21466",
+          "title": "O. Adolf Petit i Willie Doyle — Father Willie Doyle Association",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.lamennais.org/wp-content/uploads/2016/05/es-Boletin-Julio-2021.pdf",
+          "title": "Bilten braće de la Mennais, srpanj 2021. — proglašenje dekreta 15. prosinca 1966.",
+          "kind": "biography-enrichment"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "227",
+        "sheetRow": 228,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1822,
+        "birthPrecision": "1822.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Belgija",
+        "deathDate": {
+          "day": 20,
+          "month": 5,
+          "year": 1914
+        },
+        "deathDateText": "20.05.1914.",
+        "deathPlace": "Drongen (Tronchiennes), Belgija",
+        "deathCircumstances": null,
+        "role": "Svećenik",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 5,
+          "day": 20,
+          "label": "20. svibnja",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Adolphe",
+        "englishName": "Adolphe Petit",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "22.05.1822.",
+        "year": 1822,
+        "place": "Gent, Belgija",
+        "sourceUrl": "https://jesuit.org.sg/?p=8952"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 20,
+        "month": 5,
+        "year": 1914
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/gallery-c4e9817a0a1eff3cf0f9-full.jpg",
+          "thumbSrc": "assets/images/gallery-c4e9817a0a1eff3cf0f9-thumb.jpg",
+          "width": 755,
+          "height": 1200,
+          "thumbWidth": 252,
+          "thumbHeight": 400,
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Adolphe_Petit_%281822-1914%29.jpg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Adolphe_Petit_(1822-1914).jpg",
+          "alt": "Časni sluga Božji Adolf Petit",
+          "caption": "",
+          "credit": "Nepoznati fotograf · Wikimedia Commons",
+          "isGroup": false,
+          "isLocal": true,
+          "identityVerified": true,
+          "identityEvidence": "Opis datoteke: 'An ancient photograph of the Venerable Adolphe Petit, Belgian Jesuit (1822-1914)'; datoteka je u kategoriji Category:Adolphe Petit i povezana s Wikidata Q2141457.",
+          "license": "Javno dobro (fotografija nepoznatoga autora, prije 1914.)",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "sourceDigest": "c4e9817a0a1eff3cf0f9020a80ddbc05dbd9f4432301183e564bc9a550ef24e5"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 272,
+        "addedWords": 173,
+        "growthPercent": 63.6,
+        "sourceUrls": [
+          "https://ontdekdrongen.org/wp-content/uploads/2014/11/heldenboekje2.pdf",
+          "https://www.lamennais.org/wp-content/uploads/2016/05/es-Boletin-Julio-2021.pdf",
+          "https://williedoyle.org/?p=21466"
+        ]
+      },
+      "lifeThemes": [
+        "education",
+        "discernment",
+        "poverty"
+      ],
+      "centuries": [
+        19,
+        20
+      ],
+      "lifePeriod": {
+        "birthYear": 1822,
+        "deathYear": 1914,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          19,
+          20
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1822.; dan i mjesec rođenja nisu provjereni. Datum smrti: 20.05.1914.",
+        "sourceUrl": "https://jesuit.org.sg/?p=8952",
+        "limitations": "1822.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "josip-picco",
+      "number": 233,
+      "name": "Josip Picco",
+      "aliases": [
+        "Giuseppe Picco",
+        "Giuseppe"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Talijanski isusovac iz Pijemonta koji je više od tri desetljeća vodio duhovne vježbe u Gozzanu kraj Novare, propovijedao po selima i ispovijedao hodočasnike, unatoč doživotno krhkom zdravlju.",
+      "roles": [
+        "Svećenik"
+      ],
+      "life": "1867. – 1946.",
+      "feast": {
+        "month": 8,
+        "day": 31,
+        "label": "31. kolovoza",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Josip Picco",
+      "portrait": {
+        "src": "assets/images/aea3439856d20320c95f-full.jpg",
+        "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+        "width": 902,
+        "height": 1200,
+        "thumbWidth": 451,
+        "thumbHeight": 600,
+        "isLocal": true,
+        "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+        "isGroup": true,
+        "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+        "caption": "Zajednički prikaz; nije osobni portret.",
+        "originalAssetPath": "assets/hero-saints.jpg"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "4. srpnja 1867., Nole (Torino), Italija"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Italija"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "31.08.1946."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Italija (Gozzano?)"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Razlike u izvorima",
+          "value": "Podatci zbirke mjesto smrti navode s upitnikom (Gozzano?). Isusovački životopis i talijanski izvori navode da je do smrti živio u kući duhovnih vježbi u Gozzanu."
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Giuseppe Picco · Giuseppe"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "18. prosinca 1997., Ivan Pavao II."
+        }
+      ],
+      "biographyHtml": "<p>Josip Picco rođen je 4. srpnja 1867. u Noleu, mjestu u Kanaveskom kraju nedaleko od Torina, kao treće od desetero djece. Prve je pouke dobio od strica, župnika, a zatim se školovao u Torinu i u salezijanskoj školi u Lanzu. Godine 1883. ušao je u nadbiskupijsko sjemenište u Chieriju. Duhovne vježbe koje je obavio u obližnjoj isusovačkoj kući presudno su oblikovale njegovu odluku, pa je u rujnu 1885. započeo novicijat Družbe Isusove.</p>\n<p>Kao mladi isusovac poučavao je u Torinu i u Cuneu, gdje je obolio od upale porebrice koja ga je pratila cijeloga života. Molio je da ga pošalju u misije na Aljasku, ali mu to zbog zdravlja nije odobreno. Za studija teologije mjesecima je njegovao teško bolesnoga subrata, oca Romualda Fumagallija, i pritom se sam iscrpio, pa mu je ređenje odgođeno. Za svećenika je zaređen 8. travnja 1901., a sljedećih je godina bio ispovjednik sjemeništaraca u Torinu, služio u župi u Genovi, bio duhovnik u Cuneu i pomoćnik u San Remu.</p>\n<p>U listopadu 1912. imenovan je pomoćnim ravnateljem kuće duhovnih vježbi u Gozzanu kraj Novare i ondje je ostao do kraja života. Vodio je duhovne vježbe, propovijedao pučke misije i devetnice po okolnim selima, nedjeljom poučavao djecu vjeronauk te bio ispovjednik redovničkih zajednica i svećenika. Za Prvoga svjetskog rata bio je kapelan vojnika u Cuneu. Zbog slabih pluća ljeta je više od četiri desetljeća provodio u planinskom Crissolu, gdje je ispovijedao hodočasnike u svetištu sv. Chiaffreda, obilazio bolesnike i uveo zajedničku večernju molitvu krunice.</p>\n<p>Središte njegove pobožnosti bila je Euharistija, a s posebnim je poštovanjem gledao na svećeništvo i molio za svećenike u kušnji. U proljeće 1946. naslutio je da mu se bliži kraj i postupno se povukao iz službe. Umro je 31. kolovoza 1946.; toga ga je jutra u sobi pronašao njegov brat Julije. Vjernici su se od njega opraštali u maloj kapeli kuće duhovnih vježbi, a pokopan je 2. rujna.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Glas o svetosti oca Picca proširio se Gozzanom i okolicom odmah nakon njegove smrti: gradonačelnik je proglasio opću žalost, a ljudi su nastavili moliti za njegov zagovor. Postupak za proglašenje blaženim službeno je uveden u Rimu 10. prosinca 1973. Dekret o njegovim herojskim krepostima pročitan je 18. prosinca 1997. u nazočnosti pape Ivana Pavla II., zajedno s dekretima za Padre Pija i nekolicinu drugih slugu Božjih, pa otada nosi naslov časnoga sluge Božjega.</p>\n<p>Novarska biskupija ubraja ga među one svoje vjernike koji su kreposti živjeli u herojskom stupnju, uz biskupa Karla Bascapèa i svećenika Silvija Gallottija, te moli da se ubrza dan njihove beatifikacije. Talijanski životopisi nazivaju ga apostolom Euharistije i Srca Isusova te tješiteljem ljudskih nevolja u Novarskom kraju i gornjoj dolini rijeke Po, a u nekim ga katoličkim krugovima preporučuju i kao zagovornika nezaposlenih.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://www.jesuit.org.sg/?p=4014",
+        "title": "Životopis sluge Božjega Josipa Picca, DI",
+        "publisher": "Jesuits in Singapore (Družba Isusova)",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://catholicism.org/a-patron-for-the-unemployed.html",
+          "title": "Otac Josip Picco – kratki životopis i molitva za proglašenje svetim",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://libreriacoletti.it/libro/venerabile-giuseppe-picco-sj-falco-lilia/9791255080442",
+          "title": "Venerabile Giuseppe Picco SJ – opis knjižice o njegovu životu",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.libreriauniversitaria.it/padre-giuseppe-picco-gesuita-povero/libro/9788801045727",
+          "title": "Padre Giuseppe Picco. Un gesuita povero e umile – opis životopisa",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://archivio.unita.news/assets/main/1997/12/19/page_025.pdf",
+          "title": "archivio.unita.news — biografski podaci",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.diocesinovara.it/wp-content/uploads/2017/10/galfrsac17.pdf",
+          "title": "Biskupija Novara – tekst o časnim slugama Božjim Novarske Crkve",
+          "kind": "biography-enrichment"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "228",
+        "sheetRow": 229,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1867,
+        "birthPrecision": "1867.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Italija",
+        "deathDate": {
+          "day": 31,
+          "month": 8,
+          "year": 1946
+        },
+        "deathDateText": "31.08.1946.",
+        "deathPlace": "Italija (Gozzano?)",
+        "deathCircumstances": null,
+        "role": "Svećenik",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 8,
+          "day": 31,
+          "label": "31. kolovoza",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Giuseppe",
+        "englishName": "Giuseppe Picco",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "04.07.1867.",
+        "year": 1867,
+        "place": "Nole (Torino), Italija",
+        "sourceUrl": "https://www.jesuit.org.sg/?p=4014"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 31,
+        "month": 8,
+        "year": 1946
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/aea3439856d20320c95f-full.jpg",
+          "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+          "width": 902,
+          "height": 1200,
+          "thumbWidth": 451,
+          "thumbHeight": 600,
+          "isLocal": true,
+          "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+          "isGroup": true,
+          "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+          "caption": "Zajednički prikaz; nije osobni portret.",
+          "originalAssetPath": "assets/hero-saints.jpg"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 313,
+        "addedWords": 136,
+        "growthPercent": 43.45,
+        "sourceUrls": [
+          "https://archivio.unita.news/assets/main/1997/12/19/page_025.pdf",
+          "https://www.jesuit.org.sg/?p=4014",
+          "https://catholicism.org/a-patron-for-the-unemployed.html",
+          "https://www.diocesinovara.it/wp-content/uploads/2017/10/galfrsac17.pdf",
+          "https://libreriacoletti.it/libro/venerabile-giuseppe-picco-sj-falco-lilia/9791255080442"
+        ]
+      },
+      "lifeThemes": [
+        "discernment",
+        "devotions",
+        "healthcare",
+        "trials"
+      ],
+      "centuries": [
+        19,
+        20
+      ],
+      "lifePeriod": {
+        "birthYear": 1867,
+        "deathYear": 1946,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          19,
+          20
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1867.; dan i mjesec rođenja nisu provjereni. Datum smrti: 31.08.1946.",
+        "sourceUrl": "https://www.jesuit.org.sg/?p=4014",
+        "limitations": "1867.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "ljudevit-de-la-puente",
+      "number": 234,
+      "name": "Ljudevit de la Puente",
+      "aliases": [
+        "Luis de la Puente",
+        "Luis"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Isusovac iz Valladolida, učenik Baltazara Álvareza i Francisca Suáreza, bio je profesor, odgojitelj novaka i traženi duhovni voditelj. Njegove Meditacije o otajstvima vjere stoljećima su hranile molitvu katolika diljem svijeta.",
+      "roles": [
+        "Svećenik"
+      ],
+      "life": "1554. – 1624.",
+      "feast": {
+        "month": 2,
+        "day": 16,
+        "label": "16. veljače",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Ljudevit de la Puente",
+      "portrait": {
+        "src": "assets/images/gallery-f491f42d0b28a453d3af-full.jpg",
+        "thumbSrc": "assets/images/gallery-f491f42d0b28a453d3af-thumb.jpg",
+        "width": 817,
+        "height": 1200,
+        "thumbWidth": 272,
+        "thumbHeight": 400,
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Retrato_de_Luis_de_la_Puente_Virtute_et_scriptis_notissimus_An%C3%B3nimo_siglo_XVIII.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Retrato_de_Luis_de_la_Puente_Virtute_et_scriptis_notissimus_An%C3%B3nimo_siglo_XVIII.jpg",
+        "alt": "Časni sluga Božji Ljudevit de la Puente",
+        "caption": "",
+        "credit": "Anonimni autor, 18. stoljeće (Biblioteca Nacional de España) · Wikimedia Commons",
+        "isGroup": false,
+        "isLocal": true,
+        "identityVerified": true,
+        "identityEvidence": "Opis datoteke na Commonsu donosi natpis s portreta: 'Vener. P. Ludovicus á Ponte Soc. Jesu Vallisoletanus ... obijt ... Vallisoleti in Collegio S. Ambrosii ... MDCXXIV'; izvor je zbirka Iconografía Hispana Španjolske nacionalne knjižnice (7493-1). Ista je slika u infokutiji članka o njemu na engleskoj Wikipediji.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceDigest": "f491f42d0b28a453d3af12cb21f283d0a588c21e7bac261e47587294469ef89a"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "11. studenoga 1554., Valladolid, Španjolska"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Španjolska"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "16.02.1624."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Valladolid, Španjolska"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Luis de la Puente · Luis"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "16. srpnja 1759., Klement XIII."
+        }
+      ],
+      "biographyHtml": "<p>Ljudevit de la Puente rođen je 11. studenoga 1554. u Valladolidu. Otac Alonso bio je službenik ondašnjega kraljevskog suda, a majka se zvala María Vázquez. Na sveučilištu u rodnom gradu stekao je 1572. bakalaureat iz umjetnosti i filozofije te započeo teologiju, ali je studij prekinuo kad se odlučio za redovnički život. U Družbu Isusovu stupio je 2. prosinca 1574.</p>\n<p>Novicijat je proveo u Medini del Campo pod vodstvom Baltazara Álvareza, koji mu je ostao trajni duhovni uzor. U isusovačkom kolegiju sv. Ambrozija u Valladolidu učitelj i duhovni voditelj bio mu je Francisco Suárez. Nakon daljnjega studija u Oñatiju i treće probacije u Villagarcíji de Campos zaređen je 1580. za svećenika, a potom je u Salamanci predavao filozofiju.</p>\n<p>Slijedile su godine odgovornih službi. Od 1585. do 1589. bio je učitelj novaka i vicerektor u Villagarcíji de Campos, a kasnije profesor teologije i rektor kolegija sv. Ambrozija. Po nalogu generala Claudija Acquavive obilazio je kao vizitator kolegije svoje provincije. Kad je 1599. kuga pogodila Villagarcíju, brinuo se za oboljele. Slabo zdravlje postupno ga je udaljilo od upravljanja i poučavanja, pa je oko 1608. napustio te službe.</p>\n<p>Posljednja desetljeća posvetio je pisanju i duhovnom vodstvu. Do smrti je bio duhovni voditelj Marine de Escobar, kasnije utemeljiteljice španjolske grane brigitinki. Njegove Meditacije o otajstvima naše svete vjere, objavljene 1605. i 1607., postale su jedno od najčitanijih djela katoličke duhovne literature. Pisao je i o kršćanskom savršenstvu u svim životnim staležima, o sakramentima te životopis svojega učitelja Álvareza. Umro je u Valladolidu 16. veljače 1624.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Glas o svetosti pratio je de la Puentea i nakon smrti. Postupak za njegovo proglašenje blaženim službeno je otvoren 4. listopada 1667., čime je dobio naslov sluge Božjega. Njegovi su spisi u postupku odobreni 1714., a papa Klement XIII. priznao mu je herojske kreposti 16. srpnja 1759. Otada nosi naslov časnoga sluge Božjega. Daljnji tijek postupka zaustavljen je nakon ukinuća Družbe Isusove 1773.</p>\n<p>Njegovo je nasljeđe ponajprije u knjigama. Meditacije su prevedene na desetak jezika, među njima i na arapski i kineski, a Duhovni vodič doživio je samo u francuskom prijevodu dvanaest izdanja. U djelu O savršenstvu kršćanina u svim staležima pokazivao je da je put prema svetosti otvoren i laicima usred njihovih svakodnevnih obveza. Bakrorez iz 18. stoljeća, koji se čuva u Španjolskoj nacionalnoj knjižnici, bilježi da je umro u kolegiju sv. Ambrozija u Valladolidu, okružen glasom svetosti.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://www.newadvent.org/cathen/09003a.htm",
+        "title": "Katolička enciklopedija — Ljudevit de la Puente",
+        "publisher": "New Advent (The Catholic Encyclopedia, 1910.)",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://es.wikipedia.org/wiki/Luis_de_la_Puente",
+          "title": "Enciklopedijski životopis — Luis de la Puente (španjolski)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Luis_de_la_Puente",
+          "title": "Enciklopedijski životopis i podaci o postupku — Luis de la Puente (engleski)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Retrato_de_Luis_de_la_Puente_Virtute_et_scriptis_notissimus_An%C3%B3nimo_siglo_XVIII.jpg",
+          "title": "Portret iz 18. stoljeća s natpisom (Biblioteca Nacional de España)",
+          "kind": "biography-enrichment"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "229",
+        "sheetRow": 230,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1554,
+        "birthPrecision": "1554.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Španjolska",
+        "deathDate": {
+          "day": 16,
+          "month": 2,
+          "year": 1624
+        },
+        "deathDateText": "16.02.1624.",
+        "deathPlace": "Valladolid, Španjolska",
+        "deathCircumstances": null,
+        "role": "Svećenik",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 2,
+          "day": 16,
+          "label": "16. veljače",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Luis",
+        "englishName": "Luis de la Puente",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "11.11.1554.",
+        "year": 1554,
+        "place": "Valladolid, Španjolska",
+        "sourceUrl": "https://www.newadvent.org/cathen/09003a.htm"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 16,
+        "month": 2,
+        "year": 1624
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/gallery-f491f42d0b28a453d3af-full.jpg",
+          "thumbSrc": "assets/images/gallery-f491f42d0b28a453d3af-thumb.jpg",
+          "width": 817,
+          "height": 1200,
+          "thumbWidth": 272,
+          "thumbHeight": 400,
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Retrato_de_Luis_de_la_Puente_Virtute_et_scriptis_notissimus_An%C3%B3nimo_siglo_XVIII.jpg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Retrato_de_Luis_de_la_Puente_Virtute_et_scriptis_notissimus_An%C3%B3nimo_siglo_XVIII.jpg",
+          "alt": "Časni sluga Božji Ljudevit de la Puente",
+          "caption": "",
+          "credit": "Anonimni autor, 18. stoljeće (Biblioteca Nacional de España) · Wikimedia Commons",
+          "isGroup": false,
+          "isLocal": true,
+          "identityVerified": true,
+          "identityEvidence": "Opis datoteke na Commonsu donosi natpis s portreta: 'Vener. P. Ludovicus á Ponte Soc. Jesu Vallisoletanus ... obijt ... Vallisoleti in Collegio S. Ambrosii ... MDCXXIV'; izvor je zbirka Iconografía Hispana Španjolske nacionalne knjižnice (7493-1). Ista je slika u infokutiji članka o njemu na engleskoj Wikipediji.",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "sourceDigest": "f491f42d0b28a453d3af12cb21f283d0a588c21e7bac261e47587294469ef89a"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 250,
+        "addedWords": 139,
+        "growthPercent": 55.6,
+        "sourceUrls": [
+          "https://en.wikipedia.org/wiki/Luis_de_la_Puente",
+          "https://es.wikipedia.org/wiki/Luis_de_la_Puente",
+          "https://commons.wikimedia.org/wiki/File:Retrato_de_Luis_de_la_Puente_Virtute_et_scriptis_notissimus_An%C3%B3nimo_siglo_XVIII.jpg"
+        ]
+      },
+      "lifeThemes": [
+        "education",
+        "culture",
+        "discernment",
+        "healthcare"
+      ],
+      "centuries": [
+        16,
+        17
+      ],
+      "lifePeriod": {
+        "birthYear": 1554,
+        "deathYear": 1624,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          16,
+          17
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1554.; dan i mjesec rođenja nisu provjereni. Datum smrti: 16.02.1624.",
+        "sourceUrl": "https://www.newadvent.org/cathen/09003a.htm",
+        "limitations": "1554.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "matej-ricci",
+      "number": 235,
+      "name": "Matej Ricci",
+      "aliases": [
+        "Matteo Ricci",
+        "Matteo"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Isusovac iz Macerate koji je gotovo tri desetljeća djelovao u Kini, gdje je prihvatio jezik i običaje učenjaka te kroz prijateljstvo, znanost i knjige na kineskom otvarao put evanđelju sve do Pekinga.",
+      "roles": [
+        "Svećenik, misionar"
+      ],
+      "life": "1552. – 1610.",
+      "feast": {
+        "month": 5,
+        "day": 11,
+        "label": "11. svibnja",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Matej Ricci",
+      "portrait": {
+        "src": "assets/images/gallery-57f22076b7ebe138da25-full.jpg",
+        "thumbSrc": "assets/images/gallery-57f22076b7ebe138da25-thumb.jpg",
+        "width": 931,
+        "height": 1200,
+        "thumbWidth": 310,
+        "thumbHeight": 400,
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/%E5%88%A9%E7%8E%9B%E7%AA%A6%E5%83%8F%EF%BC%8C%E6%B8%B8%E6%96%87%E8%BE%89%E7%BB%98.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:%E5%88%A9%E7%8E%9B%E7%AA%A6%E5%83%8F%EF%BC%8C%E6%B8%B8%E6%96%87%E8%BE%89%E7%BB%98.jpg",
+        "alt": "Časni sluga Božji Matej Ricci",
+        "caption": "",
+        "credit": "Emmanuel Pereira (Yu Wenhui), oko 1610. · Wikimedia Commons",
+        "isGroup": false,
+        "isLocal": true,
+        "identityVerified": true,
+        "identityEvidence": "Commons Artwork predložak: naslov 'Matteo Ricci (1552-1610)', ulje na platnu koje je kineski brat Emmanuel Pereira naslikao u Pekingu nedugo nakon Riccijeve smrti; 1616. odneseno u Rim, čuva se u crkvi Il Gesù. Zamjenjuje manju datoteku Ricciportrait.jpg (2183x2814 px).",
+        "license": "Public domain (PD-old-70)",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-old-70",
+        "sourceDigest": "57f22076b7ebe138da259dc5e12dc7dc35c82be15563c810063afd3d2574337e"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "6. listopada 1552., Macerata, Italija"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Italija"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "11.05.1610."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Peking, Kina"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik, misionar"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Matteo Ricci · Matteo"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "17. prosinca 2022., papa Franjo"
+        },
+        {
+          "label": "Počivalište",
+          "value": "Groblje Zhalan, Peking, Kina"
+        }
+      ],
+      "biographyHtml": "<p>Matej Ricci rođen je 6. listopada 1552. u Macerati, u tadašnjoj Papinskoj Državi. Nakon klasične naobrazbe u rodnom gradu otišao je u Rim na studij prava, ali je 1571. ondje stupio u Družbu Isusovu. Na Rimskom kolegiju uz filozofiju i teologiju učio je matematiku, kozmografiju i astronomiju kod Kristofora Claviusa, što će poslije snažno obilježiti njegovo poslanje.</p>\n<p>Godine 1578. otplovio je iz Lisabona prema Indiji i nekoliko godina djelovao u Goi i Kočinu. U Makao je stigao 7. kolovoza 1582., a uskoro se s Michelom Ruggierijem nastanio u Zhaoqingu, na kineskom kopnu. Misionarska kuća privlačila je posjetitelje kartama, satovima i slikama, a Ricci je strpljivo učio jezik i kineske klasike. Nakon protjerivanja 1589. nastavio je rad u Shaozhouu, zatim u Nanchangu i Nanjingu, sve više prihvaćajući odijevanje i način ophođenja kineskih učenjaka.</p>\n<p>U Peking je ušao 24. siječnja 1601., pozvan na dvor cara Wanlija, i postao prvi Europljanin koji je ušao u Zabranjeni grad. Kinezi su ga zvali Li Madou. Na kineskom je pisao o prijateljstvu, moralu i vjeri, a najpoznatije mu je djelo katekizam Istinsko značenje Gospodara Neba. Izradio je kartu svijeta na kineskom i s učenjakom Xu Guangqijem preveo Euklidove Elemente. Prijateljstvo s obrazovanim ljudima, bez političke ili materijalne računice, bilo mu je glavni put navještaja.</p>\n<p>Ricci je umro u Pekingu 11. svibnja 1610., nakon dvadeset i sedam godina provedenih u Kini. Car je dopustio da bude pokopan u kineskoj zemlji, što je za stranca bila rijetka čast. Njegov su rad nastavili kineski suradnici i obraćenici, koje se pamti kao stupove mlade Crkve u Kini.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Postupak za Riccijevo proglašenje blaženim pokrenut je u biskupiji Macerata osamdesetih godina 20. stoljeća, a dokumentacija biskupijske faze predana je u Rim 2014. Nakon što su teolozi, a potom kardinali i biskupi Dikasterija za kauze svetih potvrdili da je kršćanske kreposti živio u herojskom stupnju, papa Franjo je 17. prosinca 2022. odobrio proglašenje dekreta o njegovim herojskim krepostima. Za proglašenje blaženim potrebno je još priznanje čuda po njegovu zagovoru.</p>\n<p>Riccijev grob nalazi se na groblju Zhalan u Pekingu; lokalne su ga vlasti obnovile i ondje se i danas štuje. Papa Benedikt XVI. istaknuo je 2010., o četiristotoj obljetnici njegove smrti, da je Ricci mudro povezivao navještaj evanđelja s dijalogom kultura, ne zaboravljajući ni zaslugu kineskih suradnika poput Xu Guangqija i Li Zhizaoa. Papa Franjo nazvao ga je čovjekom susreta koji je nadišao položaj stranca. Uz Marka Pola jedini je stranac istaknut na pekinškom spomeniku Milenija među velikanima kineske povijesti.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://www.newadvent.org/cathen/13034a.htm",
+        "title": "Matteo Ricci — životopis",
+        "publisher": "Catholic Encyclopedia (New Advent)",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://www.americamagazine.org/faith/2022/12/17/matteo-ricci-sainthood-cause-244370",
+          "title": "Matteo Ricci proglašen časnim slugom Božjim (America Magazine, 17. 12. 2022.)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2022/12/17/221217d.html",
+          "title": "press.vatican.va — biografski podaci",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.vatican.va/content/benedict-xvi/en/speeches/2010/may/documents/hf_ben-xvi_spe_20100529_matteo-ricci.html",
+          "title": "Benedikt XVI. — govor o 400. obljetnici smrti o. Mateja Riccija (29. 5. 2010.)",
+          "kind": "biography-enrichment"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "230",
+        "sheetRow": 231,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1552,
+        "birthPrecision": "1552.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Italija",
+        "deathDate": {
+          "day": 11,
+          "month": 5,
+          "year": 1610
+        },
+        "deathDateText": "11.05.1610.",
+        "deathPlace": "Peking, Kina",
+        "deathCircumstances": null,
+        "role": "Svećenik, misionar",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 5,
+          "day": 11,
+          "label": "11. svibnja",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Matteo",
+        "englishName": "Matteo Ricci",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "06.10.1552.",
+        "year": 1552,
+        "place": "Macerata, Italija",
+        "sourceUrl": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2022/12/17/221217d.html"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 11,
+        "month": 5,
+        "year": 1610
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/gallery-57f22076b7ebe138da25-full.jpg",
+          "thumbSrc": "assets/images/gallery-57f22076b7ebe138da25-thumb.jpg",
+          "width": 931,
+          "height": 1200,
+          "thumbWidth": 310,
+          "thumbHeight": 400,
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/%E5%88%A9%E7%8E%9B%E7%AA%A6%E5%83%8F%EF%BC%8C%E6%B8%B8%E6%96%87%E8%BE%89%E7%BB%98.jpg",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:%E5%88%A9%E7%8E%9B%E7%AA%A6%E5%83%8F%EF%BC%8C%E6%B8%B8%E6%96%87%E8%BE%89%E7%BB%98.jpg",
+          "alt": "Časni sluga Božji Matej Ricci",
+          "caption": "",
+          "credit": "Emmanuel Pereira (Yu Wenhui), oko 1610. · Wikimedia Commons",
+          "isGroup": false,
+          "isLocal": true,
+          "identityVerified": true,
+          "identityEvidence": "Commons Artwork predložak: naslov 'Matteo Ricci (1552-1610)', ulje na platnu koje je kineski brat Emmanuel Pereira naslikao u Pekingu nedugo nakon Riccijeve smrti; 1616. odneseno u Rim, čuva se u crkvi Il Gesù. Zamjenjuje manju datoteku Ricciportrait.jpg (2183x2814 px).",
+          "license": "Public domain (PD-old-70)",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-old-70",
+          "sourceDigest": "57f22076b7ebe138da259dc5e12dc7dc35c82be15563c810063afd3d2574337e"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 257,
+        "addedWords": 149,
+        "growthPercent": 57.98,
+        "sourceUrls": [
+          "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2022/12/17/221217d.html",
+          "https://www.vatican.va/content/benedict-xvi/en/speeches/2010/may/documents/hf_ben-xvi_spe_20100529_matteo-ricci.html",
+          "https://www.americamagazine.org/faith/2022/12/17/matteo-ricci-sainthood-cause-244370"
+        ]
+      },
+      "lifeThemes": [
+        "missions",
+        "culture",
+        "dialogue"
+      ],
+      "centuries": [
+        16,
+        17
+      ],
+      "lifePeriod": {
+        "birthYear": 1552,
+        "deathYear": 1610,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          16,
+          17
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1552.; dan i mjesec rođenja nisu provjereni. Datum smrti: 11.05.1610.",
+        "sourceUrl": "https://www.newadvent.org/cathen/13034a.htm",
+        "limitations": "1552.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "jakov-sevin",
+      "number": 236,
+      "name": "Jakov Sevin",
+      "aliases": [
+        "Jacques Sevin",
+        "Jacques"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Francuski isusovac Jakov Sevin bio je jedan od utemeljitelja katoličkoga izviđaštva u Francuskoj, a odgojnu metodu Roberta Baden-Powella povezao je s Evanđeljem. Pred kraj života utemeljio je redovničku zajednicu Svetoga Križa Jeruzalemskoga.",
+      "roles": [
+        "Svećenik"
+      ],
+      "life": "1882. – 1951.",
+      "feast": {
+        "month": 7,
+        "day": 19,
+        "label": "19. srpnja",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Jakov Sevin",
+      "portrait": {
+        "src": "assets/images/gallery-d8db5bde1b49b9f1614c-full.jpg",
+        "thumbSrc": "assets/images/gallery-d8db5bde1b49b9f1614c-thumb.jpg",
+        "width": 789,
+        "height": 1200,
+        "thumbWidth": 263,
+        "thumbHeight": 400,
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/P%C3%A8re_Jacques_Sevin_%281929%29.png",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:P%C3%A8re_Jacques_Sevin_(1929).png",
+        "alt": "Časni sluga Božji Jakov Sevin",
+        "caption": "",
+        "credit": "Nepoznati autor (retuš: Offnfopt) · Wikimedia Commons",
+        "isGroup": false,
+        "isLocal": true,
+        "identityVerified": true,
+        "identityEvidence": "Opis datoteke na Commonsu: „Carte postale de 1929 représentant le père Jacques Sevin (1882-1951)”; ista slika koristi se u infokutiji članka o Sevinu na engleskoj Wikipediji.",
+        "license": "Javno vlasništvo (anonimno djelo; oznaka Public Domain Mark 1.0)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/deed.en",
+        "sourceDigest": "d8db5bde1b49b9f1614ceeec10015a942d6bf1d1a8c6444110a43834c3684df5"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "7. prosinca 1882., Lille, Francuska"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Francuska"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "19.07.1951."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Boran-sur-Oise, Francuska"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Jacques Sevin · Jacques"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "10. svibnja 2012., Benedikt XVI."
+        },
+        {
+          "label": "Počivalište",
+          "value": "Posjed priorata Svetoga Križa Jeruzalemskoga, Boran-sur-Oise"
+        }
+      ],
+      "biographyHtml": "<p>Jakov Sevin rođen je 7. prosinca 1882. u Lilleu na sjeveru Francuske, a kršten je već sljedećega dana. Veći dio mladosti proveo je u Tourcoingu, gdje je pohađao zavod Presvetoga Srca. Školovanje je zbog jakih glavobolja morao nakratko prekinuti, a potom ga je završio u Lilleu. U rujnu 1900. stupio je u isusovački novicijat u Saint-Acheulu kraj Amiensa.</p>\n<p>Kad su francuski zakoni protiv redovničkih zajednica natjerali isusovce u izgnanstvo, Sevin je formaciju nastavio izvan domovine. Novicijat je dovršio u belgijskom Arlonu, gdje je 1902. položio prve zavjete, a zatim je studirao i predavao u Belgiji i Nizozemskoj. Za svećenika je zaređen 2. kolovoza 1914. u Enghienu, na samom početku Prvoga svjetskog rata.</p>\n<p>Još prije rata pozorno je čitao spise Roberta Baden-Powella, a 1913. upoznao ga je osobno na izviđačkom skupu u Londonu. Uvjerio se da se izviđačka metoda može uklopiti u katolički odgoj mladih. U Mouscronu su u veljači 1918. prvi vođe položili izviđačko obećanje, a 1920. Sevin je s kanonikom Cornetteom i drugima sudjelovao u osnivanju saveza Scouts de France, u kojem je postao glavni tajnik. Od 1923. desetak je godina u dvorcu Chamarande vodio tečajeve za izviđačke vođe.</p>\n<p>Izviđaštvo je u dijelu francuskoga klera dugo nailazilo na nepovjerenje kao uvoz iz Engleske. Sevin je 1933. ostao bez odgovornosti u pokretu, a poslije i bez svih izviđačkih zaduženja, što je prihvatio u poslušnosti. Godine 1944. u Issy-les-Moulineauxu utemeljio je zajednicu Svetoga Križa Jeruzalemskoga, posvećenu odgoju i evangelizaciji mladih; prve članice bile su četiri bivše izviđačke voditeljice. Na zahtjev poglavara 1950. predao je vodstvo zajednice. Posljednje mjesece proveo je bolestan u njezinu prioratu u Boran-sur-Oiseu, gdje je umro 19. srpnja 1951.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Postupak za proglašenje blaženim uveden je u Rimu 1989. Papa Benedikt XVI. odobrio je 10. svibnja 2012. proglašenje dekreta o njegovim herojskim krepostima, pa Sevin otada nosi naslov časnoga sluge Božjega. Postulator kauze bio je o. Jacques Gagey, svjetski kapelan katoličkoga izviđaštva. U siječnju 2021. biskup Beauvaisa Jacques Benoit-Gonnin zaključio je biskupijsko istraživanje navodnoga ozdravljenja po Sevinovu zagovoru, a spisi su upućeni u Vatikan; za beatifikaciju je potrebno priznanje čuda.</p>\n<p>Pokopan je na posjedu priorata u Boran-sur-Oiseu, gdje se i danas nalazi matična kuća Sestara Svetoga Križa Jeruzalemskoga. Zajednica njeguje duhovnost koja povezuje sv. Ignacija, sv. Tereziju od Djeteta Isusa, sv. Tereziju Avilsku i izviđačko iskustvo. U Boranu je 2023. proslavljena šezdeseta obljetnica njezina crkvenog priznanja, uz biskupa Beauvaisa i nacionalnoga kapelana izviđača.</p>\n<p>Sevin je bio i jedan od pokretača Međunarodnoga ureda katoličkih izviđača, današnje Međunarodne katoličke konferencije izviđaštva. Njegova poruka da bližnji nisu samo izviđači ni sunarodnjaci i danas se navodi kao poziv na otvorenost prema svima.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://www.jesuit.org.sg/july-jacques-sevin-sj/",
+        "title": "Životopis časnoga sluge Božjega Jakova Sevina",
+        "publisher": "Jesuits in Singapore",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://www.clairval.com/en/fr-sevin-sj",
+          "title": "Otac Jakov Sevin, isusovac – opatija Saint-Joseph de Clairval",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.cics.org/jacques-sevin/?lang=en",
+          "title": "Jacques Sevin – Međunarodna katolička konferencija izviđaštva (CICS)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.cics.org/2025/12/22/the-man-of-god-of-this-edition-venerable-jacques-sevin/?lang=en",
+          "title": "Časni Jakov Sevin – CICS, prosinac 2025.",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.archivioradiovaticana.va/storico/2012/05/10/decrees_from_the_congregation_for_the_causes_of_saints/en1-586759",
+          "title": "archivioradiovaticana.va — biografski podaci",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://www.cics.org/2021/01/10/is-the-cause-of-beatification-of-the-venerable-jacques-sevin-progressing/?lang=en",
+          "title": "Napredak kauze časnoga Jakova Sevina – CICS, 2021.",
+          "kind": "biography-enrichment"
+        },
+        {
+          "url": "https://www.cics.org/2023/09/19/the-sisters-of-the-holy-cross-of-jerusalem-celebrated-their-60th-anniversary/?lang=en",
+          "title": "Šezdeseta obljetnica Sestara Svetoga Križa Jeruzalemskoga – CICS",
+          "kind": "biography-enrichment"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Jacques_Sevin",
+          "title": "Jacques Sevin (Wikipedija na engleskom)",
+          "kind": "biography-enrichment"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "231",
+        "sheetRow": 232,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1882,
+        "birthPrecision": "1882.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Francuska",
+        "deathDate": {
+          "day": 19,
+          "month": 7,
+          "year": 1951
+        },
+        "deathDateText": "19.07.1951.",
+        "deathPlace": "Boran-sur-Oise, Francuska",
+        "deathCircumstances": null,
+        "role": "Svećenik",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 7,
+          "day": 19,
+          "label": "19. srpnja",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Jacques",
+        "englishName": "Jacques Sevin",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "07.12.1882.",
+        "year": 1882,
+        "place": "Lille, Francuska",
+        "sourceUrl": "https://www.jesuit.org.sg/july-jacques-sevin-sj/"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 19,
+        "month": 7,
+        "year": 1951
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/gallery-d8db5bde1b49b9f1614c-full.jpg",
+          "thumbSrc": "assets/images/gallery-d8db5bde1b49b9f1614c-thumb.jpg",
+          "width": 789,
+          "height": 1200,
+          "thumbWidth": 263,
+          "thumbHeight": 400,
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/P%C3%A8re_Jacques_Sevin_%281929%29.png",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:P%C3%A8re_Jacques_Sevin_(1929).png",
+          "alt": "Časni sluga Božji Jakov Sevin",
+          "caption": "",
+          "credit": "Nepoznati autor (retuš: Offnfopt) · Wikimedia Commons",
+          "isGroup": false,
+          "isLocal": true,
+          "identityVerified": true,
+          "identityEvidence": "Opis datoteke na Commonsu: „Carte postale de 1929 représentant le père Jacques Sevin (1882-1951)”; ista slika koristi se u infokutiji članka o Sevinu na engleskoj Wikipediji.",
+          "license": "Javno vlasništvo (anonimno djelo; oznaka Public Domain Mark 1.0)",
+          "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/deed.en",
+          "sourceDigest": "d8db5bde1b49b9f1614ceeec10015a942d6bf1d1a8c6444110a43834c3684df5"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 271,
+        "addedWords": 158,
+        "growthPercent": 58.3,
+        "sourceUrls": [
+          "https://www.archivioradiovaticana.va/storico/2012/05/10/decrees_from_the_congregation_for_the_causes_of_saints/en1-586759",
+          "https://www.cics.org/2021/01/10/is-the-cause-of-beatification-of-the-venerable-jacques-sevin-progressing/?lang=en",
+          "https://www.cics.org/2023/09/19/the-sisters-of-the-holy-cross-of-jerusalem-celebrated-their-60th-anniversary/?lang=en",
+          "https://www.jesuit.org.sg/july-jacques-sevin-sj/",
+          "https://www.cics.org/jacques-sevin/?lang=en",
+          "https://en.wikipedia.org/wiki/Jacques_Sevin"
+        ]
+      },
+      "lifeThemes": [
+        "youth",
+        "education",
+        "trials"
+      ],
+      "centuries": [
+        19,
+        20
+      ],
+      "lifePeriod": {
+        "birthYear": 1882,
+        "deathYear": 1951,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          19,
+          20
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1882.; dan i mjesec rođenja nisu provjereni. Datum smrti: 19.07.1951.",
+        "sourceUrl": "https://www.jesuit.org.sg/july-jacques-sevin-sj/",
+        "limitations": "1882.; dan i mjesec rođenja nisu provjereni."
+      }
+    },
+    {
+      "id": "franjo-paulski-tarin",
+      "number": 237,
+      "name": "Franjo Paulski Tarín",
+      "aliases": [
+        "Francisco de Paula Tarín",
+        "Francisco de Paula"
+      ],
+      "venerationStatus": "venerable",
+      "groupId": "venerable",
+      "groupLabel": "Časni sluge Božji",
+      "summary": "Španjolski isusovac i pučki misionar koji je desetljećima propovijedao po selima Andaluzije, La Manche i Extremadure. Posljednje godine proveo je u Sevilli, gdje je uz upravu isusovačke kuće skrbio za siromašne i odrasle bez obrazovanja.",
+      "roles": [
+        "Svećenik"
+      ],
+      "life": "1847. – 1910.",
+      "feast": {
+        "month": 12,
+        "day": 12,
+        "label": "12. prosinca",
+        "scope": "individual",
+        "kind": "anniversary",
+        "basis": "death-date",
+        "provenance": "source-death-date"
+      },
+      "additionalFeasts": [],
+      "patronage": [],
+      "sourcePatronage": [],
+      "patronageScope": "individual",
+      "sourcePatronageOwner": "Franjo Paulski Tarín",
+      "portrait": {
+        "src": "assets/images/aea3439856d20320c95f-full.jpg",
+        "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+        "width": 902,
+        "height": 1200,
+        "thumbWidth": 451,
+        "thumbHeight": 600,
+        "isLocal": true,
+        "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+        "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+        "isGroup": true,
+        "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+        "caption": "Zajednički prikaz; nije osobni portret.",
+        "originalAssetPath": "assets/hero-saints.jpg"
+      },
+      "details": [
+        {
+          "label": "Crkveni naslov",
+          "value": "Časni sluga Božji"
+        },
+        {
+          "label": "Rođenje",
+          "value": "7. listopada 1847., Godelleta, Španjolska"
+        },
+        {
+          "label": "Država rođenja",
+          "value": "Španjolska"
+        },
+        {
+          "label": "Datum smrti",
+          "value": "12.12.1910."
+        },
+        {
+          "label": "Mjesto smrti/mučeništva",
+          "value": "Sevilla, Španjolska"
+        },
+        {
+          "label": "Uloga",
+          "value": "Svećenik"
+        },
+        {
+          "label": "Mučenik",
+          "value": "Ne"
+        },
+        {
+          "label": "Ostale oznake",
+          "value": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti."
+        },
+        {
+          "label": "Pripadnost",
+          "value": "Isusovac"
+        },
+        {
+          "label": "Drugi oblici imena",
+          "value": "Francisco de Paula Tarín · Francisco de Paula"
+        },
+        {
+          "label": "Priznanje herojskih kreposti",
+          "value": "3. siječnja 1987., Ivan Pavao II."
+        },
+        {
+          "label": "Počivalište",
+          "value": "Crkva Presvetoga Srca Isusova, Sevilla"
+        }
+      ],
+      "biographyHtml": "<p>Franjo Paulski Tarín rođen je 7. listopada 1847. u Godelleti kraj Valencije, kao deveto od jedanaestero djece Miguela Tarína i Terese Arnau. U pobožnoj obitelji molila se večernja krunica, a djeca su rano pomagala ocu i braći u poslu. Školovao se kod pijarista u Valenciji, a zatim upisao studij prava. Godine 1869. teško je obolio od plućne bolesti i mjesecima bio na rubu smrti, pa je studij morao prekinuti.</p>\n<p>Nakon oporavka sve je jasnije osjećao poziv na misionarski život. Budući da su redovničke zajednice u Španjolskoj tih godina bile potiskivane, 1873. otišao je, velikim dijelom pješice, u Poyanne u južnoj Francuskoj, gdje su prognani španjolski isusovci imali novicijat. Ondje je započeo redovnički život, zatim studirao filozofiju i teologiju, a za svećenika je zaređen 1883. u Oñi.</p>\n<p>Prve svećeničke godine proveo je u El Puertu de Santa Maríji, gdje je za epidemije kolere njegovao oboljele ne bojeći se zaraze. Ondje ga je i dječji udarac ozlijedio u gležanj, a rana mu nikada nije posve zacijelila. Iz Talavere de la Reina započeo je rad koji će obilježiti njegov život: pučke misije po selima i gradićima. Desetljećima je obilazio Andaluziju, La Manchu i Extremaduru, propovijedao, ispovijedao, poučavao katekizam te posjećivao bolesnike, bolnice i zatvore. U stotinama mjesta osnovao je udruženja Apostolata Srca Isusova.</p>\n<p>Poglavari su ga postavili i za predstojnika isusovačke kuće u Sevilli, ali ga ni ta služba nije udaljila od ljudi na rubu. Pokrenuo je večernju nastavu za odrasle i kuću za žene bez doma, a nastavio je propovijedati po predgrađima. Puk ga je zvao apostolom Andaluzije, a u Cádizu „željeznim misionarom“. Nakon pada 1910. i teške ozljede noge ostao je prikovan za postelju u isusovačkoj rezidenciji u Sevilli, gdje je umro 12. prosinca 1910.</p>\n<section class=\"biography-enrichment\">\n<h3>Život i nasljeđe</h3>\n<p>Glas o njegovoj svetosti proširio se odmah nakon smrti, kada su se pred njegovim tijelom stvarali dugi redovi. Sevillski nadbiskup Eustaquio Ilundáin otvorio je biskupijski postupak 1926., a postupak je u Rimu uveden 14. studenoga 1934. Dekret o herojskim krepostima objavljen je 3. siječnja 1987., za pontifikata pape Ivana Pavla II., i otada nosi naslov časnoga sluge Božjega. Postupak za beatifikaciju i dalje je otvoren.</p>\n<p>Pokopan je u Sevilli, u isusovačkoj crkvi Presvetoga Srca Isusova u ulici Jesús del Gran Poder, u kapeli posvećenoj dušama u čistilištu. Natpis na nadgrobnoj ploči opisuje ga kao služitelja Evanđelja i neumornoga radnika za spasenje duša. Njegov grob više od stoljeća privlači vjernike, osobito petkom. Sjećanje na njegove misije živi i u mjestima koja je pohodio: u Tarifi se, primjerice, pjeva marijanski himan koji je ondje ostavio.</p>\n</section>",
+      "devotionsHtml": "",
+      "biographyScope": "individual",
+      "biographyLanguage": "hr",
+      "source": {
+        "url": "https://www.jesuit.org.sg/dec-francis-de-paola-tarin-sj/",
+        "title": "Životopis časnoga sluge Božjega Franje Paulskoga Tarína",
+        "publisher": "Družba Isusova – Singapur (jesuit.org.sg)",
+        "isShared": false
+      },
+      "supplementalSources": [
+        {
+          "url": "https://dialnet.unirioja.es/descarga/articulo/3437600.pdf",
+          "title": "Carlos Núñez Jiménez, „El padre Tarín“, Aljaranda 79 (2010.)",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://catholicmagazine.news/venerable-francisco-de-paula-tarin-a-tireless-apostle-of-rural-spain",
+          "title": "Časni Franjo Paulski Tarín, neumorni apostol ruralne Španjolske",
+          "kind": "biography-research"
+        },
+        {
+          "url": "https://manresa-sj.org/stamps/1_Tarin.htm",
+          "title": "Francisco de Paula Tarín Arnau – kratki životopis (Manresa)",
+          "kind": "biography-research"
+        }
+      ],
+      "relatedSaints": [],
+      "status": "complete",
+      "collectionOrigin": "workbook",
+      "textProcessing": "croatian-summary",
+      "workbook": {
+        "spreadsheetId": "232",
+        "sheetRow": 233,
+        "birthDate": null,
+        "birthDateText": null,
+        "birthYear": 1847,
+        "birthPrecision": "1847.; dan i mjesec rođenja nisu provjereni.",
+        "birthPlace": null,
+        "birthCountry": "Španjolska",
+        "deathDate": {
+          "day": 12,
+          "month": 12,
+          "year": 1910
+        },
+        "deathDateText": "12.12.1910.",
+        "deathPlace": "Sevilla, Španjolska",
+        "deathCircumstances": null,
+        "role": "Svećenik",
+        "martyr": false,
+        "martyrLabel": "Ne",
+        "otherLabels": "Časni sluga Božji – nema liturgijskog spomendana; u direktoriju naveden na dan smrti.",
+        "membership": "Isusovac",
+        "feast": {
+          "month": 12,
+          "day": 12,
+          "label": "12. prosinca",
+          "scope": "individual",
+          "kind": "anniversary",
+          "basis": "death-date",
+          "provenance": "source-death-date"
+        },
+        "sources": [],
+        "notes": "",
+        "originalName": "Francisco de Paula",
+        "englishName": "Francisco de Paula Tarín",
+        "sourceDescription": {
+          "it": null,
+          "hr": null
+        }
+      },
+      "isLayCompanion": false,
+      "honorific": "Časni sluga Božji",
+      "editorialBirth": {
+        "dateText": "07.10.1847.",
+        "year": 1847,
+        "place": "Godelleta, Španjolska",
+        "sourceUrl": "https://dialnet.unirioja.es/descarga/articulo/3437600.pdf"
+      },
+      "birthDate": null,
+      "deathDate": {
+        "day": 12,
+        "month": 12,
+        "year": 1910
+      },
+      "aiAssisted": true,
+      "gallery": [
+        {
+          "src": "assets/images/aea3439856d20320c95f-full.jpg",
+          "thumbSrc": "assets/images/aea3439856d20320c95f-thumb.jpg",
+          "width": 902,
+          "height": 1200,
+          "thumbWidth": 451,
+          "thumbHeight": 600,
+          "isLocal": true,
+          "sourceUrl": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "sourcePage": "https://i.pinimg.com/1200x/56/82/91/5682910309c499355248d2282363e83d.jpg",
+          "credit": "Zajednički prikaz isusovačkih svetaca; sliku je dostavio urednik zbirke.",
+          "isGroup": true,
+          "alt": "Zajednički prikaz isusovačkih svetaca; osobni portret nije dostupan",
+          "caption": "Zajednički prikaz; nije osobni portret.",
+          "originalAssetPath": "assets/hero-saints.jpg"
+        }
+      ],
+      "relationships": [],
+      "biographyEnrichment": {
+        "originalWords": 284,
+        "addedWords": 133,
+        "growthPercent": 46.83,
+        "sourceUrls": [
+          "https://dialnet.unirioja.es/descarga/articulo/3437600.pdf",
+          "https://www.jesuit.org.sg/dec-francis-de-paola-tarin-sj/"
+        ]
+      },
+      "lifeThemes": [
+        "missions",
+        "education",
+        "poverty",
+        "healthcare"
+      ],
+      "centuries": [
+        19,
+        20
+      ],
+      "lifePeriod": {
+        "birthYear": 1847,
+        "deathYear": 1910,
+        "birthApproximate": false,
+        "deathApproximate": false,
+        "centuries": [
+          19,
+          20
+        ],
+        "coverageBasis": "life-span",
+        "knownAliveYears": [],
+        "evidence": "1847.; dan i mjesec rođenja nisu provjereni. Datum smrti: 12.12.1910.",
+        "sourceUrl": "https://www.jesuit.org.sg/dec-francis-de-paola-tarin-sj/",
+        "limitations": "1847.; dan i mjesec rođenja nisu provjereni."
       }
     }
   ]

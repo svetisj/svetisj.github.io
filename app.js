@@ -48,7 +48,7 @@
   const imageCredit = image => (image?.credit || 'Podaci o autoru slike nisu navedeni.').replace(/^Opći prikaz;\s*slika ovoga sveca nije dostupna\.\s*/i, '');
   const titlePrefixes = config.prefixes;
   const personTitle = saint => `${saint.honorific || titlePrefixes[saint.venerationStatus] || ''} ${saint.name}`.trim();
-  const translationNote = saint => saint.venerationStatus === 'blessed' ? `<p class="translation-note">${saint.textProcessing === 'croatian-summary' ? 'Tekst je sažet i prilagođen uz pomoć umjetne inteligencije.' : 'Tekst je preveden i prilagođen uz pomoć umjetne inteligencije.'}</p>` : '';
+  const translationNote = saint => saint.venerationStatus === 'blessed' || saint.aiAssisted ? `<p class="translation-note">${saint.textProcessing === 'croatian-summary' ? 'Tekst je sažet i prilagođen uz pomoć umjetne inteligencije.' : 'Tekst je preveden i prilagođen uz pomoć umjetne inteligencije.'}</p>` : '';
   const matchesSelection = (saint, selection) => { const filter = config.filters.find(item => item.id === selection); return Boolean(filter && (filter.id === 'all' || filter.statuses?.includes(saint.venerationStatus) || (filter.groupId && filter.groupId === saint.groupId) || (filter.id === 'laity' && saint.isLayCompanion))); };
   const profileHash = saint => {
     const prefix = saint.venerationStatus === 'saint' ? 'sv' : saint.venerationStatus === 'blessed' ? 'bl' : 'sb';

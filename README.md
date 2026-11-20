@@ -8,7 +8,7 @@ Hrvatska digitalna zbirka života i svjedočanstava svetaca, blaženika i slugu 
 
 **Adresa stranice:** [svetisj.github.io](https://svetisj.github.io/)
 
-Zbirka sadrži **223 profila**: 59 svetaca, 162 blaženika i dvije osobe u skupini Sluge Božji. Uključuje i laičke suradnike te suputnike isusovačkih mučenika. Svaki profil donosi životopis, raspoložive biografske podatke, sliku i poveznice na izvore.
+Zbirka sadrži **237 profila**: 59 svetaca, 162 blaženika, 15 časnih slugu Božjih i jednoga slugu Božjega. Uključuje i laičke suradnike te suputnike isusovačkih mučenika. Svaki profil donosi životopis, raspoložive biografske podatke, sliku i poveznice na izvore.
 
 ## Što se nalazi u zbirci
 
@@ -18,7 +18,7 @@ Zbirka sadrži **223 profila**: 59 svetaca, 162 blaženika i dvije osobe u skupi
 - **Pretraživanje po imenu** i drugim zabilježenim oblicima imena, uz podršku za hrvatske dijakritičke znakove.
 - **Djelovanje**: 16 kategorija prema dokumentiranim iskustvima i djelovanju, uz barem jednu kategoriju za svaku osobu.
 - **Razdoblje**: stoljeća života od 15. do 20. stoljeća.
-- **Status**: sveci, blaženici, sluge Božji i laici. Jedna sklopiva kontrola **Filtri** objedinjuje djelovanje, razdoblje, status i skupine, uz višestruki odabir, brojač odabira i prikaz rezultata. Odabrane stavke ostaju vidljive i nakon zatvaranja.
+- **Status**: sveci, blaženici, časni sluge Božji, sluge Božji i laici. Jedna sklopiva kontrola **Filtri** objedinjuje djelovanje, razdoblje, status i skupine, uz višestruki odabir, brojač odabira i prikaz rezultata. Odabrane stavke ostaju vidljive i nakon zatvaranja.
 - **Skupine**: svih 12 kategorija zbirke nalazi se unutar kontrole Filtri i vrijedi za kartice, popis i kalendar.
 - **Spremljeni profili** i prilagodljiva veličina teksta, uz pamćenje odabira na uređaju.
 - **Dijeljenje i ispis** životopisa.
@@ -32,7 +32,7 @@ Svaki životopis ima i zasebnu adresu, primjerice [Sv. Ignacije Lojolski](https:
 
 Životopisi su izvorni hrvatski sažeci i sinteze, sastavljeni uz pomoć umjetne inteligencije prema navedenim izvorima. Dulji životopisi dopunjeni su dodatnim provjerenim crkvenim i stručnim izvorima, koji su svi povezani uz tekst. Ne predstavljaju potpune prijevode izvornih članaka. Tekst blaženog Ivana Merza prilagođen je iz hrvatskog izvora.
 
-Za 217 osoba podatci su usklađeni s uredničkom tablicom: kalendar prati **Datum proslave**, a profili donose raspoložive datume i mjesta rođenja i smrti, okolnosti mučeništva, ulogu, pripadnost, druge oznake, oblike imena i izvore. Šest dodatnih profila zadržava ranije podatke. Nepotpuni datumi i razlike među izvorima izričito su označeni.
+Za 232 osobe podatci su usklađeni s uredničkom tablicom: kalendar prati **Datum proslave**, a profili donose raspoložive datume i mjesta rođenja i smrti, okolnosti mučeništva, ulogu, pripadnost, druge oznake, oblike imena i izvore. Pet dodatnih profila zadržava ranije podatke. Časni sluge Božji nemaju liturgijski spomendan, pa su u kalendaru navedeni na dan smrti; njihovi su životopisi izvorni hrvatski sažeci navedenih izvora, sastavljeni uz pomoć umjetne inteligencije. Nepotpuni datumi i razlike među izvorima izričito su označeni.
 
 ## Statička objava
 
@@ -46,11 +46,11 @@ Ovaj repozitorij sadrži **samo gotove statičke datoteke stranice i ovaj README
 ├── ui-config.js               # Oznake i skupine u sučelju
 ├── assets/                    # IHS logo, portreti, ikone i slika za dijeljenje
 ├── data/                      # Podaci zbirke
-├── osoba/                     # 223 statičkih stranica životopisa
+├── osoba/                     # 237 statičkih stranica životopisa
 ├── manifest.webmanifest       # Podaci za instalaciju aplikacije
 ├── sw.js                      # Izvanmrežno spremanje i verzije predmemorije
 ├── offline-assets.json        # Popis datoteka za izvanmrežno čitanje
-├── sitemap.xml                # 224 URL-ova za tražilice
+├── sitemap.xml                # 238 URL-ova za tražilice
 ├── robots.txt                 # Pravila indeksiranja i adresa sitemapa
 ├── 404.html                   # Stranica za nepostojeće poveznice
 └── .nojekyll                  # Posluživanje bez obrade Jekyllom

@@ -6,7 +6,8 @@ window.SAINT_UI_CONFIG = Object.freeze({
     { id: 'all', label: 'Svi' },
     { id: 'saint', label: 'Sveci', statuses: ['saint'] },
     { id: 'blessed', label: 'Blaženici', statuses: ['blessed'] },
-    { id: 'servants', label: 'Sluge Božji', statuses: ['venerable', 'servant-of-god'] },
+    { id: 'venerable', label: 'Časni sluge Božji', statuses: ['venerable'] },
+    { id: 'servants', label: 'Sluge Božji', statuses: ['servant-of-god'] },
     { id: 'laity', label: 'Laici', groupId: 'laity' },
   ],
 });
